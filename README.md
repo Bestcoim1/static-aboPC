@@ -1,5 +1,21 @@
 # ABOPC — bản HTML, CSS và JavaScript thuần
 
+## Xem online và cập nhật
+
+Đường link chia sẻ: **https://bestcoim1.github.io/static-aboPC/**. Website là demo đồ án; tài khoản, giỏ hàng và đơn mẫu lưu riêng trên trình duyệt mỗi người.
+
+Repository này chỉ chứa bản xuất tĩnh. GitHub Actions tự xuất bản sau mỗi lần push vào `main`; không cần gửi lại file cho người xem. Tiến độ triển khai nằm ở tab Actions. Chỉnh sửa trên máy chưa xuất bản sẽ không ảnh hưởng đến đường link đang chia sẻ.
+
+Từ dự án gốc `E:/trang-web-ban-pc`, chạy lệnh sau để tạo lại bản tĩnh, kiểm tra và push:
+
+```powershell
+node scripts/static-export/publish.mjs
+```
+
+Nếu vừa sửa trực tiếp các file trong bản tĩnh và muốn giữ chúng (không tạo lại từ React/adapter), dùng `node scripts/static-export/publish.mjs --skip-build`. Cả hai chế độ đều kiểm tra bản xuất trước khi push. Công cụ dùng môi trường Node/Playwright đã cài trên máy phát triển hiện tại; người xem website không cần cài gì.
+
+Lưu ý: tạo lại bản tĩnh sẽ thay các file sinh tự động. Các thay đổi UI dùng lâu dài nên nằm trong nguồn/bộ xuất của dự án gốc. Bản đã cập nhật có thể cần tải lại trang; dữ liệu demo cũ trong trình duyệt không tự đồng bộ giữa các máy.
+
 Bản demo riêng, cập nhật ngày 26/10/2026, đã áp dụng đợt cải thiện UI/UX dành cho bản tĩnh. Thư mục này có thể sao chép độc lập; trình duyệt không cần React, Vite, Supabase hay CDN. Có 47 tài liệu HTML, 26 sản phẩm mẫu, ảnh và font Inter đi kèm.
 
 ## Chạy trên máy

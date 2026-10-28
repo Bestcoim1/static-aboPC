@@ -1,0 +1,50 @@
+name: Publish ABOPC demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: Prepare website files
+        env:
+          PAGE_BASE: ${{ steps.pages.outputs.base_path }}
+        run: |
+          mkdir _site
+          cp -R about account admin assets builder cart checkout compatibility deals images login orders products setup-planner track-order wishlist _site/
+          cp ./*.html guest-token.js pages.json ./*-LICENSE.txt _site/
+          touch _site/.nojekyll
+          node -e "const fs=require('node:fs');const pages=JSON.parse(fs.readFileSync('pages.json','utf8'));for(const p of pages){if(!fs.existsSync('_site/'+p.file))throw Error('Missing page: '+p.file)}console.log('Validated '+pages.length+' HTML pages')"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const base=(process.env.PAGE_BASE||'').replace(/\/$/,'')+'/';
+          const file='_site/404.html';
+          const html=fs.readFileSync(file,'utf8').replace('name="static-base" content="./"',`name="static-base" content="${base}"`).replaceAll('="./',`="${base}`);
+          fs.writeFileSync(file,html);
+          NODE
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

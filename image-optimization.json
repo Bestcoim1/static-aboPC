@@ -1,0 +1,746 @@
+[
+  {
+    "source": "/images/abopc-desk-studio.jpg",
+    "bytes": 222021,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/abopc-desk-studio-96.webp",
+        "bytes": 1994
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/abopc-desk-studio-192.webp",
+        "bytes": 5402
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/abopc-desk-studio-384.webp",
+        "bytes": 15086
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/abopc-desk-studio-768.webp",
+        "bytes": 42434
+      },
+      {
+        "width": 1280,
+        "url": "/images/optimized/abopc-desk-studio-1280.webp",
+        "bytes": 90608
+      },
+      {
+        "width": 1536,
+        "url": "/images/optimized/abopc-desk-studio-1536.webp",
+        "bytes": 122270
+      }
+    ]
+  },
+  {
+    "source": "/images/pc-studio-taste.jpg",
+    "bytes": 205784,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/pc-studio-taste-96.webp",
+        "bytes": 980
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/pc-studio-taste-192.webp",
+        "bytes": 2648
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/pc-studio-taste-384.webp",
+        "bytes": 7334
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/pc-studio-taste-768.webp",
+        "bytes": 24610
+      },
+      {
+        "width": 1280,
+        "url": "/images/optimized/pc-studio-taste-1280.webp",
+        "bytes": 56450
+      },
+      {
+        "width": 1536,
+        "url": "/images/optimized/pc-studio-taste-1536.webp",
+        "bytes": 77896
+      }
+    ]
+  },
+  {
+    "source": "/images/tools/builder-preview.jpg",
+    "bytes": 28435,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/tools/builder-preview-96.webp",
+        "bytes": 378
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/tools/builder-preview-192.webp",
+        "bytes": 1060
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/tools/builder-preview-384.webp",
+        "bytes": 3148
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/tools/builder-preview-768.webp",
+        "bytes": 8574
+      },
+      {
+        "width": 844,
+        "url": "/images/optimized/tools/builder-preview-844.webp",
+        "bytes": 10084
+      }
+    ]
+  },
+  {
+    "source": "/images/tools/compatibility-preview.jpg",
+    "bytes": 24423,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/tools/compatibility-preview-96.webp",
+        "bytes": 346
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/tools/compatibility-preview-192.webp",
+        "bytes": 1022
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/tools/compatibility-preview-384.webp",
+        "bytes": 3072
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/tools/compatibility-preview-768.webp",
+        "bytes": 7830
+      },
+      {
+        "width": 804,
+        "url": "/images/optimized/tools/compatibility-preview-804.webp",
+        "bytes": 9002
+      }
+    ]
+  },
+  {
+    "source": "/images/tools/setup-preview.jpg",
+    "bytes": 43508,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/tools/setup-preview-96.webp",
+        "bytes": 770
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/tools/setup-preview-192.webp",
+        "bytes": 1978
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/tools/setup-preview-384.webp",
+        "bytes": 5278
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/tools/setup-preview-768.webp",
+        "bytes": 12238
+      },
+      {
+        "width": 874,
+        "url": "/images/optimized/tools/setup-preview-874.webp",
+        "bytes": 14930
+      }
+    ]
+  },
+  {
+    "source": "/images/products/1.webp",
+    "bytes": 29846,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/1-96.webp",
+        "bytes": 1468
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/1-192.webp",
+        "bytes": 3504
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/1-384.webp",
+        "bytes": 7756
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/1-768.webp",
+        "bytes": 16576
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/1-1000.webp",
+        "bytes": 23310
+      }
+    ]
+  },
+  {
+    "source": "/images/products/10.webp",
+    "bytes": 36452,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/10-96.webp",
+        "bytes": 1946
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/10-192.webp",
+        "bytes": 4342
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/10-384.webp",
+        "bytes": 10800
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/10-768.webp",
+        "bytes": 28694
+      },
+      {
+        "width": 785,
+        "url": "/images/optimized/products/10-785.webp",
+        "bytes": 30488
+      }
+    ]
+  },
+  {
+    "source": "/images/products/11.webp",
+    "bytes": 21276,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/11-96.webp",
+        "bytes": 806
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/11-192.webp",
+        "bytes": 1896
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/11-384.webp",
+        "bytes": 4942
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/11-768.webp",
+        "bytes": 12424
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/11-1000.webp",
+        "bytes": 18116
+      }
+    ]
+  },
+  {
+    "source": "/images/products/12.webp",
+    "bytes": 59358,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/12-96.webp",
+        "bytes": 2344
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/12-192.webp",
+        "bytes": 6476
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/12-384.webp",
+        "bytes": 17752
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/12-768.webp",
+        "bytes": 43210
+      },
+      {
+        "width": 800,
+        "url": "/images/optimized/products/12-800.webp",
+        "bytes": 48732
+      }
+    ]
+  },
+  {
+    "source": "/images/products/13-alt.webp",
+    "bytes": 16102,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/13-alt-96.webp",
+        "bytes": 730
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/13-alt-192.webp",
+        "bytes": 1596
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/13-alt-384.webp",
+        "bytes": 3628
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/13-alt-768.webp",
+        "bytes": 7594
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/13-alt-1000.webp",
+        "bytes": 12732
+      }
+    ]
+  },
+  {
+    "source": "/images/products/13-back.webp",
+    "bytes": 18198,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/13-back-96.webp",
+        "bytes": 576
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/13-back-192.webp",
+        "bytes": 1244
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/13-back-384.webp",
+        "bytes": 3070
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/13-back-768.webp",
+        "bytes": 8158
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/13-back-1000.webp",
+        "bytes": 14446
+      }
+    ]
+  },
+  {
+    "source": "/images/products/13.webp",
+    "bytes": 30892,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/13-96.webp",
+        "bytes": 1012
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/13-192.webp",
+        "bytes": 2312
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/13-384.webp",
+        "bytes": 5742
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/13-768.webp",
+        "bytes": 14260
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/13-1000.webp",
+        "bytes": 22562
+      }
+    ]
+  },
+  {
+    "source": "/images/products/14.webp",
+    "bytes": 84668,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/14-96.webp",
+        "bytes": 1788
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/14-192.webp",
+        "bytes": 6022
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/14-384.webp",
+        "bytes": 17844
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/14-768.webp",
+        "bytes": 43994
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/14-1000.webp",
+        "bytes": 69940
+      }
+    ]
+  },
+  {
+    "source": "/images/products/15.webp",
+    "bytes": 25972,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/15-96.webp",
+        "bytes": 772
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/15-192.webp",
+        "bytes": 1914
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/15-384.webp",
+        "bytes": 5352
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/15-768.webp",
+        "bytes": 14020
+      },
+      {
+        "width": 800,
+        "url": "/images/optimized/products/15-800.webp",
+        "bytes": 19750
+      }
+    ]
+  },
+  {
+    "source": "/images/products/16.webp",
+    "bytes": 44116,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/16-96.webp",
+        "bytes": 1508
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/16-192.webp",
+        "bytes": 3740
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/16-384.webp",
+        "bytes": 10264
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/16-768.webp",
+        "bytes": 25478
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/16-1000.webp",
+        "bytes": 37910
+      }
+    ]
+  },
+  {
+    "source": "/images/products/2.webp",
+    "bytes": 36920,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/2-96.webp",
+        "bytes": 1144
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/2-192.webp",
+        "bytes": 3060
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/2-384.webp",
+        "bytes": 7300
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/2-768.webp",
+        "bytes": 16920
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/2-1000.webp",
+        "bytes": 26862
+      }
+    ]
+  },
+  {
+    "source": "/images/products/3-alt.webp",
+    "bytes": 76588,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/3-alt-96.webp",
+        "bytes": 1474
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/3-alt-192.webp",
+        "bytes": 4046
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/3-alt-384.webp",
+        "bytes": 12206
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/3-alt-768.webp",
+        "bytes": 36160
+      },
+      {
+        "width": 996,
+        "url": "/images/optimized/products/3-alt-996.webp",
+        "bytes": 64570
+      }
+    ]
+  },
+  {
+    "source": "/images/products/3.webp",
+    "bytes": 87176,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/3-96.webp",
+        "bytes": 1590
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/3-192.webp",
+        "bytes": 4284
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/3-384.webp",
+        "bytes": 12962
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/3-768.webp",
+        "bytes": 38490
+      },
+      {
+        "width": 996,
+        "url": "/images/optimized/products/3-996.webp",
+        "bytes": 70936
+      }
+    ]
+  },
+  {
+    "source": "/images/products/4.webp",
+    "bytes": 49182,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/4-96.webp",
+        "bytes": 1926
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/4-192.webp",
+        "bytes": 5216
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/4-384.webp",
+        "bytes": 14884
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/4-768.webp",
+        "bytes": 39384
+      },
+      {
+        "width": 800,
+        "url": "/images/optimized/products/4-800.webp",
+        "bytes": 44494
+      }
+    ]
+  },
+  {
+    "source": "/images/products/5.webp",
+    "bytes": 20294,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/5-96.webp",
+        "bytes": 904
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/5-192.webp",
+        "bytes": 2578
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/5-384.webp",
+        "bytes": 7734
+      },
+      {
+        "width": 624,
+        "url": "/images/optimized/products/5-624.webp",
+        "bytes": 17318
+      }
+    ]
+  },
+  {
+    "source": "/images/products/6.webp",
+    "bytes": 27508,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/6-96.webp",
+        "bytes": 1124
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/6-192.webp",
+        "bytes": 2850
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/6-384.webp",
+        "bytes": 9064
+      },
+      {
+        "width": 600,
+        "url": "/images/optimized/products/6-600.webp",
+        "bytes": 21474
+      }
+    ]
+  },
+  {
+    "source": "/images/products/7.webp",
+    "bytes": 26308,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/7-96.webp",
+        "bytes": 1298
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/7-192.webp",
+        "bytes": 2808
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/7-384.webp",
+        "bytes": 6822
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/7-768.webp",
+        "bytes": 14530
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/7-1000.webp",
+        "bytes": 20622
+      }
+    ]
+  },
+  {
+    "source": "/images/products/8.webp",
+    "bytes": 56494,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/8-96.webp",
+        "bytes": 1774
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/8-192.webp",
+        "bytes": 4210
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/8-384.webp",
+        "bytes": 11494
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/8-768.webp",
+        "bytes": 30890
+      },
+      {
+        "width": 1000,
+        "url": "/images/optimized/products/8-1000.webp",
+        "bytes": 46818
+      }
+    ]
+  },
+  {
+    "source": "/images/products/9.webp",
+    "bytes": 165344,
+    "variants": [
+      {
+        "width": 96,
+        "url": "/images/optimized/products/9-96.webp",
+        "bytes": 2580
+      },
+      {
+        "width": 192,
+        "url": "/images/optimized/products/9-192.webp",
+        "bytes": 7812
+      },
+      {
+        "width": 384,
+        "url": "/images/optimized/products/9-384.webp",
+        "bytes": 26542
+      },
+      {
+        "width": 768,
+        "url": "/images/optimized/products/9-768.webp",
+        "bytes": 81762
+      },
+      {
+        "width": 984,
+        "url": "/images/optimized/products/9-984.webp",
+        "bytes": 133376
+      }
+    ]
+  }
+]

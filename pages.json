@@ -1,0 +1,284 @@
+[
+  {
+    "route": "/",
+    "file": "index.html",
+    "title": "Linh kiện và cấu hình PC | ABOPC",
+    "images": 21
+  },
+  {
+    "route": "/products",
+    "file": "products/index.html",
+    "title": "Danh mục sản phẩm | ABOPC",
+    "images": 28
+  },
+  {
+    "route": "/cart",
+    "file": "cart/index.html",
+    "title": "Giỏ hàng | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/checkout",
+    "file": "checkout/index.html",
+    "title": "Thanh toán | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/orders",
+    "file": "orders/index.html",
+    "title": "Đơn hàng | ABOPC",
+    "images": 2
+  },
+  {
+    "route": "/track-order",
+    "file": "track-order/index.html",
+    "title": "Tra cứu đơn hàng | ABOPC",
+    "images": 2
+  },
+  {
+    "route": "/wishlist",
+    "file": "wishlist/index.html",
+    "title": "Sản phẩm yêu thích | ABOPC",
+    "images": 2
+  },
+  {
+    "route": "/deals",
+    "file": "deals/index.html",
+    "title": "Khuyến mãi | ABOPC",
+    "images": 12
+  },
+  {
+    "route": "/about",
+    "file": "about/index.html",
+    "title": "Về ABOPC | ABOPC",
+    "images": 3
+  },
+  {
+    "route": "/builder",
+    "file": "builder/index.html",
+    "title": "Xây dựng cấu hình PC | ABOPC",
+    "images": 2
+  },
+  {
+    "route": "/compatibility",
+    "file": "compatibility/index.html",
+    "title": "Kiểm tra tương thích | ABOPC",
+    "images": 2
+  },
+  {
+    "route": "/setup-planner",
+    "file": "setup-planner/index.html",
+    "title": "Bố trí góc máy | ABOPC",
+    "images": 7
+  },
+  {
+    "route": "/login",
+    "file": "login/index.html",
+    "title": "Đăng nhập | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/account",
+    "file": "account/index.html",
+    "title": "Đăng nhập | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/admin",
+    "file": "admin/index.html",
+    "title": "Quản trị đơn hàng | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/admin/orders",
+    "file": "admin/orders/index.html",
+    "title": "Quản trị đơn hàng | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/admin/products",
+    "file": "admin/products/index.html",
+    "title": "Quản trị sản phẩm và kho | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/admin/coupons",
+    "file": "admin/coupons/index.html",
+    "title": "Quản trị mã giảm giá | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/admin/reviews",
+    "file": "admin/reviews/index.html",
+    "title": "Quản trị đánh giá | ABOPC",
+    "images": 1
+  },
+  {
+    "route": "/products/1",
+    "file": "products/1/index.html",
+    "title": "Intel Core i9-14900K | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/2",
+    "file": "products/2/index.html",
+    "title": "NVIDIA GeForce RTX 4080 Super | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/3",
+    "file": "products/3/index.html",
+    "title": "ASUS ROG Strix B650E-F Gaming | ABOPC",
+    "images": 8
+  },
+  {
+    "route": "/products/4",
+    "file": "products/4/index.html",
+    "title": "Corsair Vengeance DDR5 32GB | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/5",
+    "file": "products/5/index.html",
+    "title": "Samsung 990 Pro 2TB NVMe | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/6",
+    "file": "products/6/index.html",
+    "title": "Lian Li O11 Dynamic EVO | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/7",
+    "file": "products/7/index.html",
+    "title": "AMD Ryzen 9 7950X3D | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/8",
+    "file": "products/8/index.html",
+    "title": "MSI GeForce RTX 4070 Ti Gaming X | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/9",
+    "file": "products/9/index.html",
+    "title": "Gigabyte X670 AORUS Elite AX | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/10",
+    "file": "products/10/index.html",
+    "title": "G.Skill Trident Z5 RGB 64GB | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/11",
+    "file": "products/11/index.html",
+    "title": "WD Black SN850X 1TB NVMe | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/12",
+    "file": "products/12/index.html",
+    "title": "Corsair RM850x 850W 80+ Gold | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/13",
+    "file": "products/13/index.html",
+    "title": "NZXT Kraken Elite 360 RGB | ABOPC",
+    "images": 9
+  },
+  {
+    "route": "/products/14",
+    "file": "products/14/index.html",
+    "title": "be quiet! Dark Rock Pro 5 | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/15",
+    "file": "products/15/index.html",
+    "title": "Fractal Design North Charcoal | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/16",
+    "file": "products/16/index.html",
+    "title": "Seasonic Prime TX-1000 1000W | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90101",
+    "file": "products/90101/index.html",
+    "title": "ABOPC Nano ITX | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90102",
+    "file": "products/90102/index.html",
+    "title": "ABOPC Pulse Air | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90103",
+    "file": "products/90103/index.html",
+    "title": "ABOPC Vertex 4000D | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90104",
+    "file": "products/90104/index.html",
+    "title": "ABOPC Titan Full Tower | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90201",
+    "file": "products/90201/index.html",
+    "title": "ABOPC View 24\" | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90202",
+    "file": "products/90202/index.html",
+    "title": "ABOPC View 27\" | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90203",
+    "file": "products/90203/index.html",
+    "title": "ABOPC View 32\" 4K | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90204",
+    "file": "products/90204/index.html",
+    "title": "ABOPC UltraWide 34\" | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90301",
+    "file": "products/90301/index.html",
+    "title": "ABOPC Giá đỡ đơn | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/products/90302",
+    "file": "products/90302/index.html",
+    "title": "ABOPC Giá đỡ đôi | ABOPC",
+    "images": 6
+  },
+  {
+    "route": "/404",
+    "file": "404.html",
+    "title": "Không tìm thấy trang | ABOPC",
+    "images": 2
+  },
+  {
+    "route": "/guest-order.html",
+    "file": "guest-order.html",
+    "title": "Tra cứu đơn demo · ABOPC",
+    "images": 0
+  }
+]
