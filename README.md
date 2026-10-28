@@ -2,6 +2,8 @@
 
 ## Xem online và cập nhật
 
+Cập nhật giá mẫu 28/10/2026: giá bán và giá gốc được làm tròn đến 10.000đ gần nhất, ví dụ 15.044.745đ → 15.040.000đ. Trình duyệt đã dùng bản cũ được nâng cấp một lần; giá tự sửa trong admin, dữ liệu tài khoản, tồn kho và đơn đã tạo được giữ nguyên. Báo giá chờ có sản phẩm đổi giá cần lấy lại. Đây là giá demo, không phải giá thị trường hoặc bảng giá HACOM.
+
 Đường link chia sẻ: **https://bestcoim1.github.io/static-aboPC/**. Website là demo đồ án; tài khoản, giỏ hàng và đơn mẫu lưu riêng trên trình duyệt mỗi người.
 
 Repository này chỉ chứa bản xuất tĩnh. GitHub Actions tự xuất bản sau mỗi lần push vào `main`; không cần gửi lại file cho người xem. Tiến độ triển khai nằm ở tab Actions. Chỉnh sửa trên máy chưa xuất bản sẽ không ảnh hưởng đến đường link đang chia sẻ.
