@@ -1,0 +1,784 @@
+{
+  "cssComparisons": [
+    {
+      "file": "products/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "about/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "cart/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "orders/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "guest-order.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "login/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "account/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "builder/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "admin/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "deals/index.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "404.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 390,
+      "equal": true
+    },
+    {
+      "file": "products/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "about/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "cart/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "orders/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "guest-order.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "login/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "account/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "builder/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "admin/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "deals/index.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "404.html",
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 1440,
+      "equal": true
+    }
+  ],
+  "responsiveStress": [
+    {
+      "file": "products/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/page-2.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/page-3.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/1/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/2/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/3/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/4/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/5/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/6/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/7/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/8/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/9/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/10/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/11/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/12/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/13/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/14/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/15/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/16/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90101/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90102/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90103/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90104/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90201/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90202/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90203/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90204/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90301/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "products/90302/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "about/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "cart/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "checkout/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "orders/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "track-order/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "guest-order.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "login/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "account/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "wishlist/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "builder/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "compatibility/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "setup-planner/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "admin/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "admin/products/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "admin/orders/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "deals/index.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "404.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "ui-kit.html",
+      "cssZoom": 2,
+      "overflow": false
+    },
+    {
+      "file": "index.html",
+      "longUnbrokenHeading": true,
+      "width": 360
+    },
+    {
+      "file": "products/index.html",
+      "longUnbrokenHeading": true,
+      "width": 360
+    },
+    {
+      "file": "products/3/index.html",
+      "longUnbrokenHeading": true,
+      "width": 360
+    },
+    {
+      "file": "ui-kit.html",
+      "longUnbrokenHeading": true,
+      "width": 360
+    }
+  ],
+  "keyboard": [
+    "Skip link moves focus to main",
+    "Tab skips disabled button and gives visible focus to next link",
+    "Native menu opens with Enter, closes with Space, supports Tab and Shift+Tab",
+    "Code disclosure opens by keyboard; scrollable code region can be entered and exited",
+    "Reduced motion disables button transform and transition"
+  ],
+  "errors": []
+}

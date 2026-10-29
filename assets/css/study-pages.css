@@ -1,0 +1,547 @@
+/* P07–P10 — Bố cục HTML tĩnh, không cần trạng thái JavaScript. */
+.study-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
+}
+.study-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-block: 20px;
+}
+.study-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.study-nav > a {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.study-nav > a:hover,
+.study-nav > a[aria-current="page"] {
+  color: #a91f1f;
+  background: var(--secondary);
+}
+.study-nav a:focus-visible,
+.study-footer a:focus-visible,
+.category-links a:focus-visible,
+.catalog-card a:focus-visible,
+.product-gallery a:focus-visible,
+.study-summary:focus-visible {
+  outline: 3px solid #a91f1f;
+  outline-offset: 3px;
+}
+.study-menu {
+  position: relative;
+}
+.study-summary {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.study-menu ul {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  width: 240px;
+  padding: 12px;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 10px 30px #0001;
+}
+.study-menu a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.study-menu a:hover {
+  background: var(--secondary);
+}
+.study-main {
+  flex: 1;
+  min-width: 0;
+}
+.study-page {
+  padding-block: 32px 56px;
+}
+.study-heading {
+  margin-bottom: 24px;
+}
+.study-heading h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 750;
+  line-height: 1.2;
+  margin-block: 8px 12px;
+}
+.study-heading p {
+  max-width: 72ch;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+.study-kicker {
+  color: #a91f1f;
+  font-size: 12px;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.study-footer {
+  padding-block: 32px;
+  border-top: 1px solid var(--border);
+  background: var(--secondary);
+}
+.study-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 32px;
+}
+.study-footer p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 12px;
+  color: var(--muted-foreground);
+  max-width: 44ch;
+}
+.study-footer h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.study-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.study-footer a {
+  display: inline-block;
+  padding-block: 6px;
+  font-size: 13px;
+}
+.study-footer-bottom {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+}
+.category-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin-block: 16px 24px;
+  list-style: none;
+}
+.category-links a {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  font-size: 13px;
+}
+.category-links a:hover {
+  border-color: #c92525;
+  color: #a91f1f;
+}
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  scroll-margin-top: 24px;
+}
+.catalog-image {
+  display: block;
+  padding: 24px;
+  background: #faf8f4;
+}
+.catalog-image img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+}
+.catalog-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+.catalog-content h2,
+.catalog-content h3 {
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.45;
+}
+.catalog-content h2 a:hover,
+.catalog-content h3 a:hover {
+  color: #a91f1f;
+  text-decoration: underline;
+}
+.catalog-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+.catalog-category {
+  color: #a91f1f;
+  font-size: 11px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+.catalog-facts {
+  font-size: 12px;
+  margin: 0;
+}
+.catalog-facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-block: 4px;
+}
+.catalog-facts dt {
+  color: var(--muted-foreground);
+}
+.catalog-facts dd {
+  text-align: right;
+  font-weight: 550;
+}
+.catalog-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin-top: auto;
+  font-variant-numeric: tabular-nums;
+}
+.catalog-price strong {
+  font-size: 19px;
+}
+.catalog-price del {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.catalog-content > .btn {
+  width: 100%;
+}
+.catalog-count {
+  font-size: 14px;
+  color: var(--muted-foreground);
+  margin-bottom: 20px;
+}
+.home-featured .catalog-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.home-featured .catalog-image {
+  padding: 16px;
+}
+.home-featured .catalog-image img {
+  height: 160px;
+}
+.home-featured .catalog-content {
+  padding: 14px;
+}
+.product-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  margin-block: 28px 40px;
+}
+.product-gallery {
+  min-width: 0;
+}
+.product-gallery-main {
+  display: block;
+  background: #faf8f4;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.product-gallery-main img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+}
+.product-gallery-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+.product-gallery-thumbs a {
+  display: block;
+  padding: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.product-gallery-thumbs img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+.product-gallery figcaption {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.product-purchase-sample {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  margin-top: 24px;
+}
+.product-purchase-sample .catalog-price strong {
+  font-size: 28px;
+}
+.product-purchase-sample > p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.product-sections {
+  display: grid;
+  gap: 36px;
+}
+.product-sections > section {
+  scroll-margin-top: 24px;
+}
+.product-sections > section > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.study-costs {
+  display: grid;
+  gap: 12px;
+  max-width: 440px;
+  margin-top: 24px;
+}
+.study-costs > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.study-costs > div:last-child {
+  font-weight: 700;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.study-preview {
+  margin: 24px 0;
+}
+.study-preview img {
+  display: block;
+  width: 100%;
+  max-width: 920px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.study-preview figcaption {
+  margin-top: 12px;
+  color: var(--muted-foreground);
+  font-size: 13px;
+}
+@media (max-width: 1023px) {
+  .catalog-grid,
+  .home-featured .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-intro {
+    gap: 24px;
+  }
+}
+@media (max-width: 639px) {
+  .study-header-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    padding-block: 12px;
+  }
+  .study-header-row > .btn {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .study-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .study-menu ul {
+    left: 0;
+    right: auto;
+    max-width: calc(100vw - 32px);
+  }
+  .study-nav > a,
+  .study-summary {
+    padding-inline: 8px;
+    font-size: 13px;
+  }
+  .study-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-featured .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+  .catalog-card {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
+  .catalog-image {
+    padding: 10px;
+    align-self: start;
+    margin-top: 12px;
+    background: transparent;
+  }
+  .catalog-image img {
+    height: 110px;
+  }
+  .home-featured .catalog-image img {
+    height: 100px;
+  }
+  .catalog-content {
+    padding: 16px 16px 16px 4px;
+  }
+  .catalog-meta {
+    flex-wrap: wrap;
+  }
+  .catalog-facts {
+    font-size: 11px;
+  }
+  .product-intro {
+    grid-template-columns: 1fr;
+  }
+  .product-gallery-main img {
+    height: 260px;
+  }
+  .product-purchase-sample,
+  .study-panel {
+    padding: 18px;
+  }
+}
+
+/* P11–P12 — Bài thực hành dùng cùng thành phần với cửa hàng. */
+.teaching-kit {
+  max-width: 1060px;
+}
+.kit-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-block: 24px;
+}
+.kit-toc a,
+.kit-section p > a {
+  color: #a91f1f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.kit-section {
+  margin-block: 24px;
+  scroll-margin-top: 24px;
+}
+.kit-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.kit-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.kit-section p,
+.kit-section dd,
+.kit-section li {
+  line-height: 1.7;
+}
+.kit-section p {
+  margin-block: 12px;
+}
+.kit-section ol {
+  list-style: decimal;
+  padding-left: 24px;
+}
+.kit-section li {
+  margin-block: 6px;
+}
+.kit-section pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 16px;
+  margin-block: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #f7ede5;
+  color: #34231d;
+  font-size: 13px;
+  line-height: 1.6;
+  tab-size: 2;
+}
+.kit-section code {
+  font-family: Consolas, monospace;
+}
+.kit-section .study-faq pre {
+  margin: 0 16px 16px;
+}
+.kit-pagination-example {
+  margin-block: 24px;
+  padding-block: 8px;
+  border-top: 1px solid var(--border);
+}
+.kit-pagination-example .pagination {
+  margin-block: 16px;
+}
+.kit-definitions dt {
+  margin-top: 16px;
+  font-weight: 700;
+}
+.kit-definitions dd {
+  margin-top: 4px;
+}
+/* Chuỗi dài được xuống dòng; code/bảng có vùng cuộn riêng. */
+.study-main,
+.study-footer,
+.study-header {
+  overflow-wrap: anywhere;
+}
+.study-main a:focus-visible,
+.study-header a:focus-visible,
+.study-footer a:focus-visible,
+summary:focus-visible,
+pre:focus-visible {
+  outline: 3px solid #a91f1f;
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

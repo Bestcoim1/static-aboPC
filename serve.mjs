@@ -7,7 +7,7 @@ import {sendFile} from './http-file.mjs';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const port=Number(process.env.PORT||5179);
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json','.jpg':'image/jpeg','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2'};
-http.createServer(async(req,res)=>{
+const server=http.createServer(async(req,res)=>{
   try{
     const url=new URL(req.url,'http://localhost');
     let file=path.resolve(root,'.'+decodeURIComponent(url.pathname));
@@ -17,5 +17,8 @@ http.createServer(async(req,res)=>{
       file=path.join(file,'index.html');
     }
     await sendFile(req,res,file,mime[path.extname(file)]||'application/octet-stream');
-  }catch{res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'}).end('Không tìm thấy trang.');}
-}).listen(port,'127.0.0.1',()=>console.log(`ABOPC static demo: http://127.0.0.1:${port} (Ctrl+C để dừng)`));
+  }catch{
+    const html=(await fs.readFile(path.join(root,'404.html'),'utf8')).replaceAll('="./','="/');
+    res.writeHead(404,{'Content-Type':'text/html; charset=utf-8'}).end(html);
+  }
+}).listen(port,'127.0.0.1',()=>console.log(`ABOPC static demo: http://127.0.0.1:${server.address().port} (Ctrl+C để dừng)`));

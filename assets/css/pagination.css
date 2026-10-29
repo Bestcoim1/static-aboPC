@@ -1,0 +1,50 @@
+/* P08 — Mỗi số trang liên kết tới một file HTML thật.
+   .active đánh dấu trang hiện tại, không phải pseudo-class :active.
+   Ở đầu/cuối danh sách, dùng <span> thay vì link để không có đích sai. */
+.pagination {
+  margin-block: 32px 8px;
+}
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pagination a,
+.pagination span {
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #d9cbc1;
+  border-radius: 4px;
+  background-color: white;
+  color: #34231d;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+}
+.pagination a:hover {
+  background-color: #f7ede5;
+  border-color: #c92525;
+}
+.pagination .active a {
+  background-color: #c92525;
+  border-color: #c92525;
+  color: white;
+  font-weight: 700;
+}
+.pagination a:focus-visible {
+  outline: 3px solid #a91f1f;
+  outline-offset: 3px;
+}
+.pagination .disabled span {
+  color: #71645c;
+  background-color: #f4eee8;
+  opacity: 0.6;
+  cursor: not-allowed;
+}

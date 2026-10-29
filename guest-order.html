@@ -1,6 +1,115 @@
-<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="static-base" content="./"><link rel="icon" href="data:,"><title>Tra cứu đơn demo · ABOPC</title>  <script type="module" crossorigin="" src="./assets/guestOrder.js"></script>
-  <link rel="modulepreload" crossorigin="" href="./assets/data.js">
-  <link rel="modulepreload" crossorigin="" href="./assets/checkout.js">
-  <link rel="stylesheet" crossorigin="" href="./assets/data.css">
-  <link rel="stylesheet" crossorigin="" href="./assets/guestOrder.css">
-<link rel="preload" as="font" type="font/woff2" href="./assets/inter-latin-wght-normal.woff2" crossorigin=""><link rel="preload" as="font" type="font/woff2" href="./assets/inter-vietnamese-wght-normal.woff2" crossorigin=""></head><body><div id="guest-root"><main><a class="brand" href="./">ABO<span>PC</span></a><section><p class="eyebrow">TRA CỨU ĐƠN KHÁCH</p><h1>Xem đơn hàng của bạn</h1><p class="muted">Môi trường thử nghiệm local · Giá/phí/thuế là số mẫu.</p><form><h2>Gửi lại liên kết tra cứu</h2><p class="muted">Nhập mã đơn và email đã dùng khi đặt hàng.</p><label for="order-number">Mã đơn hàng</label><input id="order-number" maxlength="36" required="" autocomplete="off"><label for="contact-email">Email liên hệ</label><input id="contact-email" type="email" maxlength="254" required="" autocomplete="off"><button type="submit">Gửi liên kết</button></form></section><p class="footer"><a href="./track-order">Tra cứu đơn khác</a> · <a href="./">Quay lại cửa hàng</a> · Không chia sẻ liên kết tra cứu với người khác.</p></main></div></body></html>
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tra cứu dành cho khách — mẫu. Bản học tập HTML và CSS của ABOPC."
+    />
+    <meta name="static-base" content="./" />
+    <link rel="icon" href="data:," />
+    <title>Tra cứu dành cho khách — mẫu | ABOPC</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="./assets/fonts/inter-vietnamese-wght-normal.woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div class="storefront site-shell">
+      <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+      <header class="study-header">
+        <div class="site-container study-header-row">
+          <a href="./index.html" aria-label="ABOPC — Trang chủ"
+            ><img
+              class="brand-mark"
+              src="./images/brand/abo-logo.svg"
+              width="112"
+              height="46"
+              alt="ABOPC"
+          /></a>
+          <nav class="study-nav" aria-label="Điều hướng chính">
+            <a href="./index.html">Trang chủ</a><a href="./products/index.html">Sản phẩm</a
+            ><a href="./deals/index.html">Khuyến mãi</a><a href="./about/index.html">Giới thiệu</a>
+            <details class="study-menu">
+              <summary class="study-summary">Trang mẫu</summary>
+              <ul>
+                <li><a href="./builder/index.html">Cấu hình mẫu</a></li>
+                <li><a href="./compatibility/index.html">Bảng thông số mẫu</a></li>
+                <li><a href="./setup-planner/index.html">Bố trí góc máy mẫu</a></li>
+                <li><a href="./wishlist/index.html">Danh sách yêu thích mẫu</a></li>
+                <li><a href="./orders/index.html">Đơn hàng mẫu</a></li>
+                <li><a href="./track-order/index.html">Tra cứu mẫu</a></li>
+                <li><a href="./account/index.html">Hồ sơ mẫu</a></li>
+                <li><a href="./admin/index.html">Quản trị mẫu</a></li>
+              </ul>
+            </details>
+          </nav>
+          <a class="btn btn-outline" href="./cart/index.html">Giỏ hàng mẫu</a>
+        </div>
+      </header>
+      <main id="main-content" tabindex="-1" class="study-main">
+        <div class="site-container study-page">
+          <header class="study-heading">
+            <p class="study-kicker">Ví dụ giao diện · Không xử lý giao dịch</p>
+            <h1>Tra cứu dành cho khách — mẫu</h1>
+          </header>
+          <p class="study-note">
+            Trang mẫu cho khách vãng lai. Không gửi email, mở phiên tra cứu hoặc xác thực liên kết.
+          </p>
+          <section class="study-panel">
+            <h2>Ví dụ tra cứu</h2>
+            <p>Mã đơn minh họa: MẪU-001. Email minh họa: khach@abopc.example.</p>
+          </section>
+          <div class="study-actions">
+            <a class="btn btn-primary" href="./orders/index.html">Xem nội dung đơn mẫu</a
+            ><a class="btn btn-outline" href="./track-order/index.html">Xem biểu mẫu tra cứu</a>
+          </div>
+        </div>
+      </main>
+      <footer class="study-footer">
+        <div class="site-container">
+          <div class="study-footer-grid">
+            <div>
+              <a href="./index.html" aria-label="ABOPC — Trang chủ"
+                ><img
+                  class="brand-mark"
+                  src="./images/brand/abo-logo.svg"
+                  width="112"
+                  height="46"
+                  alt="ABOPC"
+              /></a>
+              <p>Từ linh kiện đến góc máy của riêng bạn.</p>
+              <p>
+                Bản học tập HTML + CSS. Nội dung và giao dịch mẫu; không nhận đơn hoặc thanh toán.
+              </p>
+            </div>
+            <div>
+              <h2>Khám phá</h2>
+              <ul>
+                <li><a href="./products/index.html">Danh sách sản phẩm</a></li>
+                <li><a href="./deals/index.html">Khuyến mãi mẫu</a></li>
+                <li><a href="./about/index.html">Về ABOPC</a></li>
+                <li><a href="./ui-kit.html">Mẫu nút bấm</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Trang minh họa</h2>
+              <ul>
+                <li><a href="./builder/index.html">Cấu hình PC mẫu</a></li>
+                <li><a href="./setup-planner/index.html">Góc máy mẫu</a></li>
+                <li><a href="./checkout/index.html">Biểu mẫu thanh toán</a></li>
+                <li><a href="./login/index.html">Biểu mẫu đăng nhập</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="study-footer-bottom">© 2026 ABOPC · Website đồ án</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+/* Các điều chỉnh giao diện còn dùng sau khi đối chiếu với HTML. Đặt sau layout/pages để giữ cascade. */
+.storefront {
+  --shell-accent: var(--static-link);
+}
+.taste-home {
+  --home-accent: var(--static-link);
+}
+.home-hero {
+  padding-block: 28px;
+}
+.home-hero-grid {
+  gap: 40px;
+}
+.home-hero-image img {
+  max-height: 360px;
+}
+.home-trust {
+  padding-block: 12px;
+}
+.home-trust-note {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.home-trust-item p {
+  font-size: 12px;
+}
+.home-section {
+  padding-block: 32px;
+}
+.home-categories {
+  padding-block: 24px;
+}
+.home-section-heading {
+  margin-bottom: 18px;
+}
+.home-category {
+  padding: 10px 8px;
+}
+.home-tools-section {
+  padding-block: 40px;
+}
+.home-tools-grid {
+  grid-template-columns: 1.35fr 1fr 1fr;
+  align-items: stretch;
+}
+.home-tool:first-child {
+  background: var(--secondary);
+}
+.home-tool-preview {
+  background: #f7f0e7;
+  height: 180px;
+}
+.home-tool-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home-needs-compact {
+  padding-block: 12px 32px;
+}
+.home-needs-compact h2 {
+  font-weight: 650;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.home-needs-compact > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+}
+.home-needs-compact a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 16px;
+  min-height: 64px;
+  padding-block: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  flex: 1 1 200px;
+}
+.home-needs-compact span {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  font-weight: 400;
+  grid-column: 1;
+}
+.home-needs-compact svg {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--static-link);
+}
+.home-brand {
+  font-size: 14px;
+  padding-block: 14px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #766a62;
+  opacity: 1;
+}
+[id="description"],
+[id="specifications"],
+[id="reviews"] {
+  scroll-margin-top: calc(var(--static-header-height) + 20px);
+}
+@media (max-width: 1023px) {
+  :root {
+    --static-header-height: 111px;
+  }
+}
+@media (max-width: 767px) {
+  .home-hero {
+    padding-block: 20px;
+  }
+  .home-hero-grid {
+    gap: 20px;
+  }
+  .home-eyebrow {
+    margin-bottom: 12px;
+  }
+  .home-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+  .home-hero-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .home-actions {
+    margin-top: 16px;
+    gap: 8px;
+  }
+  .home-hero-image img {
+    max-height: 180px;
+    object-fit: cover;
+  }
+  .home-trust-grid {
+    gap: 10px;
+  }
+  .home-trust-item h2 {
+    font-size: 12px;
+  }
+  .home-trust-item p,
+  .home-categories .home-section-heading p,
+  .home-featured .home-section-heading p {
+    display: none;
+  }
+  .home-category-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .home-category {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+    padding: 8px 2px;
+  }
+  .home-category-photo {
+    width: 48px;
+    height: 40px;
+  }
+  .home-category h3 {
+    font-size: 12px;
+  }
+  .home-category-copy > span {
+    display: none;
+  }
+  .home-section-heading h2 {
+    font-size: 22px;
+  }
+  .home-section {
+    padding-block: 24px;
+  }
+  .home-tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-tool {
+    grid-template-columns: 88px minmax(0, 1fr);
+    padding: 12px;
+  }
+  .home-tool-preview {
+    height: 76px;
+  }
+  .home-tool h3 {
+    font-size: 16px;
+  }
+  .home-tool-copy {
+    padding: 0;
+  }
+  .home-tools-section {
+    padding-block: 28px;
+  }
+  .home-needs-compact > div {
+    display: grid;
+    gap: 4px;
+  }
+  .home-needs-compact a {
+    min-height: 64px;
+  }
+  .home-needs-compact h2 {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
+main h1[tabindex="-1"] {
+  scroll-margin-top: var(--storefront-header-height, 150px);
+}

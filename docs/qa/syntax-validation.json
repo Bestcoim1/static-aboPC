@@ -1,0 +1,310 @@
+{
+  "config": {
+    "extends": [
+      "html-validate:recommended"
+    ],
+    "rules": {
+      "doctype-style": "off",
+      "void-style": "off",
+      "no-inline-style": "off",
+      "svg-focusable": "off",
+      "long-title": "off",
+      "prefer-native-element": "off"
+    }
+  },
+  "html": [
+    {
+      "file": "products/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/page-2.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/page-3.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/1/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/2/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/3/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/4/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/5/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/6/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/7/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/8/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/9/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/10/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/11/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/12/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/13/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/14/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/15/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/16/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "about/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "cart/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "checkout/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "orders/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "track-order/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "guest-order.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "login/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "account/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "builder/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "admin/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "deals/index.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "404.html",
+      "valid": true,
+      "messages": []
+    },
+    {
+      "file": "ui-kit.html",
+      "valid": true,
+      "messages": []
+    }
+  ],
+  "css": [
+    {
+      "file": "base.css",
+      "errors": []
+    },
+    {
+      "file": "buttons.css",
+      "errors": []
+    },
+    {
+      "file": "components.css",
+      "errors": []
+    },
+    {
+      "file": "layout.css",
+      "errors": []
+    },
+    {
+      "file": "main.css",
+      "errors": []
+    },
+    {
+      "file": "pages.css",
+      "errors": []
+    },
+    {
+      "file": "pagination.css",
+      "errors": []
+    },
+    {
+      "file": "refinements.css",
+      "errors": []
+    },
+    {
+      "file": "study-pages.css",
+      "errors": []
+    },
+    {
+      "file": "utilities.css",
+      "errors": []
+    }
+  ],
+  "errors": []
+}

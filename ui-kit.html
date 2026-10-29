@@ -1,7 +1,414 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>ABOPC · Mẫu thành phần UI</title><link rel="stylesheet" href="./assets/main.css"><style>body{background:var(--background);color:var(--foreground);font-family:Inter,sans-serif}main{max-width:960px;margin:auto;padding:24px}section{margin-block:24px}h1{font-size:28px;font-weight:700}h2{font-size:20px;font-weight:600;margin-bottom:16px}.ui-actions{margin-block:12px}label{display:grid;gap:8px;max-width:400px}p{line-height:1.6}.kit-error{color:var(--ui-error)}</style></head><body><main>
-<h1>Mẫu thành phần ABOPC</h1><p>Đỏ–kem · Inter · Trạng thái dùng trong bản tĩnh.</p><button type="button" class="ui-button" id="theme">Đổi sáng/tối</button>
-<section class="ui-panel"><h2>Nút và focus</h2><p>Dùng Tab để kiểm tra viền focus, rê chuột để xem hover.</p><div class="ui-actions"><button class="ui-button" data-kind="primary">Hành động chính</button><button class="ui-button">Hành động phụ</button><button class="ui-button" disabled>Chưa khả dụng</button><button class="ui-button" data-kind="primary" disabled aria-busy="true">Đang lưu…</button></div></section>
-<section class="ui-panel"><h2>Ô nhập và lỗi</h2><label>Tên bố trí<input class="ui-field" placeholder="Góc máy của tôi"></label><label>Email<input class="ui-field" type="email" value="email-chưa-đúng" aria-invalid="true" aria-describedby="email-error"></label><p id="email-error" class="kit-error">Nhập email có dạng ten@example.com.</p></section>
-<section class="ui-panel"><h2>Nhãn và giá</h2><div class="ui-actions"><span class="ui-badge" data-kind="success">✓ Đã lưu</span><span class="ui-badge" data-kind="warning">! Cần xem thêm</span><span class="ui-badge" data-kind="error">× Chưa lưu được</span><strong class="ui-price">15.040.000 ₫</strong></div></section>
-<section><h2>Phản hồi bền vững</h2><div class="ui-notice" data-kind="error"><p role="alert">Chưa lưu được. Giữ tên và bố trí đang chỉnh; kiểm tra bộ nhớ trước khi thử lại.</p><button class="ui-button" onclick="this.parentElement.remove()">Đóng</button></div></section>
-</main><script>document.getElementById('theme').onclick=()=>document.documentElement.classList.toggle('dark');</script></body></html>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Linh kiện và cấu hình PC. Bản học tập HTML và CSS của ABOPC."
+    />
+    <meta name="static-base" content="./" />
+    <link rel="icon" href="data:," />
+    <title>UI kit · Nút bấm và phân trang | ABOPC</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="./assets/fonts/inter-vietnamese-wght-normal.woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div class="storefront site-shell">
+      <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+      <header class="study-header">
+        <div class="site-container study-header-row">
+          <a href="./index.html" aria-label="ABOPC — Trang chủ"
+            ><img
+              class="brand-mark"
+              src="./images/brand/abo-logo.svg"
+              width="112"
+              height="46"
+              alt="ABOPC"
+          /></a>
+          <nav class="study-nav" aria-label="Điều hướng chính">
+            <a href="./index.html">Trang chủ</a><a href="./products/index.html">Sản phẩm</a
+            ><a href="./deals/index.html">Khuyến mãi</a><a href="./about/index.html">Giới thiệu</a>
+            <details class="study-menu">
+              <summary class="study-summary">Trang mẫu</summary>
+              <ul>
+                <li><a href="./builder/index.html">Cấu hình mẫu</a></li>
+                <li><a href="./compatibility/index.html">Bảng thông số mẫu</a></li>
+                <li><a href="./setup-planner/index.html">Bố trí góc máy mẫu</a></li>
+                <li><a href="./wishlist/index.html">Danh sách yêu thích mẫu</a></li>
+                <li><a href="./orders/index.html">Đơn hàng mẫu</a></li>
+                <li><a href="./track-order/index.html">Tra cứu mẫu</a></li>
+                <li><a href="./account/index.html">Hồ sơ mẫu</a></li>
+                <li><a href="./admin/index.html">Quản trị mẫu</a></li>
+              </ul>
+            </details>
+          </nav>
+          <a class="btn btn-outline" href="./cart/index.html">Giỏ hàng mẫu</a>
+        </div>
+      </header>
+      <main id="main-content" tabindex="-1" class="study-main">
+        <div class="site-container study-page teaching-kit">
+          <header class="study-heading">
+            <p class="study-kicker">HTML + CSS · Phòng thực hành</p>
+            <h1>Nút bấm &amp; phân trang</h1>
+            <p>
+              Ví dụ sống dùng cùng buttons.css và pagination.css với cửa hàng. Nút mẫu chỉ thể hiện
+              trạng thái; liên kết mở trang HTML thật.
+            </p>
+          </header>
+          <nav class="kit-toc" aria-label="Nội dung bài thực hành">
+            <a href="#buttons">1. Nút bấm</a><a href="#button-css">2. CSS và box model</a
+            ><a href="#pagination">3. Phân trang</a
+            ><a href="#compare-states">4. Phân biệt trạng thái</a
+            ><a href="#practice">5. Thực hành</a>
+          </nav>
+          <section id="buttons" class="study-panel kit-section">
+            <h2>1. Nút bấm và liên kết</h2>
+            <p>
+              Di chuột để xem <code>:hover</code>, nhấn giữ để xem <code>:active</code>, dùng Tab để
+              xem <code>:focus-visible</code>. Nút bị vô hiệu hóa được bỏ qua trong thứ tự Tab.
+            </p>
+            <div class="study-actions">
+              <button class="btn btn-primary" type="button">Nút chính — mẫu</button
+              ><button class="btn btn-outline" type="button">Nút phụ — mẫu</button
+              ><button class="btn btn-buy" type="button">Mua ngay — minh họa</button>
+              <button class="btn btn-buy" type="button" disabled>Mua ngay — vô hiệu hóa</button>
+              <a class="btn btn-outline" href="./products/index.html">Xem sản phẩm</a>
+            </div>
+            <pre
+              tabindex="0"
+              aria-label="Mã HTML của nút và liên kết"
+            ><code>&lt;button class=&quot;btn btn-buy&quot; type=&quot;button&quot;&gt;Mua ngay — minh họa&lt;/button&gt;
+&lt;button class=&quot;btn btn-buy&quot; type=&quot;button&quot; disabled&gt;Mua ngay — vô hiệu hóa&lt;/button&gt;
+&lt;a class=&quot;btn btn-outline&quot; href=&quot;./products/index.html&quot;&gt;Xem sản phẩm&lt;/a&gt;</code></pre>
+            <p>
+              <code>type="button"</code> tránh gửi form ngoài ý muốn. <code>disabled</code> là thuộc
+              tính HTML của nút; CSS chỉ định dạng cách hiển thị.
+            </p>
+          </section>
+          <section id="button-css" class="study-panel kit-section">
+            <h2>2. CSS và box model</h2>
+            <p>
+              <code>padding</code> tạo khoảng trống trong nút; <code>border</code> tạo viền;
+              <code>border-radius</code> bo góc. <code>cursor</code> đổi con trỏ, không thêm hành vi
+              mua hàng. Kích thước và màu là giá trị đã áp dụng trong cửa hàng.
+            </p>
+            <p><a href="./assets/css/buttons.css">Mở file buttons.css</a></p>
+            <pre
+              tabindex="0"
+              aria-label="CSS nút bấm đang dùng trong cửa hàng"
+            ><code>/* P06 — Nút bấm: HTML xác định hành động, CSS định dạng và phản hồi.
+   &lt;a class=&quot;btn&quot;&gt; dùng để đi tới trang khác; &lt;button&gt; dùng cho nút mẫu.
+   :active là lúc nhấn, khác với class .active của thanh phân trang. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+.btn-primary,
+.btn-buy {
+  background-color: #c92525;
+  border-color: #c92525;
+  color: white;
+}
+.btn-outline {
+  background-color: transparent;
+  border-color: #c92525;
+  color: #a91f1f;
+}
+/* Hover chỉ áp dụng khi nút còn khả dụng. */
+.btn:hover:not(:disabled) {
+  background-color: var(--secondary);
+  border-color: #c92525;
+  transform: translateY(-2px);
+}
+.btn-primary:hover:not(:disabled),
+.btn-buy:hover:not(:disabled) {
+  background-color: #a91f1f;
+  color: white;
+}
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+/* Giữ focus nhìn thấy khi sử dụng bàn phím hoặc điều hướng hỗ trợ. */
+.btn:focus {
+  outline: 2px solid #a91f1f;
+  outline-offset: 3px;
+}
+.btn:focus-visible {
+  outline-width: 3px;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+  .btn:hover:not(:disabled),
+  .btn:active:not(:disabled) {
+    transform: none;
+  }
+}</code></pre>
+          </section>
+          <section id="pagination" class="study-panel kit-section">
+            <h2>3. Ba trạng thái của phân trang</h2>
+            <p>
+              Các mẫu dưới đây mô tả thanh điều hướng ở từng trang. Bấm số để mở danh mục tương ứng:
+              9 sản phẩm ở trang 1, 9 ở trang 2 và 8 ở trang 3. HTML đã chia nội dung trước; CSS chỉ
+              trình bày thanh điều hướng.
+            </p>
+            <section class="kit-pagination-example">
+              <h3>Đang ở trang 1</h3>
+              <nav class="pagination" aria-label="Ví dụ phân trang khi ở trang 1">
+                <ul>
+                  <li class="disabled"><span aria-disabled="true">Trước</span></li>
+                  <li class="active">
+                    <a href="./products/index.html" aria-current="page" aria-label="Trang 1">1</a>
+                  </li>
+                  <li><a href="./products/page-2.html" aria-label="Trang 2">2</a></li>
+                  <li><a href="./products/page-3.html" aria-label="Trang 3">3</a></li>
+                  <li><a href="./products/page-2.html" aria-label="Trang sau">Sau</a></li>
+                </ul>
+              </nav>
+              <details class="study-faq">
+                <summary>Xem HTML của trạng thái trang 1</summary>
+                <pre
+                  tabindex="0"
+                  aria-label="HTML phân trang 1"
+                ><code>&lt;nav class=&quot;pagination&quot; aria-label=&quot;Ví dụ phân trang khi ở trang 1&quot;&gt;&lt;ul&gt;
+&lt;li class=&quot;disabled&quot;&gt;&lt;span aria-disabled=&quot;true&quot;&gt;Trước&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;./products/index.html&quot; aria-current=&quot;page&quot; aria-label=&quot;Trang 1&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang 2&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-label=&quot;Trang 3&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang sau&quot;&gt;Sau&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;</code></pre>
+              </details>
+            </section>
+            <section class="kit-pagination-example">
+              <h3>Đang ở trang 2</h3>
+              <nav class="pagination" aria-label="Ví dụ phân trang khi ở trang 2">
+                <ul>
+                  <li><a href="./products/index.html" aria-label="Trang trước">Trước</a></li>
+                  <li><a href="./products/index.html" aria-label="Trang 1">1</a></li>
+                  <li class="active">
+                    <a href="./products/page-2.html" aria-current="page" aria-label="Trang 2">2</a>
+                  </li>
+                  <li><a href="./products/page-3.html" aria-label="Trang 3">3</a></li>
+                  <li><a href="./products/page-3.html" aria-label="Trang sau">Sau</a></li>
+                </ul>
+              </nav>
+              <details class="study-faq">
+                <summary>Xem HTML của trạng thái trang 2</summary>
+                <pre
+                  tabindex="0"
+                  aria-label="HTML phân trang 2"
+                ><code>&lt;nav class=&quot;pagination&quot; aria-label=&quot;Ví dụ phân trang khi ở trang 2&quot;&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./products/index.html&quot; aria-label=&quot;Trang trước&quot;&gt;Trước&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/index.html&quot; aria-label=&quot;Trang 1&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-current=&quot;page&quot; aria-label=&quot;Trang 2&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-label=&quot;Trang 3&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-label=&quot;Trang sau&quot;&gt;Sau&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;</code></pre>
+              </details>
+            </section>
+            <section class="kit-pagination-example">
+              <h3>Đang ở trang 3</h3>
+              <nav class="pagination" aria-label="Ví dụ phân trang khi ở trang 3">
+                <ul>
+                  <li><a href="./products/page-2.html" aria-label="Trang trước">Trước</a></li>
+                  <li><a href="./products/index.html" aria-label="Trang 1">1</a></li>
+                  <li><a href="./products/page-2.html" aria-label="Trang 2">2</a></li>
+                  <li class="active">
+                    <a href="./products/page-3.html" aria-current="page" aria-label="Trang 3">3</a>
+                  </li>
+                  <li class="disabled"><span aria-disabled="true">Sau</span></li>
+                </ul>
+              </nav>
+              <details class="study-faq">
+                <summary>Xem HTML của trạng thái trang 3</summary>
+                <pre
+                  tabindex="0"
+                  aria-label="HTML phân trang 3"
+                ><code>&lt;nav class=&quot;pagination&quot; aria-label=&quot;Ví dụ phân trang khi ở trang 3&quot;&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang trước&quot;&gt;Trước&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/index.html&quot; aria-label=&quot;Trang 1&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang 2&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-current=&quot;page&quot; aria-label=&quot;Trang 3&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;disabled&quot;&gt;&lt;span aria-disabled=&quot;true&quot;&gt;Sau&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;</code></pre>
+              </details>
+            </section>
+            <details class="study-faq">
+              <summary>Xem CSS phân trang dùng chung</summary>
+              <pre
+                tabindex="0"
+                aria-label="CSS phân trang"
+              ><code>/* P08 — Mỗi số trang liên kết tới một file HTML thật.
+   .active đánh dấu trang hiện tại, không phải pseudo-class :active.
+   Ở đầu/cuối danh sách, dùng &lt;span&gt; thay vì link để không có đích sai. */
+.pagination {
+  margin-block: 32px 8px;
+}
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pagination a,
+.pagination span {
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #d9cbc1;
+  border-radius: 4px;
+  background-color: white;
+  color: #34231d;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+}
+.pagination a:hover {
+  background-color: #f7ede5;
+  border-color: #c92525;
+}
+.pagination .active a {
+  background-color: #c92525;
+  border-color: #c92525;
+  color: white;
+  font-weight: 700;
+}
+.pagination a:focus-visible {
+  outline: 3px solid #a91f1f;
+  outline-offset: 3px;
+}
+.pagination .disabled span {
+  color: #71645c;
+  background-color: #f4eee8;
+  opacity: 0.6;
+  cursor: not-allowed;
+}</code></pre>
+            </details>
+            <p><a href="./assets/css/pagination.css">Mở file pagination.css</a></p>
+          </section>
+          <section id="compare-states" class="study-panel kit-section">
+            <h2>4. Phân biệt trạng thái</h2>
+            <dl class="kit-definitions">
+              <dt><code>.active</code></dt>
+              <dd>
+                Class được viết sẵn trên <code>li</code> của trang hiện tại; đi cùng
+                <code>aria-current="page"</code> trên liên kết.
+              </dd>
+              <dt><code>:active</code></dt>
+              <dd>
+                Pseudo-class trong lúc người dùng kích hoạt phần tử, chẳng hạn nhấn giữ nút chuột.
+              </dd>
+              <dt><code>:disabled</code></dt>
+              <dd>
+                Khớp nút hoặc control HTML thật sự bị vô hiệu hóa. Thẻ <code>a</code> không hỗ trợ
+                thuộc tính disabled.
+              </dd>
+              <dt><code>.disabled span</code></dt>
+              <dd>
+                Ở giới hạn đầu/cuối, thay liên kết bằng span không có href.
+                <code>aria-disabled</code> mô tả trạng thái; nó không tự chặn tương tác.
+              </dd>
+            </dl>
+          </section>
+          <section id="practice" class="study-panel kit-section">
+            <h2>5. Luồng thực hành không cần JavaScript</h2>
+            <ol>
+              <li>Dùng Tab tới nút mẫu, quan sát viền focus và nút disabled bị bỏ qua.</li>
+              <li>Mở ba khối HTML phân trang; tìm vị trí class active và span disabled.</li>
+              <li>
+                Đi từ trang 1 đến trang 3, mở một sản phẩm rồi dùng liên kết quay lại danh sách.
+              </li>
+              <li>Thu nhỏ cửa sổ hoặc phóng to 200%; kiểm tra văn bản, nút và phân trang.</li>
+              <li>Mở file CSS, đổi một màu hoặc padding, lưu và tải lại trang.</li>
+            </ol>
+            <div class="study-actions">
+              <a class="btn btn-primary" href="./products/index.html">Bắt đầu từ danh mục</a
+              ><a class="btn btn-outline" href="./index.html">Về trang chủ</a>
+            </div>
+            <p>
+              Form, giỏ hàng, tài khoản và công cụ PC ở các trang mẫu là nội dung minh họa cố định.
+              Xem tài liệu trong thư mục <code>docs/</code> để chuẩn bị bài trình bày.
+            </p>
+          </section>
+        </div>
+      </main>
+      <footer class="study-footer">
+        <div class="site-container">
+          <div class="study-footer-grid">
+            <div>
+              <a href="./index.html" aria-label="ABOPC — Trang chủ"
+                ><img
+                  class="brand-mark"
+                  src="./images/brand/abo-logo.svg"
+                  width="112"
+                  height="46"
+                  alt="ABOPC"
+              /></a>
+              <p>Từ linh kiện đến góc máy của riêng bạn.</p>
+              <p>
+                Bản học tập HTML + CSS. Nội dung và giao dịch mẫu; không nhận đơn hoặc thanh toán.
+              </p>
+            </div>
+            <div>
+              <h2>Khám phá</h2>
+              <ul>
+                <li><a href="./products/index.html">Danh sách sản phẩm</a></li>
+                <li><a href="./deals/index.html">Khuyến mãi mẫu</a></li>
+                <li><a href="./about/index.html">Về ABOPC</a></li>
+                <li><a href="./ui-kit.html">Mẫu nút bấm</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Trang minh họa</h2>
+              <ul>
+                <li><a href="./builder/index.html">Cấu hình PC mẫu</a></li>
+                <li><a href="./setup-planner/index.html">Góc máy mẫu</a></li>
+                <li><a href="./checkout/index.html">Biểu mẫu thanh toán</a></li>
+                <li><a href="./login/index.html">Biểu mẫu đăng nhập</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="study-footer-bottom">© 2026 ABOPC · Website đồ án</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

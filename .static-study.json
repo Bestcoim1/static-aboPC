@@ -1,0 +1,8 @@
+{
+  "edition": "authored-html-css",
+  "phase": "P01-P17",
+  "date": "2026-10-29",
+  "baselineCommit": "5b9543f753f790ed8c76c15fee5e3cf1457fd6bc",
+  "legacyExportBlocked": true,
+  "browserJavaScript": "none; legacy browser files removed in P13"
+}
