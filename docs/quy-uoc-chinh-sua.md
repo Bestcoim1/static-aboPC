@@ -1,3 +1,5 @@
+> Tài liệu giai đoạn P01–P17. Yêu cầu giao diện đã điều chỉnh ngày 29/10/2026: giữ cửa hàng gốc, chỉ bỏ JavaScript. Xem [bản điều chỉnh hiện tại](khoi-phuc-giao-dien-cua-hang.md); các mô tả trang mẫu/bố cục cũ bên dưới chỉ còn giá trị lịch sử.
+
 # Quy ước chỉnh sửa
 
 ## Nguồn và đường dẫn

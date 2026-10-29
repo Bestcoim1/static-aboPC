@@ -1,50 +1,38 @@
-# ABOPC — Bản học tập HTML + CSS
+# ABOPC — Giao diện cửa hàng HTML + CSS
 
-50 trang HTML, 26 sản phẩm, phân trang thật 9–9–8. Trang chủ, danh mục, chi tiết và UI kit dùng chung CSS, hoạt động khi JavaScript bị tắt. Các quy trình nghiệp vụ là trang mẫu có nhãn rõ ràng.
+Bản này giữ diện mạo và nội dung của website tĩnh ABOPC trước khi chuyển đổi: header, trang chủ, danh mục, thẻ sản phẩm, chi tiết, đăng nhập và các công cụ PC. Website không tải JavaScript.
 
-## Mở và sửa
-Mở trực tiếp `index.html` hoặc `ui-kit.html`. Để xem qua HTTP, mở PowerShell tại thư mục này:
+Yêu cầu được điều chỉnh ngày 29/10/2026: giữ website để trình bày như cửa hàng gốc; không biến giao diện chính thành bộ trang “mẫu” hoặc bài thực hành. Tài liệu học và UI kit nằm riêng.
+
+## Mở website
+Mở trực tiếp index.html, hoặc chạy:
 
 ```powershell
 cd E:\trang-web-ban-pc\ABOPC-static\static-site
 node serve.mjs
 ```
 
-Truy cập http://127.0.0.1:5179/; Ctrl+C để dừng. Có thể dùng `python -m http.server 5179` thay thế. Không cần npm install, React, Vite, cơ sở dữ liệu hoặc Internet để xem website. Node.js chỉ dùng cho công cụ tùy chọn trên máy.
+Mở địa chỉ in trong terminal; Ctrl+C để dừng. Không cần npm install, React, Vite, API hoặc cơ sở dữ liệu để xem giao diện.
 
-Sửa trực tiếp HTML/CSS, lưu rồi tải lại. Tên/giá sản phẩm nằm trong các file HTML riêng; khi sửa phải cập nhật cả card, chi tiết và trang mẫu có nhắc sản phẩm đó.
+## Hành vi
+- Điều hướng, ảnh, liên kết danh mục và phân trang HTML hoạt động.
+- Menu Sản phẩm/Công cụ/menu điện thoại dùng details/summary, có thể mở/đóng bằng chuột và bàn phím.
+- 26 sản phẩm chia 3 trang 9–9–8, giữ thẻ sản phẩm của giao diện gốc.
+- Tìm kiếm, lọc động, thêm giỏ, đăng nhập, lưu dữ liệu và kéo thả cần JavaScript nên không thực hiện. Control giữ hình thức/vị trí cũ và được vô hiệu hóa; tooltip giải thích khi cần.
+- Giỏ hàng, checkout, wishlist và đơn hàng giữ trạng thái rỗng ban đầu của website gốc. Không tự thêm dữ liệu để làm trang mẫu.
+- UI kit tại ui-kit.html là tài liệu thực hành riêng, không thay thế website.
 
-## Tìm code
-| Nội dung | File |
-|---|---|
-| Bài thực hành và mã ví dụ | `ui-kit.html` |
-| Nút và trạng thái | `assets/css/buttons.css` |
-| Phân trang | `assets/css/pagination.css` và ba file trong `products/` |
-| Font, reset, màu | `assets/css/base.css` |
-| Thứ tự import CSS | `assets/css/main.css` |
-| Bố cục trang tĩnh | `assets/css/study-pages.css`, `layout.css`, `pages.css` |
-| Lớp tiện ích kế thừa còn dùng | `assets/css/utilities.css` |
-| Danh sách đầy đủ 50 trang | `pages.json` |
+## Cấu trúc
+assets/css/main.css nạp CSS nền và giao diện gốc. Các file base/layout/pages/utilities/refinements/components và CSS riêng từng trang giữ kiểu trình bày của bản trước. no-script.css điều chỉnh menu HTML và các control không chạy JavaScript. buttons.css/pagination.css giữ nội dung bài giảng; teaching.css và study-pages.css chỉ được UI kit tải riêng.
 
-Giữ các lớp tiện ích để bảo toàn phần nội dung cũ; không cần trình biên dịch Tailwind. Bài trình bày tập trung vào buttons.css và pagination.css.
+Sửa HTML/CSS rồi tải lại. Các trang là tài liệu độc lập, không có bước sinh lại từ React. Giữ .static-study.json để ngăn bộ xuất cũ ghi đè.
 
 ## Kiểm tra và đóng gói
 ```powershell
 node tools/check.mjs
-node tools/package.mjs ..\ABOPC-html-css-delivery
+node tools/package.mjs ..\ABOPC-storefront-html-css
 ```
 
-Thư mục đích phải chưa tồn tại. Công cụ chỉ sao chép file, không xuất bản. Gói sao chép chạy `node serve.mjs` độc lập. Các file .mjs là công cụ Node trên máy; không có HTML nào tải chúng.
+Đích phải là thư mục mới. Các file .mjs là công cụ Node chạy trên máy, không được HTML tải. Workflow Pages vẫn kiểm tra và sao chép file khi có push được chủ sở hữu yêu cầu.
 
-Workflow `.github/workflows/pages.yml` kiểm tra rồi sao chép website cho GitHub Pages. Người sở hữu cấu hình Pages dùng GitHub Actions và chủ động push/chạy workflow khi muốn xuất bản. Đợt này chưa push/deploy. `PAGE_BASE` xác định thư mục hosting để sửa link trang 404. Không chạy bộ xuất cũ; `.static-study.json` và chốt bảo vệ ngăn ghi đè bản viết tay.
-
-## Tài liệu
-- [Đối chiếu bài giảng](docs/doi-chieu-ly-thuyet.md)
-- [Kịch bản 8–10 phút](docs/huong-dan-thuyet-trinh.md)
-- [Phạm vi bản học tập](docs/pham-vi-ban-hoc-tap.md)
-- [Kiểm thử](docs/kiem-thu-html-css.md)
-- [Đọc code](docs/huong-dan-doc-code.md)
-- [Quy ước chỉnh sửa](docs/quy-uoc-chinh-sua.md)
-- [Bàn giao P11–P17](docs/ban-giao-p11-p17.md)
-
-Báo cáo P01–P05/P06–P10 và kiểm kê P01 là lịch sử, không mô tả cấu trúc cuối cùng. Giữ font, ảnh và giấy phép gốc.
+Xem [báo cáo chỉnh lại giao diện](docs/khoi-phuc-giao-dien-cua-hang.md) và [phạm vi hiện tại](docs/pham-vi-ban-hoc-tap.md). Báo cáo P01–P17 phản ánh giai đoạn trước khi sửa cách hiểu yêu cầu; không dùng các con số CSS hoặc trang mẫu cũ để mô tả bản hiện tại.

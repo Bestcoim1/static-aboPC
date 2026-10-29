@@ -1,0 +1,23 @@
+/* Giữ diện mạo cửa hàng gốc. Menu dùng HTML native; tác vụ cần JS không chạy. */
+.native-nav-menu { position: relative; }
+.native-nav-menu > summary, .native-mobile-menu > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px; }
+.native-nav-menu > summary::-webkit-details-marker, .native-mobile-menu > summary::-webkit-details-marker { display: none; }
+.native-nav-menu[open] > .native-nav-panel { opacity: 1; scale: 1; pointer-events: auto; }
+.native-nav-menu > .product-mega-panel { width: min(720px, calc(100vw - 48px)); }
+.native-mobile-panel { position: absolute; top: 100%; left: 0; right: 0; max-height: 75vh; overflow-y: auto; box-shadow: 0 14px 30px #0002; }
+.native-mobile-menu { position: static; }
+summary:focus-visible, a:focus-visible { outline: 2px solid #b52020; outline-offset: 3px; }
+.storefront-static [data-static-unavailable] { opacity: 1; cursor: not-allowed; }
+.storefront-static input[data-static-unavailable], .storefront-static select[data-static-unavailable] { -webkit-text-fill-color: currentColor; }
+.static-page-count { color: var(--muted-foreground); font-size: 13px; margin-block: 16px; }
+[data-product-card][id] { scroll-margin-top: 140px; }
+.storefront-static main { min-width: 0; overflow-wrap: anywhere; }
+.storefront-static .home-filter { display: inline-flex; align-items: center; }
+@media (max-width: 1023px) {
+  .native-nav-menu > .product-mega-panel { max-width: calc(100vw - 32px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .storefront-static *, .storefront-static *::before, .storefront-static *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+.home-filter.is-active { background: var(--card); border-color: var(--home-accent); color: var(--home-accent); }

@@ -1,14 +1,11 @@
-/* CSS dùng chung. Thứ tự import quyết định cascade.
-   buttons.css và pagination.css là hai file trọng tâm bài học.
-   utilities.css giữ các lớp tiện ích còn dùng trong trang chủ và nội dung cũ; không cần trình biên dịch. */
+/* Giao diện cửa hàng gốc, chạy bằng HTML/CSS. Không có script trình duyệt. */
 @import url("./base.css");
 @import url("./layout.css");
 @import url("./pages.css");
 @import url("./utilities.css");
+@import url("./motion.css");
 @import url("./refinements.css");
 @import url("./components.css");
-
-/* P06–P10 — Nút bấm, phân trang và bố cục trang tĩnh */
 @import url("./buttons.css");
 @import url("./pagination.css");
-@import url("./study-pages.css");
+@import url("./no-script.css");

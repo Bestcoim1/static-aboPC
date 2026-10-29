@@ -116,61 +116,61 @@
   {
     "route": "/products/90101",
     "file": "products/90101/index.html",
-    "title": "ABOPC Nano ITX",
+    "title": "ABOPC Nano ITX | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90102",
     "file": "products/90102/index.html",
-    "title": "ABOPC Pulse Air",
+    "title": "ABOPC Pulse Air | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90103",
     "file": "products/90103/index.html",
-    "title": "ABOPC Vertex 4000D",
+    "title": "ABOPC Vertex 4000D | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90104",
     "file": "products/90104/index.html",
-    "title": "ABOPC Titan Full Tower",
+    "title": "ABOPC Titan Full Tower | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90201",
     "file": "products/90201/index.html",
-    "title": "ABOPC View 24&quot;",
+    "title": "ABOPC View 24\" | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90202",
     "file": "products/90202/index.html",
-    "title": "ABOPC View 27&quot;",
+    "title": "ABOPC View 27\" | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90203",
     "file": "products/90203/index.html",
-    "title": "ABOPC View 32&quot; 4K",
+    "title": "ABOPC View 32\" 4K | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90204",
     "file": "products/90204/index.html",
-    "title": "ABOPC UltraWide 34&quot;",
+    "title": "ABOPC UltraWide 34\" | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90301",
     "file": "products/90301/index.html",
-    "title": "ABOPC Giá đỡ đơn",
+    "title": "ABOPC Giá đỡ đơn | ABOPC",
     "images": 6
   },
   {
     "route": "/products/90302",
     "file": "products/90302/index.html",
-    "title": "ABOPC Giá đỡ đôi",
+    "title": "ABOPC Giá đỡ đôi | ABOPC",
     "images": 6
   },
   {
@@ -182,109 +182,109 @@
   {
     "route": "/about",
     "file": "about/index.html",
-    "title": "Về ABOPC",
+    "title": "Về ABOPC | ABOPC",
     "images": 3
   },
   {
     "route": "/cart",
     "file": "cart/index.html",
-    "title": "Giỏ hàng mẫu | ABOPC",
-    "images": 2
+    "title": "Giỏ hàng | ABOPC",
+    "images": 1
   },
   {
     "route": "/checkout",
     "file": "checkout/index.html",
-    "title": "Thanh toán mẫu | ABOPC",
-    "images": 2
+    "title": "Thanh toán | ABOPC",
+    "images": 1
   },
   {
     "route": "/orders",
     "file": "orders/index.html",
-    "title": "Đơn hàng mẫu | ABOPC",
+    "title": "Đơn hàng | ABOPC",
     "images": 2
   },
   {
     "route": "/track-order",
     "file": "track-order/index.html",
-    "title": "Tra cứu đơn hàng mẫu | ABOPC",
+    "title": "Tra cứu đơn hàng | ABOPC",
     "images": 2
   },
   {
     "route": "/guest-order.html",
     "file": "guest-order.html",
-    "title": "Tra cứu dành cho khách — mẫu | ABOPC",
-    "images": 2
+    "title": "Tra cứu đơn hàng · ABOPC",
+    "images": 0
   },
   {
     "route": "/login",
     "file": "login/index.html",
-    "title": "Đăng nhập mẫu | ABOPC",
-    "images": 2
+    "title": "Đăng nhập | ABOPC",
+    "images": 1
   },
   {
     "route": "/account",
     "file": "account/index.html",
-    "title": "Hồ sơ mẫu | ABOPC",
-    "images": 2
+    "title": "Đăng nhập | ABOPC",
+    "images": 1
   },
   {
     "route": "/wishlist",
     "file": "wishlist/index.html",
-    "title": "Danh sách yêu thích mẫu | ABOPC",
-    "images": 4
+    "title": "Sản phẩm yêu thích | ABOPC",
+    "images": 2
   },
   {
     "route": "/builder",
     "file": "builder/index.html",
-    "title": "Cấu hình PC mẫu | ABOPC",
+    "title": "Xây dựng cấu hình PC | ABOPC",
     "images": 2
   },
   {
     "route": "/compatibility",
     "file": "compatibility/index.html",
-    "title": "Bảng thông số mẫu | ABOPC",
+    "title": "Kiểm tra tương thích | ABOPC",
     "images": 2
   },
   {
     "route": "/setup-planner",
     "file": "setup-planner/index.html",
-    "title": "Bố trí góc máy mẫu | ABOPC",
-    "images": 3
+    "title": "Bố trí góc máy | ABOPC",
+    "images": 7
   },
   {
     "route": "/admin",
     "file": "admin/index.html",
-    "title": "Quản trị mẫu | ABOPC",
-    "images": 2
+    "title": "Quản trị đơn hàng | ABOPC",
+    "images": 1
   },
   {
     "route": "/admin/products",
     "file": "admin/products/index.html",
-    "title": "Quản trị sản phẩm mẫu | ABOPC",
-    "images": 2
+    "title": "Quản trị sản phẩm và kho | ABOPC",
+    "images": 1
   },
   {
     "route": "/admin/orders",
     "file": "admin/orders/index.html",
-    "title": "Quản trị đơn hàng mẫu | ABOPC",
-    "images": 2
+    "title": "Quản trị đơn hàng | ABOPC",
+    "images": 1
   },
   {
     "route": "/admin/coupons",
     "file": "admin/coupons/index.html",
-    "title": "Mã ưu đãi mẫu | ABOPC",
-    "images": 2
+    "title": "Quản trị mã giảm giá | ABOPC",
+    "images": 1
   },
   {
     "route": "/admin/reviews",
     "file": "admin/reviews/index.html",
-    "title": "Quản trị đánh giá mẫu | ABOPC",
-    "images": 2
+    "title": "Quản trị đánh giá | ABOPC",
+    "images": 1
   },
   {
     "route": "/deals",
     "file": "deals/index.html",
-    "title": "Khuyến mãi mẫu | ABOPC",
+    "title": "Khuyến mãi | ABOPC",
     "images": 12
   },
   {

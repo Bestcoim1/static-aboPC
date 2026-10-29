@@ -3,504 +3,3169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sản phẩm — Trang 2/3. Bản học tập HTML và CSS của ABOPC." />
     <meta name="static-base" content="../" />
+    <meta name="description" content="Tìm linh kiện theo model, thông số và ngân sách." />
     <link rel="icon" href="data:," />
     <title>Sản phẩm — Trang 2/3 | ABOPC</title>
+
+    <link rel="stylesheet" href="../assets/css/data.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="../assets/fonts/inter-vietnamese-wght-normal.woff2"
-      crossorigin
-    />
+
+    <meta property="og:title" content="Danh mục sản phẩm | ABOPC" />
+    <meta property="og:description" content="Tìm linh kiện theo model, thông số và ngân sách." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/abopc-desk-studio.jpg" />
   </head>
-  <body>
-    <div class="storefront site-shell">
-      <a class="skip-link" href="#main-content">Đến nội dung chính</a>
-      <header class="study-header">
-        <div class="site-container study-header-row">
-          <a href="../index.html" aria-label="ABOPC — Trang chủ"
-            ><img
-              class="brand-mark"
-              src="../images/brand/abo-logo.svg"
-              width="112"
-              height="46"
-              alt="ABOPC"
-          /></a>
-          <nav class="study-nav" aria-label="Điều hướng chính">
-            <a href="../index.html">Trang chủ</a
-            ><a href="./index.html" aria-current="page">Sản phẩm</a
-            ><a href="../deals/index.html">Khuyến mãi</a
-            ><a href="../about/index.html">Giới thiệu</a>
-            <details class="study-menu">
-              <summary class="study-summary">Trang mẫu</summary>
-              <ul>
-                <li><a href="../builder/index.html">Cấu hình mẫu</a></li>
-                <li><a href="../compatibility/index.html">Bảng thông số mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Bố trí góc máy mẫu</a></li>
-                <li><a href="../wishlist/index.html">Danh sách yêu thích mẫu</a></li>
-                <li><a href="../orders/index.html">Đơn hàng mẫu</a></li>
-                <li><a href="../track-order/index.html">Tra cứu mẫu</a></li>
-                <li><a href="../account/index.html">Hồ sơ mẫu</a></li>
-                <li><a href="../admin/index.html">Quản trị mẫu</a></li>
-              </ul>
-            </details>
+  <body class="storefront-static">
+    <div id="root">
+      <div class="storefront site-shell">
+        <a href="./index.html#main-content" class="skip-link">Đến nội dung chính</a>
+        <header class="site-header">
+          <nav
+            aria-label="Điều hướng chính"
+            class="site-navigation fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur-md"
+          >
+            <div class="site-container">
+              <div class="site-navigation-row">
+                <a
+                  class="flex items-center shrink-0"
+                  aria-label="ABOPC — Về trang chủ"
+                  href="../index.html"
+                  ><img
+                    class="brand-mark"
+                    src="../images/brand/abo-logo.svg"
+                    alt="ABO"
+                    width="848"
+                    height="350"
+                    loading="eager"
+                /></a>
+                <div id="site-search" class="site-search">
+                  <div
+                    class="site-search-form static-search-box"
+                    role="search"
+                    aria-label="Tìm kiếm sản phẩm"
+                    data-static-form=""
+                  >
+                    <div class="static-search-input">
+                      <input
+                        type="search"
+                        aria-label="Từ khóa tìm kiếm sản phẩm"
+                        placeholder="Tìm linh kiện, thương hiệu, mẫu mã…"
+                        class="ui-field"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      /><button
+                        type="button"
+                        class="ui-button"
+                        data-kind="primary"
+                        aria-label="Tìm sản phẩm"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        Tìm
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="site-header-actions">
+                  <button
+                    class="p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Chuyển sang chế độ tối"
+                    aria-pressed="false"
+                    type="button"
+                    data-static-unavailable=""
+                    disabled=""
+                    title="Chức năng này cần JavaScript."
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-moon"
+                    >
+                      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg></button
+                  ><a
+                    class="site-order-link p-2.5 rounded-lg text-muted-foreground hover:text-red-600"
+                    aria-label="Tra cứu đơn hàng"
+                    href="../track-order/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-package-search"
+                    >
+                      <path
+                        d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"
+                      ></path>
+                      <path d="m7.5 4.27 9 5.15"></path>
+                      <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                      <line x1="12" x2="12" y1="22" y2="12"></line>
+                      <circle cx="18.5" cy="15.5" r="2.5"></circle>
+                      <path d="M20.27 17.27 22 19"></path></svg
+                    ><span>Tra cứu đơn</span></a
+                  ><a
+                    class="hidden sm:flex p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Tài khoản"
+                    href="../login/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-user"
+                    >
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle></svg></a
+                  ><a
+                    class="relative hidden sm:flex p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Yêu thích"
+                    href="../wishlist/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-heart"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      ></path></svg></a
+                  ><a
+                    class="relative p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Giỏ hàng"
+                    href="../cart/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-shopping-cart"
+                    >
+                      <circle cx="8" cy="21" r="1"></circle>
+                      <circle cx="19" cy="21" r="1"></circle>
+                      <path
+                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                      ></path></svg
+                  ></a>
+                  <details class="native-mobile-menu lg:hidden">
+                    <summary
+                      class="lg:hidden p-2.5 rounded-lg text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label="Danh mục"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-menu"
+                      >
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                      </svg>
+                    </summary>
+                    <div
+                      id="mobile-navigation"
+                      class="lg:hidden overflow-y-auto border-t border-border bg-background native-mobile-panel"
+                    >
+                      <div class="px-4 py-2 space-y-0.5">
+                        <a
+                          class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          href="../index.html"
+                          >Trang chủ</a
+                        >
+                        <div>
+                          <a
+                            class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="./index.html"
+                            >Sản phẩm</a
+                          >
+                          <div class="ml-3 mt-0.5 space-y-0.5 border-l-2 border-border pl-3">
+                            <a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html#product-1"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-cpu text-red-600/70 shrink-0"
+                              >
+                                <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                                <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                                <path d="M15 2v2"></path>
+                                <path d="M15 20v2"></path>
+                                <path d="M2 15h2"></path>
+                                <path d="M2 9h2"></path>
+                                <path d="M20 15h2"></path>
+                                <path d="M20 9h2"></path>
+                                <path d="M9 2v2"></path>
+                                <path d="M9 20v2"></path></svg
+                              >CPU</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html#product-2"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-monitor text-red-600/70 shrink-0"
+                              >
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                              >GPU</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html#product-3"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-circuit-board text-red-600/70 shrink-0"
+                              >
+                                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                                <path d="M11 9h4a2 2 0 0 0 2-2V3"></path>
+                                <circle cx="9" cy="9" r="2"></circle>
+                                <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
+                                <circle cx="15" cy="15" r="2"></circle></svg
+                              >Bo mạch chủ</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html#product-4"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-database text-red-600/70 shrink-0"
+                              >
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                                <path d="M3 12A9 3 0 0 0 21 12"></path></svg
+                              >RAM</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html#product-5"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-hard-drive text-red-600/70 shrink-0"
+                              >
+                                <line x1="22" x2="2" y1="12" y2="12"></line>
+                                <path
+                                  d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+                                ></path>
+                                <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                                <line x1="10" x2="10.01" y1="16" y2="16"></line></svg
+                              >SSD</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./page-2.html#product-12"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-zap text-red-600/70 shrink-0"
+                              >
+                                <path
+                                  d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                                ></path></svg
+                              >PSU</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html#product-6"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-box text-red-600/70 shrink-0"
+                              >
+                                <path
+                                  d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                                ></path>
+                                <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                <path d="M12 22V12"></path></svg
+                              >Vỏ máy</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./page-2.html#product-13"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-wind text-red-600/70 shrink-0"
+                              >
+                                <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                                <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                                <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg
+                              >Tản nhiệt</a
+                            ><a
+                              class="block px-2 py-2 text-xs text-muted-foreground hover:text-foreground"
+                              href="./page-3.html#product-90201"
+                              >Màn hình &amp; giá đỡ</a
+                            >
+                          </div>
+                        </div>
+                        <div>
+                          <div class="px-3 pt-2 pb-1">
+                            <span
+                              class="text-[10px] font-bold text-muted-foreground/50 uppercase tracking-widest"
+                              >Công cụ</span
+                            >
+                          </div>
+                          <div class="ml-3 space-y-0.5 border-l-2 border-red-600/30 pl-3">
+                            <a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../builder/index.html"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-wrench text-red-600 shrink-0"
+                              >
+                                <path
+                                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                                ></path></svg
+                              >Cấu hình PC</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../compatibility/index.html"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-circle-check text-red-600 shrink-0"
+                              >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="m9 12 2 2 4-4"></path></svg
+                              >Tương thích</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../setup-planner/index.html"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-layout-grid text-red-600 shrink-0"
+                              >
+                                <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                                <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                                <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                                <rect width="7" height="7" x="3" y="14" rx="1"></rect></svg
+                              >Bố trí góc máy</a
+                            >
+                          </div>
+                        </div>
+                        <a
+                          class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          href="../deals/index.html"
+                          >Khuyến mãi</a
+                        ><a
+                          class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          href="../about/index.html"
+                          >Giới thiệu</a
+                        >
+                        <div class="pt-2 border-t border-border mt-2 grid grid-cols-2 gap-1">
+                          <a
+                            class="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../wishlist/index.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-heart"
+                            >
+                              <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                              ></path>
+                            </svg>
+                            Yêu thích </a
+                          ><a
+                            class="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../track-order/index.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Theo dõi đơn hàng</a
+                          >
+                        </div>
+                        <div
+                          class="pt-2 border-t border-border mt-2 flex items-center justify-between"
+                        >
+                          <a
+                            class="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../login/index.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-user"
+                            >
+                              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Tài khoản của tôi</a
+                          >
+                          <div class="flex items-center gap-1">
+                            <button
+                              class="p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                              aria-label="Chuyển sang chế độ tối"
+                              aria-pressed="false"
+                              type="button"
+                              data-static-unavailable=""
+                              disabled=""
+                              title="Chức năng này cần JavaScript."
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-moon"
+                              >
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </div>
+              <div class="desktop-navigation">
+                <a
+                  class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                  href="../index.html"
+                  >Trang chủ</a
+                >
+                <div class="product-mega-root">
+                  <details class="native-nav-menu">
+                    <summary
+                      class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-red-600 bg-red-600/8"
+                    >
+                      Sản phẩm
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-chevron-down inline-block"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </summary>
+                    <div id="nav-products" class="product-mega-panel native-nav-panel">
+                      <div>
+                        <h2>Linh kiện &amp; thiết bị</h2>
+                        <div class="product-mega-categories">
+                          <a href="./index.html#product-1"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-cpu"
+                            >
+                              <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                              <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                              <path d="M15 2v2"></path>
+                              <path d="M15 20v2"></path>
+                              <path d="M2 15h2"></path>
+                              <path d="M2 9h2"></path>
+                              <path d="M20 15h2"></path>
+                              <path d="M20 9h2"></path>
+                              <path d="M9 2v2"></path>
+                              <path d="M9 20v2"></path></svg
+                            >CPU</a
+                          ><a href="./index.html#product-2"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-monitor"
+                            >
+                              <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                              <line x1="8" x2="16" y1="21" y2="21"></line>
+                              <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                            >GPU</a
+                          ><a href="./index.html#product-3"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-circuit-board"
+                            >
+                              <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                              <path d="M11 9h4a2 2 0 0 0 2-2V3"></path>
+                              <circle cx="9" cy="9" r="2"></circle>
+                              <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
+                              <circle cx="15" cy="15" r="2"></circle></svg
+                            >Bo mạch chủ</a
+                          ><a href="./index.html#product-4"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-database"
+                            >
+                              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                              <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                              <path d="M3 12A9 3 0 0 0 21 12"></path></svg
+                            >RAM</a
+                          ><a href="./index.html#product-5"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-hard-drive"
+                            >
+                              <line x1="22" x2="2" y1="12" y2="12"></line>
+                              <path
+                                d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+                              ></path>
+                              <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                              <line x1="10" x2="10.01" y1="16" y2="16"></line></svg
+                            >SSD</a
+                          ><a href="./page-2.html#product-12"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-zap"
+                            >
+                              <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                              ></path></svg
+                            >PSU</a
+                          ><a href="./index.html#product-6"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-box"
+                            >
+                              <path
+                                d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                              ></path>
+                              <path d="m3.3 7 8.7 5 8.7-5"></path>
+                              <path d="M12 22V12"></path></svg
+                            >Vỏ máy</a
+                          ><a href="./page-2.html#product-13"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-wind"
+                            >
+                              <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                              <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                              <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg
+                            >Tản nhiệt</a
+                          ><a href="./page-3.html#product-90201"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-monitor"
+                            >
+                              <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                              <line x1="8" x2="16" y1="21" y2="21"></line>
+                              <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                            >Màn hình &amp; giá đỡ</a
+                          >
+                        </div>
+                        <a class="product-mega-all" href="./index.html">Xem toàn bộ danh mục</a>
+                      </div>
+                      <div>
+                        <h2>Thương hiệu</h2>
+                        <a href="./index.html#product-1">Intel</a
+                        ><a href="./index.html#product-7">AMD</a
+                        ><a href="./index.html#product-2">NVIDIA</a
+                        ><a href="./index.html#product-3">ASUS</a
+                        ><a href="./index.html#product-4">Corsair</a
+                        ><a href="./index.html#product-5">Samsung</a
+                        ><a href="./index.html#product-8">MSI</a
+                        ><a href="./index.html#product-9">Gigabyte</a
+                        ><a href="./page-2.html#product-14">be quiet!</a
+                        ><a href="./index.html#product-6">Lian Li</a>
+                      </div>
+                      <div>
+                        <h2>Công cụ của bạn</h2>
+                        <a class="product-mega-tool" href="../builder/index.html"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-wrench"
+                          >
+                            <path
+                              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                            ></path></svg
+                          ><span>Cấu hình PC<small>Xây dựng cấu hình của bạn</small></span></a
+                        ><a class="product-mega-tool" href="../compatibility/index.html"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-circle-check"
+                          >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m9 12 2 2 4-4"></path></svg
+                          ><span>Tương thích<small>Kiểm tra tương thích linh kiện</small></span></a
+                        ><a class="product-mega-tool" href="../setup-planner/index.html"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-layout-grid"
+                          >
+                            <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                            <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                            <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                            <rect width="7" height="7" x="3" y="14" rx="1"></rect></svg
+                          ><span
+                            >Bố trí góc máy<small>Sắp xếp không gian bàn làm việc</small></span
+                          ></a
+                        >
+                        <p class="product-mega-note">
+                          Chọn linh kiện, kiểm tra tương thích và bố trí góc máy.
+                        </p>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="relative">
+                  <details class="native-nav-menu">
+                    <summary
+                      class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-wrench mr-1 inline-block -mt-0.5"
+                      >
+                        <path
+                          d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                        ></path></svg
+                      >Công cụ<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-chevron-down ml-0.5 inline-block transition-transform duration-150"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </summary>
+                    <div
+                      id="nav-tools"
+                      class="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 w-72 bg-card border border-border rounded-xl shadow-2xl shadow-black/15 z-50 overflow-hidden transition-all duration-150 origin-top opacity-0 scale-95 pointer-events-none native-nav-panel"
+                    >
+                      <div class="p-2">
+                        <a
+                          class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-secondary transition-colors group"
+                          href="../builder/index.html"
+                          ><div
+                            class="w-9 h-9 rounded-lg bg-red-600/10 border border-red-600/15 flex items-center justify-center shrink-0 group-hover:bg-red-600/15 group-hover:border-red-600/25 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-wrench text-red-600"
+                            >
+                              <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div class="min-w-0">
+                            <div class="text-sm font-semibold text-foreground leading-tight">
+                              Cấu hình PC
+                            </div>
+                            <div class="text-xs text-muted-foreground mt-0.5 truncate">
+                              Xây dựng cấu hình của bạn
+                            </div>
+                          </div></a
+                        ><a
+                          class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-secondary transition-colors group"
+                          href="../compatibility/index.html"
+                          ><div
+                            class="w-9 h-9 rounded-lg bg-red-600/10 border border-red-600/15 flex items-center justify-center shrink-0 group-hover:bg-red-600/15 group-hover:border-red-600/25 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-circle-check text-red-600"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                          </div>
+                          <div class="min-w-0">
+                            <div class="text-sm font-semibold text-foreground leading-tight">
+                              Tương thích
+                            </div>
+                            <div class="text-xs text-muted-foreground mt-0.5 truncate">
+                              Kiểm tra tương thích linh kiện
+                            </div>
+                          </div></a
+                        ><a
+                          class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-secondary transition-colors group"
+                          href="../setup-planner/index.html"
+                          ><div
+                            class="w-9 h-9 rounded-lg bg-red-600/10 border border-red-600/15 flex items-center justify-center shrink-0 group-hover:bg-red-600/15 group-hover:border-red-600/25 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-layout-grid text-red-600"
+                            >
+                              <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                              <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                              <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                              <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                            </svg>
+                          </div>
+                          <div class="min-w-0">
+                            <div class="text-sm font-semibold text-foreground leading-tight">
+                              Bố trí góc máy
+                            </div>
+                            <div class="text-xs text-muted-foreground mt-0.5 truncate">
+                              Sắp xếp không gian bàn làm việc
+                            </div>
+                          </div></a
+                        >
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <a
+                  class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                  href="../deals/index.html"
+                  >Khuyến mãi</a
+                ><a
+                  class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                  href="../about/index.html"
+                  >Giới thiệu</a
+                >
+              </div>
+            </div>
           </nav>
-          <a class="btn btn-outline" href="../cart/index.html">Giỏ hàng mẫu</a>
-        </div>
-      </header>
-      <main id="main-content" tabindex="-1" class="study-main">
-        <div class="site-container study-page">
-          <header class="study-heading">
-            <p class="study-kicker">Danh mục ABOPC</p>
-            <h1>Linh kiện cho cấu hình của bạn</h1>
-            <p>Khám phá 26 sản phẩm mẫu. Chọn một sản phẩm để xem ảnh, giá và thông số.</p>
-          </header>
-          <nav aria-label="Đi đến nhóm sản phẩm">
-            <p>Đi đến sản phẩm đầu tiên của từng nhóm:</p>
-            <ul class="category-links">
-              <li><a href="./index.html#product-1">CPU</a></li>
-              <li><a href="./index.html#product-2">GPU</a></li>
-              <li><a href="./index.html#product-3">Bo mạch chủ</a></li>
-              <li><a href="./index.html#product-4">RAM</a></li>
-              <li><a href="./index.html#product-5">SSD</a></li>
-              <li><a href="./index.html#product-6">Vỏ máy</a></li>
-              <li><a href="./page-2.html#product-12">PSU</a></li>
-              <li><a href="./page-2.html#product-13">Tản nhiệt</a></li>
-              <li><a href="./page-3.html#product-90201">Màn hình và giá đỡ</a></li>
-            </ul>
-          </nav>
-          <p class="catalog-count">Trang 2 / 3 · Sản phẩm 10–18 trong tổng số 26</p>
-          <div class="catalog-grid">
-            <article class="catalog-card" id="product-10" data-product-id="10">
-              <a
-                class="catalog-image"
-                href="./10/index.html"
-                aria-label="Xem G.Skill Trident Z5 RGB 64GB"
-                ><img
-                  src="../images/products/10.webp"
-                  alt="G.Skill Trident Z5 RGB 64GB"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/10-96.webp   96w,
-                    ../images/optimized/products/10-192.webp 192w,
-                    ../images/optimized/products/10-384.webp 384w,
-                    ../images/optimized/products/10-768.webp 768w,
-                    ../images/optimized/products/10-785.webp 785w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">RAM</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-10</span></div>
-                <h2><a href="./10/index.html">G.Skill Trident Z5 RGB 64GB</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Dung lượng</dt>
-                    <dd>64GB (2x32)</dd>
-                  </div>
-                  <div>
-                    <dt>Tốc độ</dt>
-                    <dd>6400 MHz</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>6.370.000 ₫</strong><del>7.390.000 ₫</del></div>
-                <a
-                  class="btn btn-primary"
-                  href="./10/index.html"
-                  aria-label="Xem chi tiết G.Skill Trident Z5 RGB 64GB"
-                  >Xem chi tiết</a
+        </header>
+        <main id="main-content" tabindex="-1" class="site-main">
+          <div data-density="compact" class="static-catalog site-container catalog-content">
+            <nav aria-label="Nhóm sản phẩm" class="flex gap-2 overflow-x-auto pb-3 mb-7">
+              <button
+                aria-pressed="true"
+                class="shrink-0 min-h-11 rounded-full px-4 text-sm font-semibold bg-red-600 text-white"
+                type="button"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                Linh kiện</button
+              ><button
+                aria-pressed="false"
+                class="shrink-0 min-h-11 rounded-full px-4 text-sm font-semibold border border-border hover:bg-secondary"
+                type="button"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                PC Chơi game &amp; Học tập</button
+              ><button
+                aria-pressed="false"
+                class="shrink-0 min-h-11 rounded-full px-4 text-sm font-semibold border border-border hover:bg-secondary"
+                type="button"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                PC văn phòng &amp; Đồ hoạ AI</button
+              ><button
+                aria-pressed="false"
+                class="shrink-0 min-h-11 rounded-full px-4 text-sm font-semibold border border-border hover:bg-secondary"
+                type="button"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                Màn hình &amp; Giá treo</button
+              ><button
+                aria-pressed="false"
+                class="shrink-0 min-h-11 rounded-full px-4 text-sm font-semibold border border-border hover:bg-secondary"
+                type="button"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                Tản nhiệt, Quạt &amp; Đèn Led
+              </button>
+            </nav>
+            <div
+              class="static-catalog-heading flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-9"
+            >
+              <div>
+                <p
+                  class="text-xs font-semibold uppercase tracking-widest text-red-600 dark:text-red-400 mb-3"
                 >
+                  ABOPC / Danh mục sản phẩm
+                </p>
+                <h1 class="text-3xl lg:text-4xl font-bold tracking-tight">
+                  Linh kiện cho cấu hình của bạn
+                </h1>
+                <p class="mt-3 text-sm text-muted-foreground">
+                  Tìm theo model, thông số và ngân sách của bạn.
+                </p>
               </div>
-            </article>
-            <article class="catalog-card" id="product-11" data-product-id="11">
-              <a
-                class="catalog-image"
-                href="./11/index.html"
-                aria-label="Xem WD Black SN850X 1TB NVMe"
-                ><img
-                  src="../images/products/11.webp"
-                  alt="WD Black SN850X 1TB NVMe"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/11-96.webp     96w,
-                    ../images/optimized/products/11-192.webp   192w,
-                    ../images/optimized/products/11-384.webp   384w,
-                    ../images/optimized/products/11-768.webp   768w,
-                    ../images/optimized/products/11-1000.webp 1000w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">SSD</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-11</span></div>
-                <h2><a href="./11/index.html">WD Black SN850X 1TB NVMe</a></h2>
-                <dl class="catalog-facts">
+            </div>
+            <div class="grid lg:grid-cols-[230px_minmax(0,1fr)] gap-8">
+              <aside
+                aria-label="Bộ lọc sản phẩm"
+                class="hidden lg:block border-r border-border pr-6"
+              >
+                <div class="space-y-7">
                   <div>
-                    <dt>Dung lượng</dt>
-                    <dd>1TB</dd>
+                    <h3 class="font-semibold mb-3">Danh mục</h3>
+                    <div class="space-y-1">
+                      <button
+                        aria-pressed="true"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm bg-red-600/10 text-red-700 dark:text-red-300 font-semibold"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>Tất cả</span><span class="text-xs tabular-nums">26</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>CPU</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>GPU</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>Bo mạch chủ</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>RAM</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>SSD</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>PSU</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>Vỏ máy</span><span class="text-xs tabular-nums">6</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>Tản nhiệt</span><span class="text-xs tabular-nums">2</span></button
+                      ><button
+                        aria-pressed="false"
+                        class="w-full min-h-10 px-3 rounded-lg flex items-center justify-between gap-2 text-left text-sm hover:bg-secondary text-muted-foreground"
+                        type="button"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <span>Màn hình và giá đỡ</span><span class="text-xs tabular-nums">6</span>
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <dt>Giao tiếp</dt>
-                    <dd>PCIe 4.0 x4</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>2.290.000 ₫</strong><del>3.060.000 ₫</del></div>
-                <a
-                  class="btn btn-primary"
-                  href="./11/index.html"
-                  aria-label="Xem chi tiết WD Black SN850X 1TB NVMe"
-                  >Xem chi tiết</a
+                  <fieldset>
+                    <legend class="font-semibold mb-3">Khoảng giá (₫)</legend>
+                    <div class="grid grid-cols-2 gap-2">
+                      <label class="text-xs text-muted-foreground"
+                        >Từ<input
+                          aria-label="Giá tối thiểu"
+                          inputmode="numeric"
+                          type="text"
+                          placeholder="0"
+                          class="w-full min-h-11 rounded-lg border border-border bg-background px-3 text-sm focus-visible:outline-2 focus-visible:outline-red-600 mt-1"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript." /></label
+                      ><label class="text-xs text-muted-foreground"
+                        >Đến<input
+                          aria-label="Giá tối đa"
+                          inputmode="numeric"
+                          type="text"
+                          placeholder="Không giới hạn"
+                          class="w-full min-h-11 rounded-lg border border-border bg-background px-3 text-sm focus-visible:outline-2 focus-visible:outline-red-600 mt-1"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                      /></label>
+                    </div>
+                  </fieldset>
+                  <label class="flex gap-3 items-center text-sm cursor-pointer min-h-10"
+                    ><input
+                      type="checkbox"
+                      class="size-4 accent-red-600"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    />Chỉ hiện sản phẩm còn hàng</label
+                  >
+                  <fieldset>
+                    <legend class="font-semibold mb-3">Thương hiệu</legend>
+                    <div class="space-y-1">
+                      <label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">ABOPC</span
+                        ><span class="text-xs text-muted-foreground">10</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">AMD</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">ASUS</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Corsair</span
+                        ><span class="text-xs text-muted-foreground">2</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Fractal Design</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">G.Skill</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Gigabyte</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Intel</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Lian Li</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">MSI</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">NVIDIA</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">NZXT</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Samsung</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Seasonic</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">Western Digital</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      ><label class="flex items-center gap-3 min-h-9 text-sm cursor-pointer"
+                        ><input
+                          type="checkbox"
+                          class="size-4 accent-red-600"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        /><span class="flex-1">be quiet!</span
+                        ><span class="text-xs text-muted-foreground">1</span></label
+                      >
+                    </div>
+                  </fieldset>
+                </div>
+              </aside>
+              <div class="min-w-0">
+                <div
+                  class="flex flex-wrap justify-between items-center gap-3 border-b border-border pb-4 mb-4"
                 >
+                  <div class="flex gap-3 items-center">
+                    <button
+                      class="lg:hidden inline-flex items-center gap-2 min-h-11 rounded-lg border border-border px-3 text-sm"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-sliders-horizontal"
+                      >
+                        <line x1="21" x2="14" y1="4" y2="4"></line>
+                        <line x1="10" x2="3" y1="4" y2="4"></line>
+                        <line x1="21" x2="12" y1="12" y2="12"></line>
+                        <line x1="8" x2="3" y1="12" y2="12"></line>
+                        <line x1="21" x2="16" y1="20" y2="20"></line>
+                        <line x1="12" x2="3" y1="20" y2="20"></line>
+                        <line x1="14" x2="14" y1="2" y2="6"></line>
+                        <line x1="8" x2="8" y1="10" y2="14"></line>
+                        <line x1="16" x2="16" y1="18" y2="22"></line></svg
+                      >Bộ lọc
+                    </button>
+                    <p role="status" class="text-sm text-muted-foreground">
+                      <strong class="text-foreground">26</strong> sản phẩm
+                    </p>
+                  </div>
+                  <label class="flex items-center gap-2 text-sm"
+                    ><span class="sr-only sm:not-sr-only text-muted-foreground">Sắp xếp</span
+                    ><select
+                      aria-label="Sắp xếp sản phẩm"
+                      class="min-h-11 rounded-lg border border-border bg-card px-3"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <option value="featured">Mặc định</option>
+                      <option value="price-asc">Giá tăng dần</option>
+                      <option value="price-desc">Giá giảm dần</option>
+                      <option value="rating">Đánh giá cao</option>
+                    </select></label
+                  >
+                </div>
+                <div class="static-density" role="group" aria-label="Cách hiển thị sản phẩm">
+                  <span>Hiển thị</span
+                  ><button
+                    type="button"
+                    aria-pressed="true"
+                    data-static-unavailable=""
+                    disabled=""
+                    title="Chức năng này cần JavaScript."
+                  >
+                    Gọn</button
+                  ><button
+                    type="button"
+                    aria-pressed="false"
+                    data-static-unavailable=""
+                    disabled=""
+                    title="Chức năng này cần JavaScript."
+                  >
+                    Ảnh lớn
+                  </button>
+                </div>
+                <p class="static-page-count">Hiển thị 10–18 trong 26 sản phẩm · Trang 2/3</p>
+                <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="10"
+                    id="product-10"
+                  >
+                    <div
+                      class="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-red-600 text-white"
+                    >
+                      −14%
+                    </div>
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: G.Skill Trident Z5 RGB 64GB"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./10/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/10-96.webp   96w,
+                          ../images/optimized/products/10-192.webp 192w,
+                          ../images/optimized/products/10-384.webp 384w,
+                          ../images/optimized/products/10-768.webp 768w,
+                          ../images/optimized/products/10-785.webp 785w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/10.webp"
+                        alt="G.Skill Trident Z5 RGB 64GB"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        RAM
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-10</span>
+                      </div>
+                      <a href="./10/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          G.Skill Trident Z5 RGB 64GB
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Dung lượng</dt>
+                          <dd class="font-medium text-right">64GB (2x32)</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Tốc độ</dt>
+                          <dd class="font-medium text-right">6400 MHz</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >6.370.000 ₫</span
+                          ><span
+                            class="whitespace-nowrap text-xs text-muted-foreground line-through"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >7.390.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: G.Skill Trident Z5 RGB 64GB"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: G.Skill Trident Z5 RGB 64GB"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: G.Skill Trident Z5 RGB 64GB"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="11"
+                    id="product-11"
+                  >
+                    <div
+                      class="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-red-600 text-white"
+                    >
+                      −25%
+                    </div>
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: WD Black SN850X 1TB NVMe"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./11/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/11-96.webp     96w,
+                          ../images/optimized/products/11-192.webp   192w,
+                          ../images/optimized/products/11-384.webp   384w,
+                          ../images/optimized/products/11-768.webp   768w,
+                          ../images/optimized/products/11-1000.webp 1000w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/11.webp"
+                        alt="WD Black SN850X 1TB NVMe"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        SSD
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-11</span>
+                      </div>
+                      <a href="./11/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          WD Black SN850X 1TB NVMe
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Dung lượng</dt>
+                          <dd class="font-medium text-right">1TB</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Giao tiếp</dt>
+                          <dd class="font-medium text-right">PCIe 4.0 x4</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >2.290.000 ₫</span
+                          ><span
+                            class="whitespace-nowrap text-xs text-muted-foreground line-through"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >3.060.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: WD Black SN850X 1TB NVMe"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: WD Black SN850X 1TB NVMe"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: WD Black SN850X 1TB NVMe"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="12"
+                    id="product-12"
+                  >
+                    <div
+                      class="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-red-600 text-white"
+                    >
+                      −13%
+                    </div>
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: Corsair RM850x 850W 80+ Gold"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./12/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/12-96.webp   96w,
+                          ../images/optimized/products/12-192.webp 192w,
+                          ../images/optimized/products/12-384.webp 384w,
+                          ../images/optimized/products/12-768.webp 768w,
+                          ../images/optimized/products/12-800.webp 800w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/12.webp"
+                        alt="Corsair RM850x 850W 80+ Gold"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        PSU
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-12</span>
+                      </div>
+                      <a href="./12/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          Corsair RM850x 850W 80+ Gold
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Công suất</dt>
+                          <dd class="font-medium text-right">850W</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Hiệu suất</dt>
+                          <dd class="font-medium text-right">80+ Gold</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >3.570.000 ₫</span
+                          ><span
+                            class="whitespace-nowrap text-xs text-muted-foreground line-through"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >4.080.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: Corsair RM850x 850W 80+ Gold"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: Corsair RM850x 850W 80+ Gold"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: Corsair RM850x 850W 80+ Gold"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="13"
+                    id="product-13"
+                  >
+                    <div
+                      class="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#1c1512] text-white"
+                    >
+                      Mới
+                    </div>
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: NZXT Kraken Elite 360 RGB"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./13/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/13-96.webp     96w,
+                          ../images/optimized/products/13-192.webp   192w,
+                          ../images/optimized/products/13-384.webp   384w,
+                          ../images/optimized/products/13-768.webp   768w,
+                          ../images/optimized/products/13-1000.webp 1000w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/13.webp"
+                        alt="NZXT Kraken Elite 360 RGB"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        Tản nhiệt
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-13</span>
+                      </div>
+                      <a href="./13/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          NZXT Kraken Elite 360 RGB
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Đế cắm</dt>
+                          <dd class="font-medium text-right">Đa nền tảng</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Két tản nhiệt</dt>
+                          <dd class="font-medium text-right">360mm</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >7.140.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: NZXT Kraken Elite 360 RGB"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: NZXT Kraken Elite 360 RGB"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: NZXT Kraken Elite 360 RGB"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="14"
+                    id="product-14"
+                  >
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: be quiet! Dark Rock Pro 5"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./14/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/14-96.webp     96w,
+                          ../images/optimized/products/14-192.webp   192w,
+                          ../images/optimized/products/14-384.webp   384w,
+                          ../images/optimized/products/14-768.webp   768w,
+                          ../images/optimized/products/14-1000.webp 1000w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/14.webp"
+                        alt="be quiet! Dark Rock Pro 5"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        Tản nhiệt
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-14</span>
+                      </div>
+                      <a href="./14/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          be quiet! Dark Rock Pro 5
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Loại</dt>
+                          <dd class="font-medium text-right">Tản khí · Tháp đôi</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">TDP</dt>
+                          <dd class="font-medium text-right">270W</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >2.550.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: be quiet! Dark Rock Pro 5"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: be quiet! Dark Rock Pro 5"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: be quiet! Dark Rock Pro 5"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="15"
+                    id="product-15"
+                  >
+                    <div
+                      class="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-400 text-[#1c1512]"
+                    >
+                      Phổ biến
+                    </div>
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: Fractal Design North Charcoal"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./15/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/15-96.webp   96w,
+                          ../images/optimized/products/15-192.webp 192w,
+                          ../images/optimized/products/15-384.webp 384w,
+                          ../images/optimized/products/15-768.webp 768w,
+                          ../images/optimized/products/15-800.webp 800w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/15.webp"
+                        alt="Fractal Design North Charcoal"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        Vỏ máy
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-15</span>
+                      </div>
+                      <a href="./15/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          Fractal Design North Charcoal
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Kiểu dáng</dt>
+                          <dd class="font-medium text-right">Tháp trung</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Bo mạch chủ</dt>
+                          <dd class="font-medium text-right">ATX</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >3.570.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: Fractal Design North Charcoal"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: Fractal Design North Charcoal"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: Fractal Design North Charcoal"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="16"
+                    id="product-16"
+                  >
+                    <div
+                      class="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-red-600 text-white"
+                    >
+                      −12%
+                    </div>
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: Seasonic Prime TX-1000 1000W"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./16/index.html"
+                      ><img
+                        srcset="
+                          ../images/optimized/products/16-96.webp     96w,
+                          ../images/optimized/products/16-192.webp   192w,
+                          ../images/optimized/products/16-384.webp   384w,
+                          ../images/optimized/products/16-768.webp   768w,
+                          ../images/optimized/products/16-1000.webp 1000w
+                        "
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/16.webp"
+                        alt="Seasonic Prime TX-1000 1000W"
+                    /></a>
+                    <div class="product-card-body">
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        PSU
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-16</span>
+                      </div>
+                      <a href="./16/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          Seasonic Prime TX-1000 1000W
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Công suất</dt>
+                          <dd class="font-medium text-right">1000W</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Hiệu suất</dt>
+                          <dd class="font-medium text-right">80+ Titanium</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >7.390.000 ₫</span
+                          ><span
+                            class="whitespace-nowrap text-xs text-muted-foreground line-through"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >8.410.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: Seasonic Prime TX-1000 1000W"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: Seasonic Prime TX-1000 1000W"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: Seasonic Prime TX-1000 1000W"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="90101"
+                    id="product-90101"
+                  >
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: ABOPC Nano ITX"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./90101/index.html"
+                      ><img
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/90101.svg"
+                        alt="ABOPC Nano ITX"
+                    /></a>
+                    <div class="product-card-body">
+                      <p class="text-[11px] text-muted-foreground mb-2">
+                        Ảnh minh họa · Sản phẩm demo
+                      </p>
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        Vỏ máy
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-90101</span>
+                      </div>
+                      <a href="./90101/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          ABOPC Nano ITX
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Kiểu dáng</dt>
+                          <dd class="font-medium text-right">Mini-ITX</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Rộng × sâu × cao</dt>
+                          <dd class="font-medium text-right">20 × 38 × 34 cm</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >2.490.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: ABOPC Nano ITX"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: ABOPC Nano ITX"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: ABOPC Nano ITX"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                  <div
+                    data-product-card="default"
+                    class="group relative rounded-xl border border-border bg-card overflow-hidden hover:border-red-600/30 transition-all duration-200 hover:shadow-xl hover:shadow-red-600/5 flex flex-col"
+                    data-product-id="90102"
+                    id="product-90102"
+                  >
+                    <button
+                      class="absolute top-3 right-3 z-10 min-h-11 min-w-11 flex items-center justify-center p-2.5 rounded-full bg-card border border-border hover:border-red-400/40 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                      aria-label="Thêm vào yêu thích: ABOPC Pulse Air"
+                      aria-pressed="false"
+                      type="button"
+                      data-static-unavailable=""
+                      disabled=""
+                      title="Chức năng này cần JavaScript."
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-heart text-muted-foreground"
+                      >
+                        <path
+                          d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                        ></path>
+                      </svg></button
+                    ><a
+                      class="product-card-image relative bg-[#faf8f4] overflow-hidden block h-56"
+                      href="./90102/index.html"
+                      ><img
+                        sizes="(max-width: 767px) 100px, (max-width: 1023px) 40vw, 280px"
+                        loading="eager"
+                        decoding="async"
+                        width="640"
+                        height="480"
+                        class="w-full h-full object-contain motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105 p-6 pt-10"
+                        src="../images/products/90102.svg"
+                        alt="ABOPC Pulse Air"
+                    /></a>
+                    <div class="product-card-body">
+                      <p class="text-[11px] text-muted-foreground mb-2">
+                        Ảnh minh họa · Sản phẩm demo
+                      </p>
+                      <div
+                        class="text-xs text-red-700 dark:text-red-300 font-medium mb-1.5 uppercase tracking-wide"
+                      >
+                        Vỏ máy
+                      </div>
+                      <div class="product-card-meta">
+                        <span
+                          class="product-stock ui-badge"
+                          data-kind="success"
+                          data-available="true"
+                          ><i aria-hidden="true"></i>Còn hàng</span
+                        ><span class="product-sku">Mã: ABO-DEMO-90102</span>
+                      </div>
+                      <a href="./90102/index.html"
+                        ><h3
+                          class="product-card-name font-semibold text-foreground text-[0.9375rem] leading-snug group-hover:text-red-600 transition-colors mb-2.5 min-h-10"
+                        >
+                          ABOPC Pulse Air
+                        </h3></a
+                      >
+                      <dl class="text-xs space-y-1.5 mb-4">
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Kiểu dáng</dt>
+                          <dd class="font-medium text-right">Mid Tower</dd>
+                        </div>
+                        <div class="flex justify-between gap-3">
+                          <dt class="text-muted-foreground">Rộng × sâu × cao</dt>
+                          <dd class="font-medium text-right">23 × 45 × 46 cm</dd>
+                        </div>
+                      </dl>
+                      <p class="static-no-reviews">Chưa có đánh giá</p>
+                      <div class="product-card-purchase">
+                        <div class="product-price-row">
+                          <span
+                            class="whitespace-nowrap text-[1.125rem] font-bold text-foreground"
+                            style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                            >3.190.000 ₫</span
+                          >
+                        </div>
+                        <div class="product-card-actions">
+                          <button
+                            aria-busy="false"
+                            aria-label="Thêm vào giỏ hàng: ABOPC Pulse Air"
+                            data-ui="primary"
+                            class="product-cart-action flex min-h-11 items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 border border-red-600 text-white rounded-lg text-xs font-semibold transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
+                            type="button"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Thêm vào giỏ</button
+                          ><button
+                            type="button"
+                            class="product-build-action"
+                            aria-label="Thêm vào cấu hình: ABOPC Pulse Air"
+                            data-static-unavailable=""
+                            disabled=""
+                            title="Chức năng này cần JavaScript."
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-plus"
+                            >
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5v14"></path></svg
+                            >Thêm vào cấu hình
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="ui-button static-compare-toggle"
+                        aria-pressed="false"
+                        aria-label="So sánh: ABOPC Pulse Air"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        So sánh
+                      </button>
+                      <p
+                        role="status"
+                        class="product-card-feedback text-xs text-muted-foreground"
+                      ></p>
+                    </div>
+                  </div>
+                </div>
+                <nav class="pagination" aria-label="Phân trang sản phẩm">
+                  <ul>
+                    <li><a href="./index.html" aria-label="Trang trước">Trước</a></li>
+                    <li><a href="./index.html" aria-label="Trang 1">1</a></li>
+                    <li class="active">
+                      <a href="./page-2.html" aria-label="Trang 2" aria-current="page">2</a>
+                    </li>
+                    <li><a href="./page-3.html" aria-label="Trang 3">3</a></li>
+                    <li><a href="./page-3.html" aria-label="Trang sau">Sau</a></li>
+                  </ul>
+                </nav>
               </div>
-            </article>
-            <article class="catalog-card" id="product-12" data-product-id="12">
-              <a
-                class="catalog-image"
-                href="./12/index.html"
-                aria-label="Xem Corsair RM850x 850W 80+ Gold"
-                ><img
-                  src="../images/products/12.webp"
-                  alt="Corsair RM850x 850W 80+ Gold"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/12-96.webp   96w,
-                    ../images/optimized/products/12-192.webp 192w,
-                    ../images/optimized/products/12-384.webp 384w,
-                    ../images/optimized/products/12-768.webp 768w,
-                    ../images/optimized/products/12-800.webp 800w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">PSU</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-12</span></div>
-                <h2><a href="./12/index.html">Corsair RM850x 850W 80+ Gold</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Công suất</dt>
-                    <dd>850W</dd>
-                  </div>
-                  <div>
-                    <dt>Hiệu suất</dt>
-                    <dd>80+ Gold</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>3.570.000 ₫</strong><del>4.080.000 ₫</del></div>
-                <a
-                  class="btn btn-primary"
-                  href="./12/index.html"
-                  aria-label="Xem chi tiết Corsair RM850x 850W 80+ Gold"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
-            <article class="catalog-card" id="product-13" data-product-id="13">
-              <a
-                class="catalog-image"
-                href="./13/index.html"
-                aria-label="Xem NZXT Kraken Elite 360 RGB"
-                ><img
-                  src="../images/products/13.webp"
-                  alt="NZXT Kraken Elite 360 RGB"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/13-96.webp     96w,
-                    ../images/optimized/products/13-192.webp   192w,
-                    ../images/optimized/products/13-384.webp   384w,
-                    ../images/optimized/products/13-768.webp   768w,
-                    ../images/optimized/products/13-1000.webp 1000w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">Tản nhiệt</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-13</span></div>
-                <h2><a href="./13/index.html">NZXT Kraken Elite 360 RGB</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Két tản nhiệt</dt>
-                    <dd>360mm</dd>
-                  </div>
-                  <div>
-                    <dt>Quạt</dt>
-                    <dd>3x 120mm</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>7.140.000 ₫</strong></div>
-                <a
-                  class="btn btn-primary"
-                  href="./13/index.html"
-                  aria-label="Xem chi tiết NZXT Kraken Elite 360 RGB"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
-            <article class="catalog-card" id="product-14" data-product-id="14">
-              <a
-                class="catalog-image"
-                href="./14/index.html"
-                aria-label="Xem be quiet! Dark Rock Pro 5"
-                ><img
-                  src="../images/products/14.webp"
-                  alt="be quiet! Dark Rock Pro 5"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/14-96.webp     96w,
-                    ../images/optimized/products/14-192.webp   192w,
-                    ../images/optimized/products/14-384.webp   384w,
-                    ../images/optimized/products/14-768.webp   768w,
-                    ../images/optimized/products/14-1000.webp 1000w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">Tản nhiệt</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-14</span></div>
-                <h2><a href="./14/index.html">be quiet! Dark Rock Pro 5</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Loại</dt>
-                    <dd>Tản khí · Tháp đôi</dd>
-                  </div>
-                  <div>
-                    <dt>TDP</dt>
-                    <dd>270W</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>2.550.000 ₫</strong></div>
-                <a
-                  class="btn btn-primary"
-                  href="./14/index.html"
-                  aria-label="Xem chi tiết be quiet! Dark Rock Pro 5"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
-            <article class="catalog-card" id="product-15" data-product-id="15">
-              <a
-                class="catalog-image"
-                href="./15/index.html"
-                aria-label="Xem Fractal Design North Charcoal"
-                ><img
-                  src="../images/products/15.webp"
-                  alt="Fractal Design North Charcoal"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/15-96.webp   96w,
-                    ../images/optimized/products/15-192.webp 192w,
-                    ../images/optimized/products/15-384.webp 384w,
-                    ../images/optimized/products/15-768.webp 768w,
-                    ../images/optimized/products/15-800.webp 800w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">Vỏ máy</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-15</span></div>
-                <h2><a href="./15/index.html">Fractal Design North Charcoal</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Kiểu dáng</dt>
-                    <dd>Tháp trung</dd>
-                  </div>
-                  <div>
-                    <dt>Bo mạch chủ</dt>
-                    <dd>ATX</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>3.570.000 ₫</strong></div>
-                <a
-                  class="btn btn-primary"
-                  href="./15/index.html"
-                  aria-label="Xem chi tiết Fractal Design North Charcoal"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
-            <article class="catalog-card" id="product-16" data-product-id="16">
-              <a
-                class="catalog-image"
-                href="./16/index.html"
-                aria-label="Xem Seasonic Prime TX-1000 1000W"
-                ><img
-                  src="../images/products/16.webp"
-                  alt="Seasonic Prime TX-1000 1000W"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                  srcset="
-                    ../images/optimized/products/16-96.webp     96w,
-                    ../images/optimized/products/16-192.webp   192w,
-                    ../images/optimized/products/16-384.webp   384w,
-                    ../images/optimized/products/16-768.webp   768w,
-                    ../images/optimized/products/16-1000.webp 1000w
-                  "
-                  sizes="(max-width: 639px) 100px, (max-width: 1023px) 45vw, 380px"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">PSU</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-16</span></div>
-                <h2><a href="./16/index.html">Seasonic Prime TX-1000 1000W</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Công suất</dt>
-                    <dd>1000W</dd>
-                  </div>
-                  <div>
-                    <dt>Hiệu suất</dt>
-                    <dd>80+ Titanium</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>7.390.000 ₫</strong><del>8.410.000 ₫</del></div>
-                <a
-                  class="btn btn-primary"
-                  href="./16/index.html"
-                  aria-label="Xem chi tiết Seasonic Prime TX-1000 1000W"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
-            <article class="catalog-card" id="product-90101" data-product-id="90101">
-              <a class="catalog-image" href="./90101/index.html" aria-label="Xem ABOPC Nano ITX"
-                ><img
-                  src="../images/products/90101.svg"
-                  alt="ABOPC Nano ITX"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">Vỏ máy</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-90101</span></div>
-                <h2><a href="./90101/index.html">ABOPC Nano ITX</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Kiểu dáng</dt>
-                    <dd>Mini-ITX</dd>
-                  </div>
-                  <div>
-                    <dt>Rộng × sâu × cao</dt>
-                    <dd>20 × 38 × 34 cm</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>2.490.000 ₫</strong></div>
-                <a
-                  class="btn btn-primary"
-                  href="./90101/index.html"
-                  aria-label="Xem chi tiết ABOPC Nano ITX"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
-            <article class="catalog-card" id="product-90102" data-product-id="90102">
-              <a class="catalog-image" href="./90102/index.html" aria-label="Xem ABOPC Pulse Air"
-                ><img
-                  src="../images/products/90102.svg"
-                  alt="ABOPC Pulse Air"
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-              /></a>
-              <div class="catalog-content">
-                <p class="catalog-category">Vỏ máy</p>
-                <div class="catalog-meta"><span>Còn hàng</span><span>ABO-DEMO-90102</span></div>
-                <h2><a href="./90102/index.html">ABOPC Pulse Air</a></h2>
-                <dl class="catalog-facts">
-                  <div>
-                    <dt>Kiểu dáng</dt>
-                    <dd>Mid Tower</dd>
-                  </div>
-                  <div>
-                    <dt>Rộng × sâu × cao</dt>
-                    <dd>23 × 45 × 46 cm</dd>
-                  </div>
-                </dl>
-                <div class="catalog-price"><strong>3.190.000 ₫</strong></div>
-                <a
-                  class="btn btn-primary"
-                  href="./90102/index.html"
-                  aria-label="Xem chi tiết ABOPC Pulse Air"
-                  >Xem chi tiết</a
-                >
-              </div>
-            </article>
+            </div>
           </div>
-          <nav class="pagination" aria-label="Phân trang sản phẩm">
-            <ul>
-              <li><a href="./index.html" aria-label="Trang trước">Trước</a></li>
-              <li><a href="./index.html" aria-label="Trang 1">1</a></li>
-              <li class="active">
-                <a href="./page-2.html" aria-label="Trang 2" aria-current="page">2</a>
-              </li>
-              <li><a href="./page-3.html" aria-label="Trang 3">3</a></li>
-              <li><a href="./page-3.html" aria-label="Trang sau">Sau</a></li>
-            </ul>
-          </nav>
-        </div>
-      </main>
-      <footer class="study-footer">
-        <div class="site-container">
-          <div class="study-footer-grid">
-            <div>
-              <a href="../index.html" aria-label="ABOPC — Trang chủ"
-                ><img
-                  class="brand-mark"
-                  src="../images/brand/abo-logo.svg"
-                  width="112"
-                  height="46"
-                  alt="ABOPC"
-              /></a>
-              <p>Từ linh kiện đến góc máy của riêng bạn.</p>
-              <p>
-                Bản học tập HTML + CSS. Nội dung và giao dịch mẫu; không nhận đơn hoặc thanh toán.
-              </p>
+        </main>
+        <footer class="site-footer">
+          <div class="site-container site-footer-content">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+              <div class="col-span-2 lg:col-span-2">
+                <div class="mb-4">
+                  <a
+                    class="flex items-center shrink-0"
+                    aria-label="ABOPC — Về trang chủ"
+                    href="../index.html"
+                    ><img
+                      class="brand-mark"
+                      src="../images/brand/abo-logo.svg"
+                      alt="ABO"
+                      width="848"
+                      height="350"
+                      loading="eager"
+                  /></a>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed max-w-[280px] mb-6">
+                  Từ linh kiện đến góc máy của riêng bạn. Khám phá, xây dựng và hoàn thiện cấu hình
+                  cùng ABOPC.
+                </p>
+                <p class="site-demo-note">Website đồ án · Dữ liệu và giao dịch mô phỏng</p>
+              </div>
+              <div>
+                <h2 class="text-xs font-bold text-foreground tracking-widest uppercase mb-4">
+                  Sản phẩm
+                </h2>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./index.html#product-1"
+                      >CPU &amp; Bộ xử lý</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./index.html#product-2"
+                      >Card đồ họa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./index.html#product-3"
+                      >Bo mạch chủ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./index.html#product-4"
+                      >Bộ nhớ (RAM)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./index.html#product-5"
+                      >Lưu trữ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./page-2.html#product-12"
+                      >Nguồn máy tính</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="text-xs font-bold text-foreground tracking-widest uppercase mb-4">
+                  Hỗ trợ
+                </h2>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../track-order/index.html"
+                      >Theo dõi đơn hàng</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../builder/index.html"
+                      >Công cụ lắp ráp PC</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../about/index.html"
+                      >Liên hệ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="text-xs font-bold text-foreground tracking-widest uppercase mb-4">
+                  Công cụ của bạn
+                </h2>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600"
+                      href="../builder/index.html"
+                      >Cấu hình PC</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600"
+                      href="../compatibility/index.html"
+                      >Tương thích</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600"
+                      href="../setup-planner/index.html"
+                      >Bố trí góc máy</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <h2>Khám phá</h2>
-              <ul>
-                <li><a href="./index.html">Danh sách sản phẩm</a></li>
-                <li><a href="../deals/index.html">Khuyến mãi mẫu</a></li>
-                <li><a href="../about/index.html">Về ABOPC</a></li>
-                <li><a href="../ui-kit.html">Mẫu nút bấm</a></li>
-              </ul>
-            </div>
-            <div>
-              <h2>Trang minh họa</h2>
-              <ul>
-                <li><a href="../builder/index.html">Cấu hình PC mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Góc máy mẫu</a></li>
-                <li><a href="../checkout/index.html">Biểu mẫu thanh toán</a></li>
-                <li><a href="../login/index.html">Biểu mẫu đăng nhập</a></li>
-              </ul>
+            <div
+              class="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4"
+            >
+              <p class="text-xs text-muted-foreground">© 2026 ABOPC</p>
+              <a class="text-sm text-muted-foreground hover:text-red-600" href="../about/index.html"
+                >Về ABOPC</a
+              >
             </div>
           </div>
-          <p class="study-footer-bottom">© 2026 ABOPC · Website đồ án</p>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

@@ -1,3 +1,5 @@
+> Tài liệu giai đoạn P01–P17. Yêu cầu giao diện đã điều chỉnh ngày 29/10/2026: giữ cửa hàng gốc, chỉ bỏ JavaScript. Xem [bản điều chỉnh hiện tại](khoi-phuc-giao-dien-cua-hang.md); các mô tả trang mẫu/bố cục cũ bên dưới chỉ còn giá trị lịch sử.
+
 # Đối chiếu lý thuyết với ABOPC
 
 Nguồn: [Bài giảng — tab Buttons và Pagination](https://docs.google.com/document/d/1yJUwScZPknijKSalSQJWVZW4UwTHHnhh-mFEmXU-rMw/edit?hl=vi&tab=t.6x2um26ll1zl). Phạm vi đã chốt: HTML + CSS, giữ thương hiệu đỏ–kem ABOPC. Đường dẫn dưới đây tính từ static-site.

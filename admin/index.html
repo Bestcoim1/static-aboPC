@@ -3,113 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Quản trị mẫu. Bản học tập HTML và CSS của ABOPC." />
     <meta name="static-base" content="../" />
+    <meta name="description" content="Khám phá website đồ án ABOPC." />
     <link rel="icon" href="data:," />
-    <title>Quản trị mẫu | ABOPC</title>
+    <title>Quản trị đơn hàng | ABOPC</title>
+
+    <link rel="stylesheet" href="../assets/css/data.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="../assets/fonts/inter-vietnamese-wght-normal.woff2"
-      crossorigin
-    />
+
+    <meta property="og:title" content="Quản trị đơn hàng | ABOPC" />
+    <meta property="og:description" content="Khám phá website đồ án ABOPC." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/abopc-desk-studio.jpg" />
+
+    <link rel="stylesheet" href="http://127.0.0.1:5182../assets/css/AdminLayout.css" />
   </head>
-  <body>
-    <div class="storefront site-shell">
-      <a class="skip-link" href="#main-content">Đến nội dung chính</a>
-      <header class="study-header">
-        <div class="site-container study-header-row">
-          <a href="../index.html" aria-label="ABOPC — Trang chủ"
+  <body class="storefront-static">
+    <div id="root">
+      <div class="admin-shell">
+        <a class="admin-skip" href="./index.html#admin-content">Đến nội dung quản trị</a>
+        <aside class="admin-sidebar">
+          <a class="admin-brand" aria-label="ABOPC — Quản trị" href="./index.html"
             ><img
               class="brand-mark"
               src="../images/brand/abo-logo.svg"
-              width="112"
-              height="46"
-              alt="ABOPC"
-          /></a>
-          <nav class="study-nav" aria-label="Điều hướng chính">
-            <a href="../index.html">Trang chủ</a><a href="../products/index.html">Sản phẩm</a
-            ><a href="../deals/index.html">Khuyến mãi</a
-            ><a href="../about/index.html">Giới thiệu</a>
-            <details class="study-menu">
-              <summary class="study-summary">Trang mẫu</summary>
-              <ul>
-                <li><a href="../builder/index.html">Cấu hình mẫu</a></li>
-                <li><a href="../compatibility/index.html">Bảng thông số mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Bố trí góc máy mẫu</a></li>
-                <li><a href="../wishlist/index.html">Danh sách yêu thích mẫu</a></li>
-                <li><a href="../orders/index.html">Đơn hàng mẫu</a></li>
-                <li><a href="../track-order/index.html">Tra cứu mẫu</a></li>
-                <li><a href="../account/index.html">Hồ sơ mẫu</a></li>
-                <li><a href="./index.html">Quản trị mẫu</a></li>
-              </ul>
-            </details>
+              alt="ABO"
+              width="848"
+              height="350"
+              loading="eager"
+            /><small>QUẢN TRỊ CỬA HÀNG</small></a
+          >
+          <p class="admin-nav-label">Không gian quản lý</p>
+          <nav aria-label="Quản trị" class="admin-navigation">
+            <a class="is-active" href="./orders/index.html" aria-current="page"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-package"
+              >
+                <path
+                  d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+                ></path>
+                <path d="M12 22V12"></path>
+                <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                <path d="m7.5 4.27 9 5.15"></path></svg
+              ><span>Đơn hàng</span></a
+            ><a class="" href="./products/index.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-boxes"
+              >
+                <path
+                  d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                ></path>
+                <path d="m7 16.5-4.74-2.85"></path>
+                <path d="m7 16.5 5-3"></path>
+                <path d="M7 16.5v5.17"></path>
+                <path
+                  d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                ></path>
+                <path d="m17 16.5-5-3"></path>
+                <path d="m17 16.5 4.74-2.85"></path>
+                <path d="M17 16.5v5.17"></path>
+                <path
+                  d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                ></path>
+                <path d="M12 8 7.26 5.15"></path>
+                <path d="m12 8 4.74-2.85"></path>
+                <path d="M12 13.5V8"></path></svg
+              ><span>Sản phẩm &amp; kho</span></a
+            ><a class="" href="./coupons/index.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-ticket-percent"
+              >
+                <path
+                  d="M2 9a3 3 0 1 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
+                ></path>
+                <path d="M9 9h.01"></path>
+                <path d="m15 9-6 6"></path>
+                <path d="M15 15h.01"></path></svg
+              ><span>Mã giảm giá</span></a
+            ><a class="" href="./reviews/index.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-message-square"
+              >
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg
+              ><span>Đánh giá</span></a
+            >
           </nav>
-          <a class="btn btn-outline" href="../cart/index.html">Giỏ hàng mẫu</a>
-        </div>
-      </header>
-      <main id="main-content" tabindex="-1" class="study-main">
-        <div class="site-container study-page">
-          <header class="study-heading">
-            <p class="study-kicker">Ví dụ giao diện · Không xử lý giao dịch</p>
-            <h1>Quản trị mẫu</h1>
-          </header>
-          <p class="study-note">
-            Các trang quản trị là giao diện mẫu công khai, không có đăng nhập, phân quyền hoặc thao
-            tác thay đổi dữ liệu.
-          </p>
-          <section class="study-panel">
-            <h2>Các màn hình minh họa</h2>
-            <div class="study-actions">
-              <a class="btn btn-primary" href="./products/index.html">Sản phẩm mẫu</a
-              ><a class="btn btn-outline" href="./orders/index.html">Đơn hàng mẫu</a
-              ><a class="btn btn-outline" href="./coupons/index.html">Mã ưu đãi mẫu</a
-              ><a class="btn btn-outline" href="./reviews/index.html">Đánh giá mẫu</a>
-            </div>
-          </section>
-        </div>
-      </main>
-      <footer class="study-footer">
-        <div class="site-container">
-          <div class="study-footer-grid">
-            <div>
-              <a href="../index.html" aria-label="ABOPC — Trang chủ"
-                ><img
-                  class="brand-mark"
-                  src="../images/brand/abo-logo.svg"
-                  width="112"
-                  height="46"
-                  alt="ABOPC"
-              /></a>
-              <p>Từ linh kiện đến góc máy của riêng bạn.</p>
-              <p>
-                Bản học tập HTML + CSS. Nội dung và giao dịch mẫu; không nhận đơn hoặc thanh toán.
-              </p>
-            </div>
-            <div>
-              <h2>Khám phá</h2>
-              <ul>
-                <li><a href="../products/index.html">Danh sách sản phẩm</a></li>
-                <li><a href="../deals/index.html">Khuyến mãi mẫu</a></li>
-                <li><a href="../about/index.html">Về ABOPC</a></li>
-                <li><a href="../ui-kit.html">Mẫu nút bấm</a></li>
-              </ul>
-            </div>
-            <div>
-              <h2>Trang minh họa</h2>
-              <ul>
-                <li><a href="../builder/index.html">Cấu hình PC mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Góc máy mẫu</a></li>
-                <li><a href="../checkout/index.html">Biểu mẫu thanh toán</a></li>
-                <li><a href="../login/index.html">Biểu mẫu đăng nhập</a></li>
-              </ul>
-            </div>
+          <div class="admin-sidebar-foot">
+            <span class="admin-demo-label">Đồ án ABOPC</span>
+            <p>Quản lý danh mục, đơn hàng và hoạt động cửa hàng.</p>
+            <a href="../index.html"
+              >Xem cửa hàng
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-arrow-up-right"
+              >
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path></svg
+            ></a>
           </div>
-          <p class="study-footer-bottom">© 2026 ABOPC · Website đồ án</p>
+        </aside>
+        <div class="admin-workspace">
+          <header class="admin-topbar">
+            <div>
+              <span>Quản trị</span><span aria-hidden="true"> / </span><strong>Đơn hàng</strong>
+            </div>
+            <div class="admin-topbar-actions">
+              <button
+                type="button"
+                aria-label="Chuyển sang giao diện tối"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="lucide lucide-moon"
+                >
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg></button
+              ><a aria-label="Đăng nhập" href="../login/index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="lucide lucide-user-round"
+                >
+                  <circle cx="12" cy="8" r="5"></circle>
+                  <path d="M20 21a8 8 0 0 0-16 0"></path></svg
+                ><span>Tài khoản</span></a
+              >
+            </div>
+          </header>
+          <div id="admin-content" tabindex="-1">
+            <main class="admin-page space-y-4" id="main-content" tabindex="-1">
+              <h1 tabindex="-1" style="font-family: var(--font-ui)">Quản trị đơn hàng</h1>
+              <a class="underline" href="../login/index.html"
+                >Đăng nhập để kiểm tra quyền quản trị</a
+              >
+            </main>
+          </div>
+          <footer class="admin-footer">ABOPC · Không gian quản trị</footer>
         </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>

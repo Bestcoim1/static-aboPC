@@ -1,4 +1,4 @@
-/* Font local, reset, typography và biến màu kế thừa. CSS có sẵn; không cần framework hoặc bước build. */
+/* P05 — Font local, reset, typography và bảng màu. Các biến màu giữ thứ tự ghi đè của bản gốc. Lớp properties/theme/base hỗ trợ CSS chuyển tiếp. */
 /*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or
@@ -578,12 +578,55 @@ textarea {
   --sidebar-border: oklch(92.2% 0 0);
   --sidebar-ring: oklch(70.8% 0 0);
 }
+.dark {
+  --background: #080d18;
+  --foreground: #f2f5fa;
+  --card: #0d1424;
+  --card-foreground: #f2f5fa;
+  --popover: #0d1424;
+  --popover-foreground: #f2f5fa;
+  --primary: #f5453b;
+  --primary-foreground: #fff;
+  --secondary: #131b2e;
+  --secondary-foreground: #f2f5fa;
+  --muted: #131b2e;
+  --muted-foreground: #8b96a8;
+  --accent: #ffcd00;
+  --accent-foreground: #1c1512;
+  --destructive: #f5453b;
+  --destructive-foreground: #fff;
+  --border: #ffffff17;
+  --input: #ffffff0f;
+  --input-background: #131b2e;
+  --switch-background: #2a3346;
+  --ring: #f5453b66;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(64.6% 0.222 25.5);
+  --chart-2: oklch(82.8% 0.189 84.429);
+  --chart-3: oklch(69.6% 0.17 162.48);
+  --chart-4: oklch(62.7% 0.265 303.9);
+  --chart-5: oklch(60% 0.118 184.704);
+  --sidebar: #0d1424;
+  --sidebar-foreground: #f2f5fa;
+  --sidebar-primary: #f5453b;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #131b2e;
+  --sidebar-accent-foreground: #f2f5fa;
+  --sidebar-border: #ffffff17;
+  --sidebar-ring: #f5453b66;
+}
 :root {
   --primary: #c92525;
   --primary-foreground: #fff;
   --destructive: #b91c1c;
   --static-link: #b52020;
   --static-header-height: 109px;
+}
+.dark {
+  --primary: #c92525;
+  --destructive: #ff948c;
+  --static-link: #ff948c;
 }
 html {
   scroll-padding-top: calc(var(--static-header-height) + 16px);
@@ -600,6 +643,12 @@ html {
   --ui-panel-radius: 12px;
   --ui-control-height: 44px;
   --ui-control-font: 14px;
+}
+.dark {
+  --ui-focus: #ff948c;
+  --ui-success: #86d9a4;
+  --ui-warning: #f5cc79;
+  --ui-error: #ff948c;
 }
 @font-face {
   font-family: Inter Variable;

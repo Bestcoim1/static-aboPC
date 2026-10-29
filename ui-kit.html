@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
@@ -11,13 +11,8 @@
     <link rel="icon" href="data:," />
     <title>UI kit · Nút bấm và phân trang | ABOPC</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="./assets/fonts/inter-vietnamese-wght-normal.woff2"
-      crossorigin
-    />
+    <link rel="stylesheet" href="./assets/css/teaching.css" />
+    <link rel="stylesheet" href="./assets/css/study-pages.css" />
   </head>
   <body>
     <div class="storefront site-shell">
@@ -78,15 +73,15 @@
               <button class="btn btn-primary" type="button">Nút chính — mẫu</button
               ><button class="btn btn-outline" type="button">Nút phụ — mẫu</button
               ><button class="btn btn-buy" type="button">Mua ngay — minh họa</button>
-              <button class="btn btn-buy" type="button" disabled>Mua ngay — vô hiệu hóa</button>
+              <button class="btn btn-buy" type="button" disabled="">Mua ngay — vô hiệu hóa</button>
               <a class="btn btn-outline" href="./products/index.html">Xem sản phẩm</a>
             </div>
             <pre
               tabindex="0"
               aria-label="Mã HTML của nút và liên kết"
-            ><code>&lt;button class=&quot;btn btn-buy&quot; type=&quot;button&quot;&gt;Mua ngay — minh họa&lt;/button&gt;
-&lt;button class=&quot;btn btn-buy&quot; type=&quot;button&quot; disabled&gt;Mua ngay — vô hiệu hóa&lt;/button&gt;
-&lt;a class=&quot;btn btn-outline&quot; href=&quot;./products/index.html&quot;&gt;Xem sản phẩm&lt;/a&gt;</code></pre>
+            ><code>&lt;button class="btn btn-buy" type="button"&gt;Mua ngay — minh họa&lt;/button&gt;
+&lt;button class="btn btn-buy" type="button" disabled&gt;Mua ngay — vô hiệu hóa&lt;/button&gt;
+&lt;a class="btn btn-outline" href="./products/index.html"&gt;Xem sản phẩm&lt;/a&gt;</code></pre>
             <p>
               <code>type="button"</code> tránh gửi form ngoài ý muốn. <code>disabled</code> là thuộc
               tính HTML của nút; CSS chỉ định dạng cách hiển thị.
@@ -104,7 +99,7 @@
               tabindex="0"
               aria-label="CSS nút bấm đang dùng trong cửa hàng"
             ><code>/* P06 — Nút bấm: HTML xác định hành động, CSS định dạng và phản hồi.
-   &lt;a class=&quot;btn&quot;&gt; dùng để đi tới trang khác; &lt;button&gt; dùng cho nút mẫu.
+   &lt;a class="btn"&gt; dùng để đi tới trang khác; &lt;button&gt; dùng cho nút mẫu.
    :active là lúc nhấn, khác với class .active của thanh phân trang. */
 .btn {
   display: inline-flex;
@@ -203,12 +198,12 @@
                 <pre
                   tabindex="0"
                   aria-label="HTML phân trang 1"
-                ><code>&lt;nav class=&quot;pagination&quot; aria-label=&quot;Ví dụ phân trang khi ở trang 1&quot;&gt;&lt;ul&gt;
-&lt;li class=&quot;disabled&quot;&gt;&lt;span aria-disabled=&quot;true&quot;&gt;Trước&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;./products/index.html&quot; aria-current=&quot;page&quot; aria-label=&quot;Trang 1&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang 2&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-label=&quot;Trang 3&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang sau&quot;&gt;Sau&lt;/a&gt;&lt;/li&gt;
+                ><code>&lt;nav class="pagination" aria-label="Ví dụ phân trang khi ở trang 1"&gt;&lt;ul&gt;
+&lt;li class="disabled"&gt;&lt;span aria-disabled="true"&gt;Trước&lt;/span&gt;&lt;/li&gt;
+&lt;li class="active"&gt;&lt;a href="./products/index.html" aria-current="page" aria-label="Trang 1"&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/page-2.html" aria-label="Trang 2"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/page-3.html" aria-label="Trang 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/page-2.html" aria-label="Trang sau"&gt;Sau&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/nav&gt;</code></pre>
               </details>
             </section>
@@ -230,12 +225,12 @@
                 <pre
                   tabindex="0"
                   aria-label="HTML phân trang 2"
-                ><code>&lt;nav class=&quot;pagination&quot; aria-label=&quot;Ví dụ phân trang khi ở trang 2&quot;&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;./products/index.html&quot; aria-label=&quot;Trang trước&quot;&gt;Trước&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/index.html&quot; aria-label=&quot;Trang 1&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-current=&quot;page&quot; aria-label=&quot;Trang 2&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-label=&quot;Trang 3&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-label=&quot;Trang sau&quot;&gt;Sau&lt;/a&gt;&lt;/li&gt;
+                ><code>&lt;nav class="pagination" aria-label="Ví dụ phân trang khi ở trang 2"&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="./products/index.html" aria-label="Trang trước"&gt;Trước&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/index.html" aria-label="Trang 1"&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li class="active"&gt;&lt;a href="./products/page-2.html" aria-current="page" aria-label="Trang 2"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/page-3.html" aria-label="Trang 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/page-3.html" aria-label="Trang sau"&gt;Sau&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/nav&gt;</code></pre>
               </details>
             </section>
@@ -257,12 +252,12 @@
                 <pre
                   tabindex="0"
                   aria-label="HTML phân trang 3"
-                ><code>&lt;nav class=&quot;pagination&quot; aria-label=&quot;Ví dụ phân trang khi ở trang 3&quot;&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang trước&quot;&gt;Trước&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/index.html&quot; aria-label=&quot;Trang 1&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;./products/page-2.html&quot; aria-label=&quot;Trang 2&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;./products/page-3.html&quot; aria-current=&quot;page&quot; aria-label=&quot;Trang 3&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;disabled&quot;&gt;&lt;span aria-disabled=&quot;true&quot;&gt;Sau&lt;/span&gt;&lt;/li&gt;
+                ><code>&lt;nav class="pagination" aria-label="Ví dụ phân trang khi ở trang 3"&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="./products/page-2.html" aria-label="Trang trước"&gt;Trước&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/index.html" aria-label="Trang 1"&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./products/page-2.html" aria-label="Trang 2"&gt;2&lt;/a&gt;&lt;/li&gt;
+&lt;li class="active"&gt;&lt;a href="./products/page-3.html" aria-current="page" aria-label="Trang 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+&lt;li class="disabled"&gt;&lt;span aria-disabled="true"&gt;Sau&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/nav&gt;</code></pre>
               </details>
             </section>

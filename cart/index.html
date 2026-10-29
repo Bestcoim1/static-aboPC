@@ -3,159 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Giỏ hàng mẫu. Bản học tập HTML và CSS của ABOPC." />
     <meta name="static-base" content="../" />
+    <meta name="description" content="Xem sản phẩm và chi phí trong giỏ hàng demo." />
     <link rel="icon" href="data:," />
-    <title>Giỏ hàng mẫu | ABOPC</title>
+    <title>Giỏ hàng | ABOPC</title>
+
+    <link rel="stylesheet" href="../assets/css/data.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="../assets/fonts/inter-vietnamese-wght-normal.woff2"
-      crossorigin
-    />
+
+    <meta property="og:title" content="Giỏ hàng | ABOPC" />
+    <meta property="og:description" content="Xem sản phẩm và chi phí trong giỏ hàng demo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/abopc-desk-studio.jpg" />
   </head>
-  <body>
-    <div class="storefront site-shell">
-      <a class="skip-link" href="#main-content">Đến nội dung chính</a>
-      <header class="study-header">
-        <div class="site-container study-header-row">
-          <a href="../index.html" aria-label="ABOPC — Trang chủ"
-            ><img
-              class="brand-mark"
-              src="../images/brand/abo-logo.svg"
-              width="112"
-              height="46"
-              alt="ABOPC"
-          /></a>
-          <nav class="study-nav" aria-label="Điều hướng chính">
-            <a href="../index.html">Trang chủ</a><a href="../products/index.html">Sản phẩm</a
-            ><a href="../deals/index.html">Khuyến mãi</a
-            ><a href="../about/index.html">Giới thiệu</a>
-            <details class="study-menu">
-              <summary class="study-summary">Trang mẫu</summary>
-              <ul>
-                <li><a href="../builder/index.html">Cấu hình mẫu</a></li>
-                <li><a href="../compatibility/index.html">Bảng thông số mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Bố trí góc máy mẫu</a></li>
-                <li><a href="../wishlist/index.html">Danh sách yêu thích mẫu</a></li>
-                <li><a href="../orders/index.html">Đơn hàng mẫu</a></li>
-                <li><a href="../track-order/index.html">Tra cứu mẫu</a></li>
-                <li><a href="../account/index.html">Hồ sơ mẫu</a></li>
-                <li><a href="../admin/index.html">Quản trị mẫu</a></li>
-              </ul>
-            </details>
-          </nav>
-          <a class="btn btn-outline" href="./index.html">Giỏ hàng mẫu</a>
-        </div>
-      </header>
-      <main id="main-content" tabindex="-1" class="study-main">
-        <div class="site-container study-page">
-          <header class="study-heading">
-            <p class="study-kicker">Ví dụ giao diện · Không xử lý giao dịch</p>
-            <h1>Giỏ hàng mẫu</h1>
-          </header>
-          <p class="study-note">
-            Giỏ hàng có sẵn 2 sản phẩm minh họa, số lượng cố định. Không thêm, xóa hoặc lưu sản
-            phẩm.
-          </p>
-          <section class="study-panel">
-            <h2>Sản phẩm trong ví dụ</h2>
+  <body class="storefront-static">
+    <div id="root">
+      <div class="focused-layout">
+        <a href="./index.html#main-content" class="skip-link">Đến nội dung chính</a>
+        <header class="focused-header">
+          <div>
+            <a
+              class="flex items-center shrink-0"
+              aria-label="ABOPC — Về trang chủ"
+              href="../index.html"
+              ><img
+                class="brand-mark"
+                src="../images/brand/abo-logo.svg"
+                alt="ABO"
+                width="848"
+                height="350"
+                loading="eager"
+            /></a>
+            <nav aria-label="Điều hướng mua hàng">
+              <a href="../products/index.html">Tiếp tục mua sắm</a
+              ><button
+                class="p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                aria-label="Chuyển sang chế độ tối"
+                aria-pressed="false"
+                type="button"
+                data-static-unavailable=""
+                disabled=""
+                title="Chức năng này cần JavaScript."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="lucide lucide-moon"
+                >
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </button>
+            </nav>
+          </div>
+        </header>
+        <main id="main-content" tabindex="-1">
+          <div class="commerce-motion flow-enter max-w-7xl mx-auto px-4 py-24 lg:py-32 text-center">
             <div
-              class="study-table-scroll"
-              tabindex="0"
-              role="region"
-              aria-label="Giỏ hàng minh họa"
+              class="w-16 h-16 rounded-2xl bg-red-600/10 border border-red-600/25 flex items-center justify-center mx-auto mb-6"
             >
-              <table class="study-table">
-                <caption>
-                  Giỏ hàng minh họa
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Sản phẩm</th>
-                    <th scope="col">Mã sản phẩm</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Thành tiền</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="../products/1/index.html">Intel Core i9-14900K</a></td>
-                    <td>ABO-DEMO-1</td>
-                    <td>1</td>
-                    <td>15.040.000 ₫</td>
-                  </tr>
-                  <tr>
-                    <td><a href="../products/4/index.html">Corsair Vengeance DDR5 32GB</a></td>
-                    <td>ABO-DEMO-4</td>
-                    <td>1</td>
-                    <td>3.310.000 ₫</td>
-                  </tr>
-                </tbody>
-              </table>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-shopping-cart text-red-600"
+              >
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                ></path>
+              </svg>
             </div>
-            <dl class="study-costs">
-              <div>
-                <dt>Tạm tính mẫu</dt>
-                <dd>18.350.000 ₫</dd>
-              </div>
-              <div>
-                <dt>Phí giao hàng mẫu</dt>
-                <dd>0 ₫</dd>
-              </div>
-              <div>
-                <dt>Tổng cộng mẫu</dt>
-                <dd>18.350.000 ₫</dd>
-              </div>
-            </dl>
-          </section>
-          <div class="study-actions">
-            <a class="btn btn-primary" href="../checkout/index.html">Xem biểu mẫu thanh toán</a
-            ><a class="btn btn-outline" href="../products/index.html">Tiếp tục xem sản phẩm</a>
+            <h1
+              tabindex="-1"
+              class="text-2xl lg:text-3xl font-bold mb-3"
+              style="font-family: var(--font-ui)"
+            >
+              Giỏ hàng trống
+            </h1>
+            <p role="status" class="text-sm mb-4"></p>
+            <p class="text-muted-foreground text-sm mb-8 max-w-sm mx-auto">
+              Có vẻ bạn chưa thêm sản phẩm nào. Khám phá linh kiện và bắt đầu lắp ráp ngay.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 px-7 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-red-600/20 text-sm"
+              href="../products/index.html"
+              >Mua linh kiện
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                class="lucide lucide-arrow-right"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path></svg
+            ></a>
           </div>
-        </div>
-      </main>
-      <footer class="study-footer">
-        <div class="site-container">
-          <div class="study-footer-grid">
-            <div>
-              <a href="../index.html" aria-label="ABOPC — Trang chủ"
-                ><img
-                  class="brand-mark"
-                  src="../images/brand/abo-logo.svg"
-                  width="112"
-                  height="46"
-                  alt="ABOPC"
-              /></a>
-              <p>Từ linh kiện đến góc máy của riêng bạn.</p>
-              <p>
-                Bản học tập HTML + CSS. Nội dung và giao dịch mẫu; không nhận đơn hoặc thanh toán.
-              </p>
-            </div>
-            <div>
-              <h2>Khám phá</h2>
-              <ul>
-                <li><a href="../products/index.html">Danh sách sản phẩm</a></li>
-                <li><a href="../deals/index.html">Khuyến mãi mẫu</a></li>
-                <li><a href="../about/index.html">Về ABOPC</a></li>
-                <li><a href="../ui-kit.html">Mẫu nút bấm</a></li>
-              </ul>
-            </div>
-            <div>
-              <h2>Trang minh họa</h2>
-              <ul>
-                <li><a href="../builder/index.html">Cấu hình PC mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Góc máy mẫu</a></li>
-                <li><a href="../checkout/index.html">Biểu mẫu thanh toán</a></li>
-                <li><a href="../login/index.html">Biểu mẫu đăng nhập</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="study-footer-bottom">© 2026 ABOPC · Website đồ án</p>
-        </div>
-      </footer>
+        </main>
+        <footer class="focused-footer">
+          <a href="../index.html">ABOPC · Về cửa hàng</a
+          ><span>Đồ án · Giá/phí/thuế mẫu, chưa phải giao dịch bán hàng thật</span>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

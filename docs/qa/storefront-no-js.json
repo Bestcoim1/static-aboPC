@@ -1,0 +1,2138 @@
+{
+  "structure": {
+    "ok": true,
+    "pages": 50,
+    "products": 26,
+    "cssFiles": 19,
+    "references": 4328,
+    "browserJavaScriptFiles": 0
+  },
+  "pages": [
+    {
+      "file": "products/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "about/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "cart/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "orders/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "guest-order.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "login/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "account/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "builder/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "deals/index.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "404.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 360,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "about/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "cart/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "orders/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "guest-order.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "login/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "account/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "builder/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "deals/index.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "404.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 390,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "about/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "cart/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "orders/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "guest-order.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "login/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "account/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "builder/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "deals/index.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "404.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 768,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "about/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "cart/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "orders/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "guest-order.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "login/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "account/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "builder/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "deals/index.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "404.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 1280,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "about/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "cart/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "orders/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "guest-order.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "login/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "account/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "builder/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "deals/index.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "404.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 1440,
+      "js": false,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-2.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/page-3.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/1/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/2/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/3/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/4/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/5/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/6/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/7/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/8/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/9/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/10/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/11/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/12/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/13/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/14/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/15/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/16/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90101/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90102/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90103/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90104/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90201/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90202/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90203/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90204/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90301/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "products/90302/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "about/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "cart/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "checkout/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "orders/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "track-order/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "guest-order.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "login/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "account/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "wishlist/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "builder/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "compatibility/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "setup-planner/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/products/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/orders/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/coupons/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "admin/reviews/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "deals/index.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "404.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "file": "ui-kit.html",
+      "width": 1440,
+      "js": true,
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "interactions": [
+    "Desktop product menu opens natively; category links reach catalog anchor",
+    "Tools menu opens/closes with Enter/Space",
+    "Mobile native menu opens and navigates",
+    "Pagination 9-9-8, product detail and browser Back at root and /demo",
+    "Original action controls are present but unavailable; no form submission/runtime"
+  ],
+  "errors": [],
+  "screenshots": [
+    "390-products_index.html.png",
+    "390-products_3_index.html.png",
+    "390-index.html.png",
+    "390-cart_index.html.png",
+    "390-login_index.html.png",
+    "390-builder_index.html.png",
+    "390-setup-planner_index.html.png",
+    "390-ui-kit.html.png",
+    "1440-products_index.html.png",
+    "1440-products_3_index.html.png",
+    "1440-index.html.png",
+    "1440-cart_index.html.png",
+    "1440-login_index.html.png",
+    "1440-builder_index.html.png",
+    "1440-setup-planner_index.html.png",
+    "1440-ui-kit.html.png"
+  ]
+}

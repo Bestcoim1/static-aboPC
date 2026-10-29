@@ -15,7 +15,10 @@
       9,
       9,
       8
-    ]
+    ],
+    "presentation": "original-storefront-without-javascript",
+    "correctedAt": "2026-10-29",
+    "reference": "Pre-P06 storefront snapshot"
   },
   "provenance": {
     "legacyGeneratedAt": "2026-10-28T14:08:57.268Z",

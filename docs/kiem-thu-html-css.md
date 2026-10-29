@@ -1,3 +1,5 @@
+> Tài liệu giai đoạn P01–P17. Yêu cầu giao diện đã điều chỉnh ngày 29/10/2026: giữ cửa hàng gốc, chỉ bỏ JavaScript. Xem [bản điều chỉnh hiện tại](khoi-phuc-giao-dien-cua-hang.md); các mô tả trang mẫu/bố cục cũ bên dưới chỉ còn giá trị lịch sử.
+
 # Kiểm thử HTML/CSS — 29/10/2026
 
 Kết quả P11–P17: đạt các kiểm tra bên dưới. Bằng chứng JSON và ảnh nằm tại `E:\trang-web-ban-pc\artifacts\html-css-p11-p17` trong workspace phát triển.

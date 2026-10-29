@@ -1,114 +1,446 @@
-/* Thành phần HTML dùng chung: thông báo, khung nội dung, bảng, form mẫu và details/summary. */
-.study-note {
-  border-left: 3px solid #c92525;
-  background: var(--secondary);
-  padding: 14px 18px;
-  margin-block: 20px;
-  font-size: 14px;
-  line-height: 1.7;
-}
-.study-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-.study-panel {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-  margin-block: 24px;
-}
-.study-panel h2 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-.study-panel h3 {
-  font-size: 17px;
-  font-weight: 650;
-  margin-bottom: 12px;
-}
-.study-panel p {
-  line-height: 1.7;
-}
-.study-table-scroll {
-  overflow-x: auto;
-}
-.study-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-.study-table caption {
-  text-align: left;
-  font-weight: 600;
-  padding-bottom: 12px;
-}
-.study-table th,
-.study-table td {
-  padding: 14px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-.study-table th {
-  background: var(--secondary);
-  font-weight: 650;
-}
-.study-table a {
-  color: #a91f1f;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.study-form fieldset {
-  display: grid;
-  gap: 16px;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  max-width: 640px;
-}
-.study-form legend {
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-.study-form label {
-  display: grid;
+/* Các thành phần hiện có: control, form, nhãn, thông báo, tìm kiếm và so sánh. Chỉ tách/định dạng ở P05; phần Buttons dành riêng cho P06. */
+.ui-button,
+[data-ui="primary"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
-  font-size: 14px;
-}
-.study-form input,
-.study-form select,
-.study-form textarea {
-  width: 100%;
-  padding: 12px;
-  min-height: 44px;
+  min-height: var(--ui-control-height);
+  min-width: 44px;
+  padding: 9px 14px;
   border: 1px solid var(--border);
-  border-radius: 6px;
-  background: #faf8f4;
-  color: #6d625b;
-  font: inherit;
-}
-.study-faq {
-  margin-block: 12px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--ui-radius);
   background: var(--card);
-}
-.study-faq summary {
-  padding: 16px;
+  color: var(--foreground);
+  font-size: var(--ui-control-font);
   font-weight: 600;
+  line-height: 1.4;
   cursor: pointer;
 }
-.study-faq p {
-  padding: 0 16px 16px;
-  line-height: 1.7;
+.ui-button[data-kind="primary"],
+[data-ui="primary"] {
+  background: var(--ui-action);
+  border-color: var(--ui-action);
+  color: var(--ui-on-action);
 }
-.study-panel,
-.catalog-content,
-.product-intro > *,
-.study-header-row > * {
+.ui-button[data-kind="primary"]:hover:not(:disabled),
+[data-ui="primary"]:hover:not(:disabled) {
+  background: var(--ui-action-hover);
+  border-color: var(--ui-action-hover);
+}
+.ui-button:not([data-kind="primary"]):hover:not(:disabled) {
+  background: var(--secondary);
+}
+.ui-button:disabled,
+[data-ui="primary"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.ui-button[aria-pressed="true"] {
+  border-color: var(--static-link);
+  color: var(--static-link);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ui-field {
+  min-height: var(--ui-control-height);
   min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--ui-radius);
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 16px;
+}
+.ui-field[aria-invalid="true"] {
+  border-color: var(--ui-error);
+}
+:is(
+  .ui-button,
+  .ui-field,
+  [data-ui="primary"],
+  .static-search-option,
+  .static-compare-scroll
+):focus-visible {
+  outline: 2px solid var(--ui-focus);
+  outline-offset: 3px;
+}
+.ui-panel {
+  border: 1px solid var(--border);
+  border-radius: var(--ui-panel-radius);
+  background: var(--card);
+  color: var(--foreground);
+  padding: 16px;
+}
+.ui-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ui-badge[data-kind="success"] {
+  color: var(--ui-success);
+}
+.ui-badge[data-kind="warning"] {
+  color: var(--ui-warning);
+}
+.ui-badge[data-kind="error"] {
+  color: var(--ui-error);
+}
+.ui-price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+.ui-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ui-notice {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid currentColor;
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--foreground);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.ui-notice[data-kind="error"] {
+  border-inline-start-color: var(--ui-error);
+}
+.ui-notice[data-kind="warning"] {
+  border-inline-start-color: var(--ui-warning);
+}
+.ui-notice[data-kind="success"] {
+  border-inline-start-color: var(--ui-success);
+}
+.ui-notice strong {
+  display: block;
+}
+.ui-notice[data-kind="error"] strong {
+  color: var(--ui-error);
+}
+.ui-notice[data-kind="success"] strong {
+  color: var(--ui-success);
+}
+.ui-notice p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.ui-notice button {
+  flex-shrink: 0;
+}
+.static-inline-notice {
+  max-width: 1280px;
+  margin: 12px auto;
+}
+#static-toast {
+  display: grid;
+  gap: 8px;
+  width: min(420px, calc(100vw - 32px));
+  max-height: 50dvh;
+  overflow: auto;
+  max-width: none;
+  right: 16px;
+  bottom: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  animation: none;
+}
+#static-toast:empty {
+  display: none;
+}
+.static-search-box {
+  position: relative;
+  width: 100%;
+}
+.static-search-input {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+.static-search-input input {
+  width: 100%;
+  flex: 1;
+  background: var(--secondary);
+}
+.static-search-input > button {
+  flex-shrink: 0;
+}
+.static-search-popup {
+  position: absolute;
+  inset: calc(100% + 8px) 0 auto;
+  max-height: min(65dvh, 520px);
+  overflow: auto;
+  padding: 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px #0002;
+  border-radius: 12px;
+  z-index: 5;
+}
+.static-search-option {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  padding: 12px;
+  min-height: 44px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.static-search-option span {
+  overflow-wrap: anywhere;
+}
+.static-search-option strong {
+  font-size: 13px;
+}
+.static-search-option:hover,
+.static-search-option[aria-selected="true"] {
+  background: var(--secondary);
+  border-color: var(--static-link);
+}
+.static-search-hint {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.static-search-popup > button {
+  width: 100%;
+}
+.static-compare-toggle {
+  margin-top: 8px;
+  width: fit-content;
+}
+.static-compare-panel {
+  max-width: 1280px;
+  margin: 20px auto;
+}
+.static-compare-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-block: 12px;
+}
+.static-compare-panel li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  min-width: 0;
+}
+.static-compare-panel li span {
+  overflow-wrap: anywhere;
+}
+.static-compare-panel > p {
+  margin-top: 8px;
+  font-size: 13px;
+}
+.static-compare-panel [role="status"] {
+  color: var(--ui-error);
+}
+.static-compare-dialog {
+  margin: auto;
+  width: min(1150px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: 20px;
+  background: var(--card);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+.static-compare-dialog::backdrop {
+  background: #080d18b3;
+}
+.static-compare-dialog header {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.static-compare-dialog h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.static-compare-dialog header button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.static-compare-dialog > p,
+.static-compare-dialog > label {
+  display: block;
+  font-size: 14px;
+  margin-block: 12px;
+  line-height: 1.6;
+}
+.static-compare-dialog > label {
+  min-height: 44px;
+  padding-block: 10px;
+}
+.static-compare-dialog input {
+  margin-right: 6px;
+}
+.static-compare-dialog [role="alert"] {
+  color: var(--ui-error);
+}
+.static-compare-scroll {
+  overflow: auto;
+  max-height: 62dvh;
+  margin: 8px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.static-compare-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 660px;
+  font-size: 14px;
+}
+.static-compare-scroll caption {
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+}
+.static-compare-scroll th,
+.static-compare-scroll td {
+  vertical-align: top;
+  padding: 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.static-compare-scroll thead th {
+  width: 220px;
+}
+.static-compare-scroll th:first-child {
+  width: 160px;
+}
+.static-compare-scroll th button {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.static-compare-scroll th a {
+  display: block;
+  text-decoration: underline;
+}
+.static-compare-scroll tr[data-different="true"] {
+  background: var(--secondary);
+}
+.static-compare-scroll small {
+  display: block;
+  margin-top: 4px;
+  color: var(--static-link);
+  font-size: 12px;
+  font-weight: 600;
+}
+.static-compare-scroll tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--card);
+}
+.static-compare-scroll tr[data-different="true"] th {
+  background: var(--secondary);
+}
+.static-compare-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--card);
+}
+.static-compare-scroll thead th:first-child {
+  left: 0;
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  .static-compare-panel {
+    margin: 12px 16px;
+  }
+  .ui-notice {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .static-inline-notice {
+    margin-inline: 16px;
+  }
+  .static-compare-dialog {
+    padding: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .static-compare-scroll table {
+    min-width: 0;
+    width: calc(104px + var(--compare-columns) * (100vw - 178px));
+  }
+  .static-compare-scroll thead th {
+    width: calc(100vw - 178px);
+  }
+  .static-compare-scroll th:first-child {
+    width: 104px;
+  }
+  .static-compare-scroll th,
+  .static-compare-scroll td {
+    padding: 10px;
+  }
+  .static-compare-scroll caption {
+    position: sticky;
+    left: 0;
+    width: calc(100vw - 74px);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ui-button,
+  [data-ui="primary"],
+  .ui-field {
+    transition:
+      background-color 0.12s ease-out,
+      border-color 0.12s ease-out,
+      color 0.12s ease-out;
+  }
+  .ui-notice,
+  .static-save-dialog[open],
+  .static-lightbox[open],
+  .static-compare-dialog[open] {
+    animation: ui-feedback-in 0.12s ease-out;
+  }
+  @keyframes ui-feedback-in {
+    0% {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-notice,
+  .static-save-dialog,
+  .static-lightbox,
+  .static-compare-dialog {
+    animation: none;
+  }
+  .ui-button,
+  [data-ui="primary"],
+  .ui-field {
+    transition: none;
+  }
 }

@@ -3,152 +3,2237 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Cấu hình PC mẫu. Bản học tập HTML và CSS của ABOPC." />
     <meta name="static-base" content="../" />
-    <link rel="icon" href="data:," />
-    <title>Cấu hình PC mẫu | ABOPC</title>
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="../assets/fonts/inter-vietnamese-wght-normal.woff2"
-      crossorigin
+    <meta
+      name="description"
+      content="Chọn linh kiện và cân đối ngân sách cho cấu hình PC của bạn."
     />
+    <link rel="icon" href="data:," />
+    <title>Xây dựng cấu hình PC | ABOPC</title>
+
+    <link rel="stylesheet" href="../assets/css/data.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <meta property="og:title" content="Xây dựng cấu hình PC | ABOPC" />
+    <meta
+      property="og:description"
+      content="Chọn linh kiện và cân đối ngân sách cho cấu hình PC của bạn."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/abopc-desk-studio.jpg" />
   </head>
-  <body>
-    <div class="storefront site-shell">
-      <a class="skip-link" href="#main-content">Đến nội dung chính</a>
-      <header class="study-header">
-        <div class="site-container study-header-row">
-          <a href="../index.html" aria-label="ABOPC — Trang chủ"
-            ><img
-              class="brand-mark"
-              src="../images/brand/abo-logo.svg"
-              width="112"
-              height="46"
-              alt="ABOPC"
-          /></a>
-          <nav class="study-nav" aria-label="Điều hướng chính">
-            <a href="../index.html">Trang chủ</a><a href="../products/index.html">Sản phẩm</a
-            ><a href="../deals/index.html">Khuyến mãi</a
-            ><a href="../about/index.html">Giới thiệu</a>
-            <details class="study-menu">
-              <summary class="study-summary">Trang mẫu</summary>
-              <ul>
-                <li><a href="./index.html">Cấu hình mẫu</a></li>
-                <li><a href="../compatibility/index.html">Bảng thông số mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Bố trí góc máy mẫu</a></li>
-                <li><a href="../wishlist/index.html">Danh sách yêu thích mẫu</a></li>
-                <li><a href="../orders/index.html">Đơn hàng mẫu</a></li>
-                <li><a href="../track-order/index.html">Tra cứu mẫu</a></li>
-                <li><a href="../account/index.html">Hồ sơ mẫu</a></li>
-                <li><a href="../admin/index.html">Quản trị mẫu</a></li>
-              </ul>
-            </details>
+  <body class="storefront-static">
+    <div id="root">
+      <div class="storefront site-shell">
+        <a href="./index.html#main-content" class="skip-link">Đến nội dung chính</a>
+        <header class="site-header">
+          <nav
+            aria-label="Điều hướng chính"
+            class="site-navigation fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur-md"
+          >
+            <div class="site-container">
+              <div class="site-navigation-row">
+                <a
+                  class="flex items-center shrink-0"
+                  aria-label="ABOPC — Về trang chủ"
+                  href="../index.html"
+                  ><img
+                    class="brand-mark"
+                    src="../images/brand/abo-logo.svg"
+                    alt="ABO"
+                    width="848"
+                    height="350"
+                    loading="eager"
+                /></a>
+                <div id="site-search" class="site-search">
+                  <div
+                    class="site-search-form static-search-box"
+                    role="search"
+                    aria-label="Tìm kiếm sản phẩm"
+                    data-static-form=""
+                  >
+                    <div class="static-search-input">
+                      <input
+                        type="search"
+                        aria-label="Từ khóa tìm kiếm sản phẩm"
+                        placeholder="Tìm linh kiện, thương hiệu, mẫu mã…"
+                        class="ui-field"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      /><button
+                        type="button"
+                        class="ui-button"
+                        data-kind="primary"
+                        aria-label="Tìm sản phẩm"
+                        data-static-unavailable=""
+                        disabled=""
+                        title="Chức năng này cần JavaScript."
+                      >
+                        Tìm
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="site-header-actions">
+                  <button
+                    class="p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Chuyển sang chế độ tối"
+                    aria-pressed="false"
+                    type="button"
+                    data-static-unavailable=""
+                    disabled=""
+                    title="Chức năng này cần JavaScript."
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-moon"
+                    >
+                      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg></button
+                  ><a
+                    class="site-order-link p-2.5 rounded-lg text-muted-foreground hover:text-red-600"
+                    aria-label="Tra cứu đơn hàng"
+                    href="../track-order/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-package-search"
+                    >
+                      <path
+                        d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"
+                      ></path>
+                      <path d="m7.5 4.27 9 5.15"></path>
+                      <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                      <line x1="12" x2="12" y1="22" y2="12"></line>
+                      <circle cx="18.5" cy="15.5" r="2.5"></circle>
+                      <path d="M20.27 17.27 22 19"></path></svg
+                    ><span>Tra cứu đơn</span></a
+                  ><a
+                    class="hidden sm:flex p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Tài khoản"
+                    href="../login/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-user"
+                    >
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle></svg></a
+                  ><a
+                    class="relative hidden sm:flex p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Yêu thích"
+                    href="../wishlist/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-heart"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      ></path></svg></a
+                  ><a
+                    class="relative p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                    aria-label="Giỏ hàng"
+                    href="../cart/index.html"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="lucide lucide-shopping-cart"
+                    >
+                      <circle cx="8" cy="21" r="1"></circle>
+                      <circle cx="19" cy="21" r="1"></circle>
+                      <path
+                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                      ></path></svg
+                  ></a>
+                  <details class="native-mobile-menu lg:hidden">
+                    <summary
+                      class="lg:hidden p-2.5 rounded-lg text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label="Danh mục"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-menu"
+                      >
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                      </svg>
+                    </summary>
+                    <div
+                      id="mobile-navigation"
+                      class="lg:hidden overflow-y-auto border-t border-border bg-background native-mobile-panel"
+                    >
+                      <div class="px-4 py-2 space-y-0.5">
+                        <a
+                          class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          href="../index.html"
+                          >Trang chủ</a
+                        >
+                        <div>
+                          <a
+                            class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../products/index.html"
+                            >Sản phẩm</a
+                          >
+                          <div class="ml-3 mt-0.5 space-y-0.5 border-l-2 border-border pl-3">
+                            <a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/index.html#product-1"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-cpu text-red-600/70 shrink-0"
+                              >
+                                <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                                <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                                <path d="M15 2v2"></path>
+                                <path d="M15 20v2"></path>
+                                <path d="M2 15h2"></path>
+                                <path d="M2 9h2"></path>
+                                <path d="M20 15h2"></path>
+                                <path d="M20 9h2"></path>
+                                <path d="M9 2v2"></path>
+                                <path d="M9 20v2"></path></svg
+                              >CPU</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/index.html#product-2"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-monitor text-red-600/70 shrink-0"
+                              >
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                              >GPU</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/index.html#product-3"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-circuit-board text-red-600/70 shrink-0"
+                              >
+                                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                                <path d="M11 9h4a2 2 0 0 0 2-2V3"></path>
+                                <circle cx="9" cy="9" r="2"></circle>
+                                <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
+                                <circle cx="15" cy="15" r="2"></circle></svg
+                              >Bo mạch chủ</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/index.html#product-4"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-database text-red-600/70 shrink-0"
+                              >
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                                <path d="M3 12A9 3 0 0 0 21 12"></path></svg
+                              >RAM</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/index.html#product-5"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-hard-drive text-red-600/70 shrink-0"
+                              >
+                                <line x1="22" x2="2" y1="12" y2="12"></line>
+                                <path
+                                  d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+                                ></path>
+                                <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                                <line x1="10" x2="10.01" y1="16" y2="16"></line></svg
+                              >SSD</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/page-2.html#product-12"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-zap text-red-600/70 shrink-0"
+                              >
+                                <path
+                                  d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                                ></path></svg
+                              >PSU</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/index.html#product-6"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-box text-red-600/70 shrink-0"
+                              >
+                                <path
+                                  d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                                ></path>
+                                <path d="m3.3 7 8.7 5 8.7-5"></path>
+                                <path d="M12 22V12"></path></svg
+                              >Vỏ máy</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../products/page-2.html#product-13"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-wind text-red-600/70 shrink-0"
+                              >
+                                <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                                <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                                <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg
+                              >Tản nhiệt</a
+                            ><a
+                              class="block px-2 py-2 text-xs text-muted-foreground hover:text-foreground"
+                              href="../products/page-3.html#product-90201"
+                              >Màn hình &amp; giá đỡ</a
+                            >
+                          </div>
+                        </div>
+                        <div>
+                          <div class="px-3 pt-2 pb-1">
+                            <span
+                              class="text-[10px] font-bold text-muted-foreground/50 uppercase tracking-widest"
+                              >Công cụ</span
+                            >
+                          </div>
+                          <div class="ml-3 space-y-0.5 border-l-2 border-red-600/30 pl-3">
+                            <a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="./index.html"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-wrench text-red-600 shrink-0"
+                              >
+                                <path
+                                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                                ></path></svg
+                              >Cấu hình PC</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../compatibility/index.html"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-circle-check text-red-600 shrink-0"
+                              >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="m9 12 2 2 4-4"></path></svg
+                              >Tương thích</a
+                            ><a
+                              class="flex items-center gap-2 px-2 py-2 rounded-lg text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                              href="../setup-planner/index.html"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-layout-grid text-red-600 shrink-0"
+                              >
+                                <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                                <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                                <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                                <rect width="7" height="7" x="3" y="14" rx="1"></rect></svg
+                              >Bố trí góc máy</a
+                            >
+                          </div>
+                        </div>
+                        <a
+                          class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          href="../deals/index.html"
+                          >Khuyến mãi</a
+                        ><a
+                          class="block px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          href="../about/index.html"
+                          >Giới thiệu</a
+                        >
+                        <div class="pt-2 border-t border-border mt-2 grid grid-cols-2 gap-1">
+                          <a
+                            class="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../wishlist/index.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-heart"
+                            >
+                              <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                              ></path>
+                            </svg>
+                            Yêu thích </a
+                          ><a
+                            class="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../track-order/index.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-shopping-cart"
+                            >
+                              <circle cx="8" cy="21" r="1"></circle>
+                              <circle cx="19" cy="21" r="1"></circle>
+                              <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                              ></path>
+                            </svg>
+                            Theo dõi đơn hàng</a
+                          >
+                        </div>
+                        <div
+                          class="pt-2 border-t border-border mt-2 flex items-center justify-between"
+                        >
+                          <a
+                            class="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                            href="../login/index.html"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="15"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-user"
+                            >
+                              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Tài khoản của tôi</a
+                          >
+                          <div class="flex items-center gap-1">
+                            <button
+                              class="p-2.5 rounded-lg text-muted-foreground hover:text-red-600 hover:bg-red-600/10 transition-colors"
+                              aria-label="Chuyển sang chế độ tối"
+                              aria-pressed="false"
+                              type="button"
+                              data-static-unavailable=""
+                              disabled=""
+                              title="Chức năng này cần JavaScript."
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                                class="lucide lucide-moon"
+                              >
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </div>
+              <div class="desktop-navigation">
+                <a
+                  class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                  href="../index.html"
+                  >Trang chủ</a
+                >
+                <div class="product-mega-root">
+                  <details class="native-nav-menu">
+                    <summary
+                      class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                    >
+                      Sản phẩm
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-chevron-down inline-block"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </summary>
+                    <div id="nav-products" class="product-mega-panel native-nav-panel">
+                      <div>
+                        <h2>Linh kiện &amp; thiết bị</h2>
+                        <div class="product-mega-categories">
+                          <a href="../products/index.html#product-1"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-cpu"
+                            >
+                              <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                              <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                              <path d="M15 2v2"></path>
+                              <path d="M15 20v2"></path>
+                              <path d="M2 15h2"></path>
+                              <path d="M2 9h2"></path>
+                              <path d="M20 15h2"></path>
+                              <path d="M20 9h2"></path>
+                              <path d="M9 2v2"></path>
+                              <path d="M9 20v2"></path></svg
+                            >CPU</a
+                          ><a href="../products/index.html#product-2"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-monitor"
+                            >
+                              <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                              <line x1="8" x2="16" y1="21" y2="21"></line>
+                              <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                            >GPU</a
+                          ><a href="../products/index.html#product-3"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-circuit-board"
+                            >
+                              <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                              <path d="M11 9h4a2 2 0 0 0 2-2V3"></path>
+                              <circle cx="9" cy="9" r="2"></circle>
+                              <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
+                              <circle cx="15" cy="15" r="2"></circle></svg
+                            >Bo mạch chủ</a
+                          ><a href="../products/index.html#product-4"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-database"
+                            >
+                              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                              <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                              <path d="M3 12A9 3 0 0 0 21 12"></path></svg
+                            >RAM</a
+                          ><a href="../products/index.html#product-5"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-hard-drive"
+                            >
+                              <line x1="22" x2="2" y1="12" y2="12"></line>
+                              <path
+                                d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+                              ></path>
+                              <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                              <line x1="10" x2="10.01" y1="16" y2="16"></line></svg
+                            >SSD</a
+                          ><a href="../products/page-2.html#product-12"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-zap"
+                            >
+                              <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                              ></path></svg
+                            >PSU</a
+                          ><a href="../products/index.html#product-6"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-box"
+                            >
+                              <path
+                                d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                              ></path>
+                              <path d="m3.3 7 8.7 5 8.7-5"></path>
+                              <path d="M12 22V12"></path></svg
+                            >Vỏ máy</a
+                          ><a href="../products/page-2.html#product-13"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-wind"
+                            >
+                              <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                              <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                              <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg
+                            >Tản nhiệt</a
+                          ><a href="../products/page-3.html#product-90201"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-monitor"
+                            >
+                              <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                              <line x1="8" x2="16" y1="21" y2="21"></line>
+                              <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                            >Màn hình &amp; giá đỡ</a
+                          >
+                        </div>
+                        <a class="product-mega-all" href="../products/index.html"
+                          >Xem toàn bộ danh mục</a
+                        >
+                      </div>
+                      <div>
+                        <h2>Thương hiệu</h2>
+                        <a href="../products/index.html#product-1">Intel</a
+                        ><a href="../products/index.html#product-7">AMD</a
+                        ><a href="../products/index.html#product-2">NVIDIA</a
+                        ><a href="../products/index.html#product-3">ASUS</a
+                        ><a href="../products/index.html#product-4">Corsair</a
+                        ><a href="../products/index.html#product-5">Samsung</a
+                        ><a href="../products/index.html#product-8">MSI</a
+                        ><a href="../products/index.html#product-9">Gigabyte</a
+                        ><a href="../products/page-2.html#product-14">be quiet!</a
+                        ><a href="../products/index.html#product-6">Lian Li</a>
+                      </div>
+                      <div>
+                        <h2>Công cụ của bạn</h2>
+                        <a class="product-mega-tool" href="./index.html"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-wrench"
+                          >
+                            <path
+                              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                            ></path></svg
+                          ><span>Cấu hình PC<small>Xây dựng cấu hình của bạn</small></span></a
+                        ><a class="product-mega-tool" href="../compatibility/index.html"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-circle-check"
+                          >
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="m9 12 2 2 4-4"></path></svg
+                          ><span>Tương thích<small>Kiểm tra tương thích linh kiện</small></span></a
+                        ><a class="product-mega-tool" href="../setup-planner/index.html"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-layout-grid"
+                          >
+                            <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                            <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                            <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                            <rect width="7" height="7" x="3" y="14" rx="1"></rect></svg
+                          ><span
+                            >Bố trí góc máy<small>Sắp xếp không gian bàn làm việc</small></span
+                          ></a
+                        >
+                        <p class="product-mega-note">
+                          Chọn linh kiện, kiểm tra tương thích và bố trí góc máy.
+                        </p>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="relative">
+                  <details class="native-nav-menu">
+                    <summary
+                      class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-red-600 bg-red-600/8"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-wrench mr-1 inline-block -mt-0.5"
+                      >
+                        <path
+                          d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                        ></path></svg
+                      >Công cụ<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-chevron-down ml-0.5 inline-block transition-transform duration-150"
+                      >
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </summary>
+                    <div
+                      id="nav-tools"
+                      class="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 w-72 bg-card border border-border rounded-xl shadow-2xl shadow-black/15 z-50 overflow-hidden transition-all duration-150 origin-top opacity-0 scale-95 pointer-events-none native-nav-panel"
+                    >
+                      <div class="p-2">
+                        <a
+                          class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-secondary transition-colors group"
+                          href="./index.html"
+                          ><div
+                            class="w-9 h-9 rounded-lg bg-red-600/10 border border-red-600/15 flex items-center justify-center shrink-0 group-hover:bg-red-600/15 group-hover:border-red-600/25 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-wrench text-red-600"
+                            >
+                              <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div class="min-w-0">
+                            <div class="text-sm font-semibold text-foreground leading-tight">
+                              Cấu hình PC
+                            </div>
+                            <div class="text-xs text-muted-foreground mt-0.5 truncate">
+                              Xây dựng cấu hình của bạn
+                            </div>
+                          </div></a
+                        ><a
+                          class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-secondary transition-colors group"
+                          href="../compatibility/index.html"
+                          ><div
+                            class="w-9 h-9 rounded-lg bg-red-600/10 border border-red-600/15 flex items-center justify-center shrink-0 group-hover:bg-red-600/15 group-hover:border-red-600/25 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-circle-check text-red-600"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                          </div>
+                          <div class="min-w-0">
+                            <div class="text-sm font-semibold text-foreground leading-tight">
+                              Tương thích
+                            </div>
+                            <div class="text-xs text-muted-foreground mt-0.5 truncate">
+                              Kiểm tra tương thích linh kiện
+                            </div>
+                          </div></a
+                        ><a
+                          class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-secondary transition-colors group"
+                          href="../setup-planner/index.html"
+                          ><div
+                            class="w-9 h-9 rounded-lg bg-red-600/10 border border-red-600/15 flex items-center justify-center shrink-0 group-hover:bg-red-600/15 group-hover:border-red-600/25 transition-colors"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              aria-hidden="true"
+                              class="lucide lucide-layout-grid text-red-600"
+                            >
+                              <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                              <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                              <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                              <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                            </svg>
+                          </div>
+                          <div class="min-w-0">
+                            <div class="text-sm font-semibold text-foreground leading-tight">
+                              Bố trí góc máy
+                            </div>
+                            <div class="text-xs text-muted-foreground mt-0.5 truncate">
+                              Sắp xếp không gian bàn làm việc
+                            </div>
+                          </div></a
+                        >
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <a
+                  class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                  href="../deals/index.html"
+                  >Khuyến mãi</a
+                ><a
+                  class="px-4 py-2 text-sm rounded-lg transition-colors duration-150 text-muted-foreground hover:text-red-600 hover:bg-red-600/5"
+                  href="../about/index.html"
+                  >Giới thiệu</a
+                >
+              </div>
+            </div>
           </nav>
-          <a class="btn btn-outline" href="../cart/index.html">Giỏ hàng mẫu</a>
-        </div>
-      </header>
-      <main id="main-content" tabindex="-1" class="study-main">
-        <div class="site-container study-page">
-          <header class="study-heading">
-            <p class="study-kicker">Ví dụ giao diện · Không xử lý giao dịch</p>
-            <h1>Cấu hình PC mẫu</h1>
-          </header>
-          <p class="study-note">
-            Danh sách linh kiện cố định để minh họa bố cục và tổng tiền. Không chọn linh kiện, kiểm
-            tra tương thích hoặc lưu cấu hình.
-          </p>
-          <section class="study-panel">
-            <h2>Ví dụ danh sách linh kiện</h2>
-            <div
-              class="study-table-scroll"
-              tabindex="0"
-              role="region"
-              aria-label="Một phần cấu hình minh họa — chưa phải bộ PC đầy đủ"
-            >
-              <table class="study-table">
-                <caption>
-                  Một phần cấu hình minh họa — chưa phải bộ PC đầy đủ
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Sản phẩm</th>
-                    <th scope="col">Mã sản phẩm</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Giá mẫu</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="../products/7/index.html">AMD Ryzen 9 7950X3D</a></td>
-                    <td>ABO-DEMO-7</td>
-                    <td>1</td>
-                    <td>14.020.000 ₫</td>
-                  </tr>
-                  <tr>
-                    <td><a href="../products/3/index.html">ASUS ROG Strix B650E-F Gaming</a></td>
-                    <td>ABO-DEMO-3</td>
-                    <td>1</td>
-                    <td>7.390.000 ₫</td>
-                  </tr>
-                  <tr>
-                    <td><a href="../products/4/index.html">Corsair Vengeance DDR5 32GB</a></td>
-                    <td>ABO-DEMO-4</td>
-                    <td>1</td>
-                    <td>3.310.000 ₫</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="catalog-price"><strong>Tổng ba linh kiện: 24.720.000 ₫</strong></p>
-          </section>
-          <div class="study-actions">
-            <a class="btn btn-primary" href="../compatibility/index.html">Xem bảng thông số mẫu</a
-            ><a class="btn btn-outline" href="../products/index.html">Khám phá linh kiện</a>
-          </div>
-        </div>
-      </main>
-      <footer class="study-footer">
-        <div class="site-container">
-          <div class="study-footer-grid">
-            <div>
-              <a href="../index.html" aria-label="ABOPC — Trang chủ"
-                ><img
-                  class="brand-mark"
-                  src="../images/brand/abo-logo.svg"
-                  width="112"
-                  height="46"
-                  alt="ABOPC"
-              /></a>
-              <p>Từ linh kiện đến góc máy của riêng bạn.</p>
-              <p>
-                Bản học tập HTML + CSS. Nội dung và giao dịch mẫu; không nhận đơn hoặc thanh toán.
+        </header>
+        <main id="main-content" tabindex="-1" class="site-main">
+          <div class="min-h-screen tool-page">
+            <nav class="tool-navigation" aria-label="Bộ công cụ PC">
+              <a aria-current="page" class="active" href="./index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="lucide lucide-cpu"
+                >
+                  <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                  <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                  <path d="M15 2v2"></path>
+                  <path d="M15 20v2"></path>
+                  <path d="M2 15h2"></path>
+                  <path d="M2 9h2"></path>
+                  <path d="M20 15h2"></path>
+                  <path d="M20 9h2"></path>
+                  <path d="M9 2v2"></path>
+                  <path d="M9 20v2"></path></svg
+                ><span>Xây dựng cấu hình</span></a
+              ><a class="" href="../compatibility/index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="lucide lucide-shield-check"
+                >
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                  ></path>
+                  <path d="m9 12 2 2 4-4"></path></svg
+                ><span>Kiểm tra tương thích</span></a
+              ><a class="" href="../setup-planner/index.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  class="lucide lucide-monitor"
+                >
+                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                  <line x1="8" x2="16" y1="21" y2="21"></line>
+                  <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                ><span>Bố trí góc máy</span></a
+              >
+            </nav>
+            <section class="relative overflow-hidden border-b border-border">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-[#fff5f4] via-white to-[#fffcf2] dark:from-[#0b1120] dark:via-[#080d18] dark:to-[#0d1424]"
+              ></div>
+              <div
+                class="absolute inset-0 opacity-[0.035]"
+                style="
+                  background-image:
+                    linear-gradient(rgba(218, 37, 29, 0.55) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(218, 37, 29, 0.55) 1px, transparent 1px);
+                  background-size: 60px 60px;
+                "
+              ></div>
+              <div
+                class="absolute -right-32 top-0 w-[600px] h-[400px] bg-red-600/7 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+                  <div>
+                    <div
+                      class="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full border border-red-600/25 bg-red-600/8 text-red-600 text-xs font-semibold tracking-wide"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                        class="lucide lucide-cpu"
+                      >
+                        <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                        <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                        <path d="M15 2v2"></path>
+                        <path d="M15 20v2"></path>
+                        <path d="M2 15h2"></path>
+                        <path d="M2 9h2"></path>
+                        <path d="M20 15h2"></path>
+                        <path d="M20 9h2"></path>
+                        <path d="M9 2v2"></path>
+                        <path d="M9 20v2"></path>
+                      </svg>
+                      Cấu hình PC
+                    </div>
+                    <h1
+                      class="text-3xl lg:text-5xl font-bold leading-[1.1] mb-3"
+                      style="font-family: var(--font-ui)"
+                    >
+                      Xây dựng cấu hình
+                    </h1>
+                    <p class="text-muted-foreground text-base leading-relaxed max-w-xl">
+                      Chọn linh kiện của bạn
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+              <p class="static-builder-summary" role="status">
+                0/8 linh kiện · <strong>0 ₫</strong><span>Tổng giá linh kiện đã chọn</span>
               </p>
-            </div>
-            <div>
-              <h2>Khám phá</h2>
-              <ul>
-                <li><a href="../products/index.html">Danh sách sản phẩm</a></li>
-                <li><a href="../deals/index.html">Khuyến mãi mẫu</a></li>
-                <li><a href="../about/index.html">Về ABOPC</a></li>
-                <li><a href="../ui-kit.html">Mẫu nút bấm</a></li>
-              </ul>
-            </div>
-            <div>
-              <h2>Trang minh họa</h2>
-              <ul>
-                <li><a href="./index.html">Cấu hình PC mẫu</a></li>
-                <li><a href="../setup-planner/index.html">Góc máy mẫu</a></li>
-                <li><a href="../checkout/index.html">Biểu mẫu thanh toán</a></li>
-                <li><a href="../login/index.html">Biểu mẫu đăng nhập</a></li>
-              </ul>
+              <div
+                class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_340px] gap-6 lg:gap-8 items-start"
+              >
+                <div class="space-y-3">
+                  <div
+                    data-component-slot="CPU"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-cpu text-muted-foreground group-hover:text-red-600"
+                        >
+                          <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                          <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                          <path d="M15 2v2"></path>
+                          <path d="M15 20v2"></path>
+                          <path d="M2 15h2"></path>
+                          <path d="M2 9h2"></path>
+                          <path d="M20 15h2"></path>
+                          <path d="M20 9h2"></path>
+                          <path d="M9 2v2"></path>
+                          <path d="M9 20v2"></path>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >CPU</span
+                          ><span class="text-xs text-muted-foreground/60"
+                            >Bộ xử lý Intel &amp; AMD</span
+                          >
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="CPU"
+                          aria-label="Chọn hoặc đổi CPU"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="GPU"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-monitor text-muted-foreground group-hover:text-red-600"
+                        >
+                          <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                          <line x1="8" x2="16" y1="21" y2="21"></line>
+                          <line x1="12" x2="12" y1="17" y2="21"></line>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >GPU</span
+                          ><span class="text-xs text-muted-foreground/60">Card đồ họa</span>
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="GPU"
+                          aria-label="Chọn hoặc đổi GPU"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="Motherboard"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-circuit-board text-muted-foreground group-hover:text-red-600"
+                        >
+                          <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                          <path d="M11 9h4a2 2 0 0 0 2-2V3"></path>
+                          <circle cx="9" cy="9" r="2"></circle>
+                          <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
+                          <circle cx="15" cy="15" r="2"></circle>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >Bo mạch chủ</span
+                          ><span class="text-xs text-muted-foreground/60">ATX · mATX · ITX</span>
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="Motherboard"
+                          aria-label="Chọn hoặc đổi Bo mạch chủ"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="RAM"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-database text-muted-foreground group-hover:text-red-600"
+                        >
+                          <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                          <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                          <path d="M3 12A9 3 0 0 0 21 12"></path>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >RAM</span
+                          ><span class="text-xs text-muted-foreground/60"
+                            >Bộ nhớ DDR4 &amp; DDR5</span
+                          >
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="RAM"
+                          aria-label="Chọn hoặc đổi RAM"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="SSD"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-hard-drive text-muted-foreground group-hover:text-red-600"
+                        >
+                          <line x1="22" x2="2" y1="12" y2="12"></line>
+                          <path
+                            d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+                          ></path>
+                          <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                          <line x1="10" x2="10.01" y1="16" y2="16"></line>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >SSD</span
+                          ><span class="text-xs text-muted-foreground/60">Ổ NVMe &amp; SATA</span>
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="SSD"
+                          aria-label="Chọn hoặc đổi SSD"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="PSU"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-zap text-muted-foreground group-hover:text-red-600"
+                        >
+                          <path
+                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >PSU</span
+                          ><span class="text-xs text-muted-foreground/60">Bộ nguồn</span>
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="PSU"
+                          aria-label="Chọn hoặc đổi PSU"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="Case"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-box text-muted-foreground group-hover:text-red-600"
+                        >
+                          <path
+                            d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                          ></path>
+                          <path d="m3.3 7 8.7 5 8.7-5"></path>
+                          <path d="M12 22V12"></path>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >Vỏ máy</span
+                          ><span class="text-xs text-muted-foreground/60">Vỏ máy tính</span>
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="Case"
+                          aria-label="Chọn hoặc đổi Vỏ máy"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-component-slot="Cooling"
+                    class="group relative rounded-2xl border transition-all duration-200 overflow-hidden border-border bg-card hover:border-red-600/25 hover:shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="tool-change-highlight"
+                      style="opacity: 0"
+                    ></span>
+                    <div class="component-slot-row flex items-center gap-4 p-4 lg:p-5">
+                      <div
+                        class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-secondary border border-border group-hover:bg-red-600/8 group-hover:border-red-600/20"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-wind text-muted-foreground group-hover:text-red-600"
+                        >
+                          <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                          <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                          <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path>
+                        </svg>
+                      </div>
+                      <div class="component-slot-info flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 mb-0.5">
+                          <span
+                            class="text-sm font-bold text-foreground"
+                            style="font-family: var(--font-ui)"
+                            >Tản nhiệt</span
+                          ><span class="text-xs text-muted-foreground/60"
+                            >Tản nhiệt khí &amp; nước</span
+                          >
+                        </div>
+                        <span class="text-sm text-muted-foreground/60">Chưa chọn</span>
+                      </div>
+                      <div class="component-slot-actions flex items-center gap-2 shrink-0">
+                        <button
+                          data-slot="Cooling"
+                          aria-label="Chọn hoặc đổi Tản nhiệt"
+                          class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-red-600/8 border border-red-600/20 text-red-600 text-sm font-semibold hover:bg-red-600/14 hover:border-red-600/40 transition-colors"
+                          type="button"
+                          data-static-unavailable=""
+                          disabled=""
+                          title="Chức năng này cần JavaScript."
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-plus"
+                          >
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5v14"></path>
+                          </svg>
+                          Chọn
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:sticky lg:top-36">
+                  <div class="rounded-2xl border border-border bg-card overflow-hidden">
+                    <div
+                      class="px-5 py-4 border-b border-border bg-secondary/30 flex items-center justify-between"
+                    >
+                      <span class="text-sm font-bold" style="font-family: var(--font-ui)"
+                        >Tóm tắt cấu hình</span
+                      ><span class="text-xs text-muted-foreground tabular-nums"
+                        >0 / 8 linh kiện đã chọn</span
+                      >
+                    </div>
+                    <div class="px-5 pt-4 pb-1">
+                      <div class="h-1.5 rounded-full bg-secondary overflow-hidden">
+                        <div
+                          class="h-full bg-gradient-to-r from-red-600 to-amber-400 rounded-full transition-all duration-200"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="px-5 py-3 space-y-2">
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-cpu text-muted-foreground/40"
+                          >
+                            <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                            <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                            <path d="M15 2v2"></path>
+                            <path d="M15 20v2"></path>
+                            <path d="M2 15h2"></path>
+                            <path d="M2 9h2"></path>
+                            <path d="M20 15h2"></path>
+                            <path d="M20 9h2"></path>
+                            <path d="M9 2v2"></path>
+                            <path d="M9 20v2"></path>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">CPU</span>
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-monitor text-muted-foreground/40"
+                          >
+                            <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                            <line x1="8" x2="16" y1="21" y2="21"></line>
+                            <line x1="12" x2="12" y1="17" y2="21"></line>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">GPU</span>
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-circuit-board text-muted-foreground/40"
+                          >
+                            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                            <path d="M11 9h4a2 2 0 0 0 2-2V3"></path>
+                            <circle cx="9" cy="9" r="2"></circle>
+                            <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
+                            <circle cx="15" cy="15" r="2"></circle>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate"
+                          >Bo mạch chủ</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-database text-muted-foreground/40"
+                          >
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                            <path d="M3 12A9 3 0 0 0 21 12"></path>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">RAM</span>
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-hard-drive text-muted-foreground/40"
+                          >
+                            <line x1="22" x2="2" y1="12" y2="12"></line>
+                            <path
+                              d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+                            ></path>
+                            <line x1="6" x2="6.01" y1="16" y2="16"></line>
+                            <line x1="10" x2="10.01" y1="16" y2="16"></line>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">SSD</span>
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-zap text-muted-foreground/40"
+                          >
+                            <path
+                              d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">PSU</span>
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-box text-muted-foreground/40"
+                          >
+                            <path
+                              d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"
+                            ></path>
+                            <path d="m3.3 7 8.7 5 8.7-5"></path>
+                            <path d="M12 22V12"></path>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">Vỏ máy</span>
+                      </div>
+                      <div class="flex items-center gap-2.5 py-1.5">
+                        <div
+                          class="w-5 h-5 rounded-full flex items-center justify-center shrink-0 bg-secondary border border-border"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                            class="lucide lucide-wind text-muted-foreground/40"
+                          >
+                            <path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path>
+                            <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path>
+                            <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path>
+                          </svg>
+                        </div>
+                        <span class="text-xs text-muted-foreground flex-1 truncate">Tản nhiệt</span>
+                      </div>
+                    </div>
+                    <div
+                      class="relative mx-5 my-3 pt-3 border-t border-border flex items-center justify-between"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="tool-change-highlight"
+                        style="opacity: 0"
+                      ></span
+                      ><span class="text-sm text-muted-foreground">Tổng ước tính</span
+                      ><span
+                        class="text-xl font-bold text-foreground tabular-nums"
+                        style="font-family: var(--font-ui); font-variant-numeric: tabular-nums"
+                        >—</span
+                      >
+                    </div>
+                    <div class="px-5 pb-5 space-y-2.5">
+                      <button
+                        disabled=""
+                        class="w-full py-3 rounded-xl font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 bg-secondary text-muted-foreground cursor-not-allowed"
+                        type="button"
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-shopping-cart"
+                        >
+                          <circle cx="8" cy="21" r="1"></circle>
+                          <circle cx="19" cy="21" r="1"></circle>
+                          <path
+                            d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                          ></path>
+                        </svg>
+                        Thêm tất cả vào giỏ</button
+                      ><button
+                        disabled=""
+                        class="w-full py-2.5 rounded-xl border text-sm font-semibold flex items-center justify-center gap-1.5 transition-colors border-border text-muted-foreground/50 cursor-not-allowed"
+                        type="button"
+                        title="Chức năng này cần JavaScript."
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-circle-check"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        Kiểm tra tương thích</button
+                      ><a
+                        class="w-full py-2.5 rounded-xl border border-border text-sm text-muted-foreground hover:text-foreground hover:border-red-600/30 transition-colors flex items-center justify-center gap-1.5"
+                        href="../cart/index.html"
+                        >Giỏ hàng
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                          class="lucide lucide-chevron-right"
+                        >
+                          <path d="m9 18 6-6-6-6"></path></svg
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <p class="study-footer-bottom">© 2026 ABOPC · Website đồ án</p>
-        </div>
-      </footer>
+        </main>
+        <footer class="site-footer">
+          <div class="site-container site-footer-content">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+              <div class="col-span-2 lg:col-span-2">
+                <div class="mb-4">
+                  <a
+                    class="flex items-center shrink-0"
+                    aria-label="ABOPC — Về trang chủ"
+                    href="../index.html"
+                    ><img
+                      class="brand-mark"
+                      src="../images/brand/abo-logo.svg"
+                      alt="ABO"
+                      width="848"
+                      height="350"
+                      loading="eager"
+                  /></a>
+                </div>
+                <p class="text-muted-foreground text-sm leading-relaxed max-w-[280px] mb-6">
+                  Từ linh kiện đến góc máy của riêng bạn. Khám phá, xây dựng và hoàn thiện cấu hình
+                  cùng ABOPC.
+                </p>
+                <p class="site-demo-note">Website đồ án · Dữ liệu và giao dịch mô phỏng</p>
+              </div>
+              <div>
+                <h2 class="text-xs font-bold text-foreground tracking-widest uppercase mb-4">
+                  Sản phẩm
+                </h2>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../products/index.html#product-1"
+                      >CPU &amp; Bộ xử lý</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../products/index.html#product-2"
+                      >Card đồ họa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../products/index.html#product-3"
+                      >Bo mạch chủ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../products/index.html#product-4"
+                      >Bộ nhớ (RAM)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../products/index.html#product-5"
+                      >Lưu trữ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../products/page-2.html#product-12"
+                      >Nguồn máy tính</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="text-xs font-bold text-foreground tracking-widest uppercase mb-4">
+                  Hỗ trợ
+                </h2>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../track-order/index.html"
+                      >Theo dõi đơn hàng</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="./index.html"
+                      >Công cụ lắp ráp PC</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600 transition-colors"
+                      href="../about/index.html"
+                      >Liên hệ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="text-xs font-bold text-foreground tracking-widest uppercase mb-4">
+                  Công cụ của bạn
+                </h2>
+                <ul class="space-y-2.5">
+                  <li>
+                    <a class="text-sm text-muted-foreground hover:text-red-600" href="./index.html"
+                      >Cấu hình PC</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600"
+                      href="../compatibility/index.html"
+                      >Tương thích</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-sm text-muted-foreground hover:text-red-600"
+                      href="../setup-planner/index.html"
+                      >Bố trí góc máy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4"
+            >
+              <p class="text-xs text-muted-foreground">© 2026 ABOPC</p>
+              <a class="text-sm text-muted-foreground hover:text-red-600" href="../about/index.html"
+                >Về ABOPC</a
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

@@ -1,20 +1,18 @@
-# Phạm vi bản học tập
+# Phạm vi hiện tại: giữ giao diện cửa hàng, bỏ JavaScript
 
-Bản P01–P17, ngày 29/10/2026, tại E:\trang-web-ban-pc\ABOPC-static\static-site. Chưa push/deploy.
+Ngày điều chỉnh: 29/10/2026.
 
-| Nhóm | Hành vi bàn giao |
-|---|---|
-| Trang chủ/giới thiệu/khuyến mãi | HTML thật, liên kết tới nội dung tồn tại |
-| Danh mục/chi tiết | 26 sản phẩm, 9–9–8; giữ tên/giá/mô tả/thông số; gallery mở ảnh |
-| Button/pagination | CSS hover/active/focus/disabled; UI kit dùng CSS chung |
-| Menu/FAQ | Details/summary native, hỗ trợ bàn phím |
-| Giỏ/checkout/đơn/tra cứu | Nội dung mẫu; không thêm giỏ, tính tiền động, gửi đơn hay tra cứu mạng |
-| Login/tài khoản/quản trị | Mẫu; không xác thực, phân quyền hoặc ghi dữ liệu |
-| Builder/tương thích/planner | Cấu hình/bảng/ảnh mẫu; không kiểm tra tương thích hoặc kéo thả |
-| Wishlist/đánh giá | Nội dung cố định; không lưu người dùng |
-| Tìm/lọc/sắp xếp/dark toggle/toast | Không có runtime; liên kết giữ lại dẫn tới nội dung tĩnh thật |
-| Công cụ .mjs | Chạy trên Node.js, không tải vào trình duyệt |
+Yêu cầu của người dùng là website để trình bày giống bản tĩnh ban đầu nhất có thể, chỉ không dùng JavaScript. Vì vậy, việc đổi giao diện chính thành “Giỏ hàng mẫu”, “Trang mẫu”, bảng ví dụ hoặc chèn lời giảng giải đã được đảo lại.
 
-Đã bỏ file JavaScript cũ khỏi gói. Giữ ảnh, font, giấy phép và .git. Không chỉnh bản backup người dùng đã tạo, không sửa React/backend để thay thế bản học tập. Snapshot đối chiếu nằm ngoài website, trong artifacts/html-css-p11-p17 của workspace.
+## Được giữ
+Header và footer gốc; bố cục trang chủ; sidebar/danh mục; thẻ sản phẩm gốc; thông số và ảnh; trang đăng nhập; bố cục cấu hình PC, tương thích và mặt bằng góc máy. Giữ trạng thái khởi đầu gốc của các trang cần dữ liệu tài khoản hoặc giỏ hàng.
 
-Giao diện sáng đỏ–kem được giữ. Báo cáo QA phân biệt bằng chứng Chromium với các trình duyệt/công nghệ hỗ trợ chưa thử. Các trang mẫu không được coi là tính năng thương mại hoạt động thật.
+## Không dùng JavaScript
+Không có thẻ script, modulepreload, inline handler hay URL javascript. Không gọi API và không đọc/ghi localStorage. Các nút/input cần xử lý động giữ hình thức nhưng disabled; không chuyển sang trang xác nhận hoặc giả vờ xử lý thành công.
+
+Menu dùng details/summary; liên kết vẫn điều hướng; phân trang tải ba tài liệu HTML chứa 9–9–8 sản phẩm. Link danh mục/thương hiệu dẫn tới trang và vị trí sản phẩm có thật; không tạo kết quả lọc động bằng query giả.
+
+## Tài liệu học
+UI kit và các tài liệu đối chiếu lý thuyết vẫn được giữ riêng. CSS trình bày gốc được khôi phục khi cần; không ưu tiên giảm số dòng CSS nếu việc đó làm mất diện mạo website.
+
+Bản JavaScript đầy đủ và ứng dụng React/backend không được sửa trong lần điều chỉnh này. Bản thay đổi hiện tại chưa tự động commit/push; kết quả GitHub trước đó vẫn là lần xuất bản đã được người dùng yêu cầu trước khi điều chỉnh.
