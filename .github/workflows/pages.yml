@@ -31,6 +31,8 @@ jobs:
         id: pages
       - name: Check authored HTML and CSS
         run: node tools/check.mjs
+      - name: Check CSS cache invalidation
+        run: node --test tools/version-css.test.mjs
       - name: Copy website files without a build
         env:
           PAGE_BASE: ${{ steps.pages.outputs.base_path }}

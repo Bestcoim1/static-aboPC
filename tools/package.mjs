@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { check } from "./check.mjs";
+import { versionCss } from "./version-css.mjs";
 const root = fileURLToPath(new URL("../", import.meta.url));
 const destination = path.resolve(process.argv[2] || path.join(root, "_site"));
 const base = process.env.PAGE_BASE || "";
@@ -49,8 +50,9 @@ await fs.writeFile(file, html);
 const metadataFile = path.join(destination, "export-manifest.json");
 const metadata = JSON.parse(await fs.readFile(metadataFile, "utf8"));
 metadata.hostingBase = prefix;
+metadata.stylesheetVersion = await versionCss(destination);
 await fs.writeFile(metadataFile, JSON.stringify(metadata, null, 2) + "\n");
 console.log(await check(destination));
 console.log(
-  JSON.stringify({ destination, pageBase: prefix, pages: pages.length, published: false }, null, 2),
+  JSON.stringify({ destination, pageBase: prefix, pages: pages.length, stylesheetVersion: metadata.stylesheetVersion, published: false }, null, 2),
 );

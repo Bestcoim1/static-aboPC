@@ -53,7 +53,14 @@ export async function check(root = defaultRoot) {
     value = value.replaceAll("&amp;", "&");
     if (/^(data:|https?:|mailto:|tel:|#?$)/.test(value)) return;
     const url = new URL(value, "https://local.test/" + file);
-    assert.equal(url.search, "", "Không dùng query động: " + file);
+    if (url.pathname.endsWith(".css") && url.search) {
+      assert.match(url.search, /^\?v=[0-9a-f]{12}$/, "CSS version không hợp lệ: " + file);
+    } else {
+      assert.equal(url.search, "", "Không dùng query động: " + file);
+    }
+    if (url.pathname.endsWith(".css") && manifest.stylesheetVersion) {
+      assert.equal(url.search, "?v=" + manifest.stylesheetVersion, "CSS khác phiên bản gói: " + file);
+    }
     let pathname = url.pathname;
     if (value.startsWith("/") && hostingBase && pathname.startsWith(hostingBase + "/"))
       pathname = pathname.slice(hostingBase.length);

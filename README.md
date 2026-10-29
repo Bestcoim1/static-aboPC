@@ -35,4 +35,6 @@ node tools/package.mjs ..\ABOPC-storefront-html-css
 
 Đích phải là thư mục mới. Các file .mjs là công cụ Node chạy trên máy, không được HTML tải. Workflow Pages vẫn kiểm tra và sao chép file khi có push được chủ sở hữu yêu cầu.
 
+Khi đóng gói, mỗi URL CSS (kể cả CSS được @import) được thêm mã phiên bản tính từ nội dung toàn bộ stylesheet. Khi sửa CSS và xuất bản lại, trình duyệt tải bộ CSS mới thay vì trộn với cache của lần trước. File nguồn vẫn giữ tên dễ đọc; không thêm JavaScript vào website. Chạy `node --test tools/version-css.test.mjs` để kiểm tra cơ chế này.
+
 Xem [báo cáo chỉnh lại giao diện](docs/khoi-phuc-giao-dien-cua-hang.md) và [phạm vi hiện tại](docs/pham-vi-ban-hoc-tap.md). Báo cáo P01–P17 phản ánh giai đoạn trước khi sửa cách hiểu yêu cầu; không dùng các con số CSS hoặc trang mẫu cũ để mô tả bản hiện tại.
